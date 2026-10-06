@@ -487,6 +487,31 @@ ul {
     text-align: center;
 }
 
+/* Shared automatic wiki links */
+
+.wiki-link {
+  color: var(--frost-bright);
+  text-decoration: underline;
+  text-decoration-color: rgba(145, 203, 227, 0.4);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.wiki-link:hover {
+  color: var(--nordic-gold-bright);
+  text-decoration-color: currentColor;
+}
+
+.wiki-link:focus-visible {
+  outline: 2px solid var(--frost);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.nice-to-have-row .wiki-link {
+  color: var(--nordic-gold-bright);
+}
+
 /* Shared responsive behavior */
 
 @media (max-width: 900px) {

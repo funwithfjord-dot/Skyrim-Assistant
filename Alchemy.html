@@ -236,162 +236,155 @@
             </div>
         </section>
 
-        <!-- HEALING -->
+        <!-- HEALING & RECOVERY -->
         <section id="healing" class="panel">
             <h2>Healing & Recovery</h2>
 
             <p class="panel-intro">
-                Survival Mode makes reliable healing, disease treatment, stamina restoration,
-                and carry-weight recovery much more valuable. Keep a large reserve of basic
-                health potions, then use specialized recipes for caves, long trips, water,
-                magic-heavy fights, and emergency recovery.
+                Basic recipes for restoring health, stamina, and Magicka; supporting regeneration;
+                curing disease and poison; and temporarily increasing carry capacity.
+                Optional ingredient upgrades will be reviewed individually.
             </p>
 
             <div class="table-wrap">
                 <table>
                     <thead>
                         <tr>
-                            <th>Effects</th>
-                            <th>Ingredients / Food</th>
-                            <th>Use Case</th>
-                            <th>Nice to Haves</th>
+                            <th scope="col">Effects</th>
+                            <th scope="col">Ingredients</th>
+                            <th scope="col">Use Case</th>
+                            <th scope="col">Nice to Haves</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        <!-- FIRST HEALING ROW -->
+                        <!-- 1. HEALING -->
                         <tr>
                             <td>Restore Health</td>
-                            <td class="recipe">Blue Mountain Flower + Wheat</td>
+                            <td class="recipe">
+                                Blue Mountain Flower + Butterfly Wing
+                            </td>
                             <td>
                                 <span class="tag tag-essential">Essential</span>
-                                Basic, cheap, easy-to-source healing potion. Pick Blue Mountain Flowers while
-                                traveling and harvest or buy Wheat from farms. This should be your main bulk
-                                healing reserve in Survival Mode.
+                                Basic immediate healing with easy-to-collect ingredients.
+                                Gather Blue Mountain Flowers while traveling and catch orange
+                                butterflies for Butterfly Wings.
                             </td>
-                            <td>
-                                <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                    aria-controls="nice-healing-basic">
-                                    Optional +
-                                </button>
-                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
 
-                        <tr id="nice-healing-basic" class="nice-to-have-row" hidden>
-                            <td>Fortify Health</td>
-                            <td class="recipe">Giant's Toe</td>
-                            <td class="nice-to-have-use">
-                                Use when preparing for dragons, bosses, giant camps, or difficult expeditions.
-                                It upgrades the basic healing potion into a stronger emergency version.
-                            </td>
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
+                        <!-- 2. HEALTH REGENERATION -->
                         <tr>
-                            <td>Cure Disease + Restore Stamina + Resist Poison</td>
-                            <td class="recipe">Charred Skeever Hide + Mudcrab Chitin</td>
-                            <td>
-                                Best for Falmer, Chaurus, spiders, animal dens, poison traps, and swamp travel.
-                                Carry these when poison and disease are more likely than direct magical damage.
+                            <td>Regenerate Health</td>
+                            <td class="recipe">
+                                Garlic + Juniper Berries
                             </td>
                             <td>
-                                <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                    aria-controls="nice-healing-poison-defense">
-                                    Optional +
-                                </button>
+                                Improves health regeneration over time rather than restoring
+                                health immediately. Keep separate from emergency healing potions.
+                                Reserve some Garlic for cooking.
                             </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
 
-                        <tr id="nice-healing-poison-defense" class="nice-to-have-row" hidden>
-                            <td colspan="4">
-                                <div class="nice-to-have-content">
-                                    <strong>Nice to haves:</strong>
-                                    Add <span class="recipe">Felsaad Tern Feathers</span> for
-                                    <strong>Restore Health</strong>. This turns it into an excellent full
-                                    creature-cave recovery potion, though the feathers are best saved for
-                                    dedicated healing and disease batches when your supply is low.
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Cure Disease + Restore Health + Restore Stamina + Resist Magic</td>
-                            <td class="recipe">Charred Skeever Hide + Felsaad Tern Feathers + Wisp Wrappings</td>
-                            <td>
-                                Premium all-purpose expedition potion. Especially valuable before mage dens,
-                                dragon priest ruins, difficult tombs, or long travel away from towns.
-                            </td>
-                            <td>—</td>
-                        </tr>
-
-                        <tr>
-                            <td>Cure Disease + Restore Health + Restore Stamina + Resist Poison</td>
-                            <td class="recipe">Charred Skeever Hide + Felsaad Tern Feathers + Mudcrab Chitin</td>
-                            <td>
-                                Premium creature-cave recovery potion. Excellent for Chaurus nests, Falmer
-                                ruins, spider caves, swamps, and other poison-heavy locations.
-                            </td>
-                            <td>—</td>
-                        </tr>
-
-                        <tr>
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Red Mountain Flower + Mora Tapinella</td>
-                            <td>
-                                Straightforward caster recovery potion. Keep a larger reserve if your
-                                build relies on spells or staff charges during long Survival Mode trips.
-                            </td>
-                            <td>—</td>
-                        </tr>
-
-                        <tr>
-                            <td>Fortify Magicka + Regenerate Magicka</td>
-                            <td class="recipe">Salmon Roe + Jazbay Grapes</td>
-                            <td>
-                                Use shortly before a demanding spell sequence. This is a preparation potion,
-                                not a substitute for instant Restore Magicka during combat.
-                            </td>
-                            <td>—</td>
-                        </tr>
-
+                        <!-- 3. STAMINA -->
                         <tr>
                             <td>Restore Stamina</td>
-                            <td class="recipe">Purple Mountain Flower + Thistle Branch</td>
-                            <td>
-                                Reliable supply for sprinting, power attacks, archery, carrying loot,
-                                and escaping dangerous fights.
+                            <td class="recipe">
+                                Bee + Purple Mountain Flower
                             </td>
-                            <td>—</td>
+                            <td>
+                                Immediate stamina recovery for sprinting, power attacks,
+                                and escaping dangerous encounters.
+                                Gather Purple Mountain Flowers and collect Bees while exploring.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
 
+                        <!-- 4. STAMINA REGENERATION -->
                         <tr>
-                            <td>Waterbreathing + Fortify Magicka</td>
-                            <td class="recipe">Salmon Roe + Nordic Barnacle</td>
-                            <td>
-                                Carry for submerged ruins, shipwrecks, deep-water treasure, and long dives.
+                            <td>Regenerate Stamina</td>
+                            <td class="recipe">
+                                Mora Tapinella + Scaly Pholiota
                             </td>
-                            <td>—</td>
+                            <td>
+                                Supports stamina recovery during extended activity.
+                                Useful when you expect repeated attacks or frequent sprinting
+                                rather than needing a single immediate refill.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
 
+                        <!-- 5. MAGICKA -->
                         <tr>
-                            <td>Restore Stamina + Waterbreathing + Fortify Magicka</td>
-                            <td class="recipe">Salmon Roe + Histcarp</td>
-                            <td>
-                                Useful for diving, swimming, sprinting after surfacing, and unexpected
-                                encounters near water.
+                            <td>Restore Magicka</td>
+                            <td class="recipe">
+                                Red Mountain Flower + Mora Tapinella
                             </td>
-                            <td>—</td>
+                            <td>
+                                Immediate Magicka recovery for spellcasting.
+                                Collect Red Mountain Flowers along roads and Mora Tapinella
+                                from fallen logs and tree stumps.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
 
+                        <!-- 6. MAGICKA REGENERATION -->
                         <tr>
-                            <td>Fortify Carry Weight + Fortify Stamina Regeneration</td>
-                            <td class="recipe">Creep Cluster + Mora Tapinella + Scaly Pholiota</td>
+                            <td>Regenerate Magicka</td>
+                            <td class="recipe">
+                                Garlic + Salt Pile
+                            </td>
+                            <td>
+                                Supports Magicka regeneration during longer encounters.
+                                Both ingredients also serve as cooking supplies, so keep
+                                a separate reserve for Survival Mode meals.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
+                        </tr>
+
+                        <!-- 7. CURE DISEASE -->
+                        <tr>
+                            <td>Cure Disease</td>
+                            <td class="recipe">
+                                Hawk Feathers + Vampire Dust
+                            </td>
+                            <td>
+                                Treats diseases without adding unrelated buffs.
+                                Keep a small reserve for infections acquired while exploring.
+                                These ingredients are less convenient to gather than flowers.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
+                        </tr>
+
+                        <!-- 8. CURE POISON -->
+                        <tr>
+                            <td>Cure Poison</td>
+                            <td class="recipe">
+                                Imp Gall + Scrib Jelly
+                            </td>
+                            <td>
+                                <span class="tag tag-ae">AE / Rare Curios</span>
+                                Stops ongoing poison effects. This is a cure, not preventive
+                                poison resistance. Purchase the ingredients from Khajiit caravans
+                                when available.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
+                        </tr>
+
+                        <!-- 9. CARRY WEIGHT -->
+                        <tr>
+                            <td>Fortify Carry Weight</td>
+                            <td class="recipe">
+                                Creep Cluster + Hawk Beak
+                            </td>
                             <td>
                                 <span class="tag tag-survival">Survival</span>
-                                Keep for loot extraction, Dwemer ruins, dragon bones, and long overland returns
-                                where fast travel is unavailable.
+                                Temporarily increases carrying capacity for loot extraction,
+                                heavy crafting materials, or the return trip from a dungeon.
+                                The effect is temporary, so plan where to unload.
                             </td>
-                            <td>—</td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1111,6 +1104,7 @@
     </main>
 
     <script src="js/Alchemy.js"></script>
+    <script src="js/WikiLinks.js"></script>
 </body>
 
 </html>
