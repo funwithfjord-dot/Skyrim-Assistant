@@ -98,6 +98,39 @@
     { name: "White Cap", page: "White_Cap", type: "ingredient" },
     { name: "Ectoplasm", page: "Ectoplasm", type: "ingredient" },
     { name: "Pearl", page: "Pearl", type: "ingredient" },
+        // Warming foods
+    { name: "Hot Potato Soup", page: "Survival_Mode_Items", type: "food" },
+    { name: "Hot Cabbage Soup", page: "Survival_Mode_Items", type: "food" },
+    { name: "Hot Tomato Soup", page: "Survival_Mode_Items", type: "food" },
+    { name: "Hot Vegetable Soup", page: "Survival_Mode_Items", type: "food" },
+    { name: "Hot Venison Stew", page: "Survival_Mode_Items", type: "food" },
+    { name: "Hot Elsweyr Fondue", page: "Survival_Mode_Items", type: "food" },
+    { name: "Hot Crab Stew", page: "Food", type: "food" },
+    { name: "Hot Roasted Tomato Crab Bisque", page: "Food", type: "food" },
+
+    // Other foods currently displayed in the Survival section
+    { name: "Salmon Steak", page: "Food", type: "food" },
+    { name: "Seared Slaughterfish", page: "Food", type: "food" },
+    { name: "Rabbit Haunch", page: "Food", type: "food" },
+    { name: "Steamed Mudcrab Legs", page: "Food", type: "food" },
+    { name: "Crab Stew", page: "Food", type: "food" },
+    { name: "Vegetable Soup", page: "Food", type: "food" },
+    { name: "Beef Stew", page: "Food", type: "food" },
+    { name: "Garlic Bread", page: "Food", type: "food" },
+
+    // Cooking supplies
+    { name: "Potato", page: "Food", type: "food" },
+    { name: "Cabbage", page: "Food", type: "food" },
+    { name: "Leek", page: "Food", type: "food" },
+    { name: "Tomato", page: "Food", type: "food" },
+    { name: "Crab Meat", page: "Food", type: "food" },
+    { name: "Venison", page: "Food", type: "food" },
+    { name: "Butter", page: "Food", type: "food" },
+    { name: "Eidar Cheese Wheel", page: "Food", type: "food" },
+    { name: "Ale", page: "Food", type: "food" },
+
+    // Alchemy ingredient also used in cooking
+    { name: "Moon Sugar", page: "Moon_Sugar", type: "ingredient" },
 
     /*
      * Add other types here later:

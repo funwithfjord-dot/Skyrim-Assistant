@@ -1888,14 +1888,16 @@
 
                     <!-- START: COLD RECOVERY OPTIONS -->
                     <tbody id="options-survival-cold" class="ingredient-pool" hidden>
-                        <!-- RECIPE OPTIONS LEGEND -->
+                        <!-- SHARED WARMING EFFECTS -->
                         <tr class="nice-to-have-row healing-legend-row">
                             <td colspan="4">
-                                <strong>Warming-food recipes:</strong>
-                                Each row is a complete cooking recipe.
-                                All listed dishes weigh 0.5.
-                                Recovery effects and durations describe the hot versions.
-                                Ingredients are not interchangeable.
+                                <strong>Shared effects:</strong>
+                                All recipes below restore 380 Hunger, reduce accumulated Cold
+                                by 200 points, and increase Warmth by 25 points for 300 seconds
+                                (5 minutes). Each dish weighs 0.5.
+                                The Effects column lists additional benefits.
+                                Each row is a complete cooking recipe; ingredients are not
+                                interchangeable.
                             </td>
                         </tr>
 
@@ -1910,10 +1912,7 @@
                         <!-- START: HOT POTATO SOUP -->
                         <tr class="nice-to-have-row ingredient-safe">
                             <td>
-                                Restore Health: 10 points<br />
-                                Restore Hunger: 380 points<br />
-                                Reduce Cold: 200 points<br />
-                                Fortify Warmth: 25 points for 300 seconds
+                                Restore Health: 10 points
                             </td>
 
                             <td class="recipe">Hot Potato Soup</td>
@@ -1929,10 +1928,7 @@
                         <!-- START: HOT CABBAGE SOUP -->
                         <tr class="nice-to-have-row ingredient-safe">
                             <td>
-                                Restore Health: 10 points<br />
-                                Restore Hunger: 380 points<br />
-                                Reduce Cold: 200 points<br />
-                                Fortify Warmth: 25 points for 300 seconds
+                                Restore Health: 10 points
                             </td>
 
                             <td class="recipe">Hot Cabbage Soup</td>
@@ -1948,10 +1944,7 @@
                         <!-- START: HOT TOMATO SOUP -->
                         <tr class="nice-to-have-row ingredient-safe">
                             <td>
-                                Restore Health: 10 points<br />
-                                Restore Hunger: 380 points<br />
-                                Reduce Cold: 200 points<br />
-                                Fortify Warmth: 25 points for 300 seconds
+                                Restore Health: 10 points
                             </td>
 
                             <td class="recipe">Hot Tomato Soup</td>
@@ -1967,10 +1960,7 @@
                         <!-- START: HOT VEGETABLE SOUP -->
                         <tr class="nice-to-have-row ingredient-safe">
                             <td>
-                                Restore Health: 1 point/second for 720 seconds<br />
-                                Restore Hunger: 380 points<br />
-                                Reduce Cold: 200 points<br />
-                                Fortify Warmth: 25 points for 300 seconds
+                                Restore Health: 1 point/second for 720 seconds
                             </td>
 
                             <td class="recipe">Hot Vegetable Soup</td>
@@ -1987,10 +1977,7 @@
                         <tr class="nice-to-have-row ingredient-safe">
                             <td>
                                 Restore Health: 1 point/second for 720 seconds<br />
-                                Restore Stamina: 2 points/second for 720 seconds<br />
-                                Restore Hunger: 380 points<br />
-                                Reduce Cold: 200 points<br />
-                                Fortify Warmth: 25 points for 300 seconds
+                                Restore Stamina: 2 points/second for 720 seconds
                             </td>
 
                             <td class="recipe">
@@ -2009,10 +1996,7 @@
                         <!-- START: HOT VENISON STEW -->
                         <tr class="nice-to-have-row ingredient-safe">
                             <td>
-                                Restore Health: 1 point/second for 720 seconds<br />
-                                Restore Hunger: 380 points<br />
-                                Reduce Cold: 200 points<br />
-                                Fortify Warmth: 25 points for 300 seconds
+                                Restore Health: 1 point/second for 720 seconds
                             </td>
 
                             <td class="recipe">Hot Venison Stew</td>
@@ -2028,10 +2012,7 @@
                         <!-- START: HOT ELSWEYR FONDUE -->
                         <tr class="nice-to-have-row ingredient-safe">
                             <td>
-                                Regenerate Magicka: 25% faster for 720 seconds<br />
-                                Restore Hunger: 380 points<br />
-                                Reduce Cold: 200 points<br />
-                                Fortify Warmth: 25 points for 300 seconds
+                                Regenerate Magicka: 25% faster for 720 seconds
                             </td>
 
                             <td class="recipe">Hot Elsweyr Fondue</td>
@@ -2048,10 +2029,7 @@
                         <tr class="nice-to-have-row ingredient-safe">
                             <td>
                                 Restore Health: 15 points immediately<br />
-                                Restore Health: 1 point/second for 720 seconds<br />
-                                Restore Hunger: 380 points<br />
-                                Reduce Cold: 200 points<br />
-                                Fortify Warmth: 25 points for 300 seconds
+                                Restore Health: 1 point/second for 720 seconds
                             </td>
 
                             <td class="recipe">
@@ -2110,16 +2088,244 @@
                     </tbody>
                     <!-- END: LIGHT TRAVEL RATIONS MAIN ROW -->
 
-                    <!-- START: LIGHT TRAVEL RATIONS OPTIONS -->
+                    <!-- START: LIGHT TRAVEL RATION OPTIONS -->
                     <tbody id="options-survival-rations" class="ingredient-pool" hidden>
+                        <!-- SHARED RATION BENEFITS -->
                         <tr class="nice-to-have-row healing-legend-row">
                             <td colspan="4">
-                                <strong>Travel-ration recipe options:</strong>
-                                Complete cooking recipes will be added here after review.
+                                <strong>Shared effect:</strong>
+                                All foods below restore 220 Hunger per serving.
+                                Each serving weighs 0.1 or 0.2, as listed.
+                                Cooking-pot recipes and oven recipes are identified individually.
+                                Each row is a complete recipe; ingredients are not interchangeable.
+                                Hearthfire and Fishing labels indicate official content,
+                                not third-party mods.
                             </td>
                         </tr>
+
+                        <!-- EXPANDED COLUMN HEADINGS -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td><strong>Weight</strong></td>
+                            <td><strong>Food</strong></td>
+                            <td><strong>Ingredients</strong></td>
+                            <td><strong>Preparation</strong></td>
+                        </tr>
+
+                        <!-- START: SALMON STEAK -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.1</td>
+                            <td class="recipe">Salmon Steak</td>
+                            <td class="nice-to-have-use">
+                                Salmon Meat + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: SALMON STEAK -->
+
+                        <!-- START: RABBIT HAUNCH -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.1</td>
+                            <td class="recipe">Rabbit Haunch</td>
+                            <td class="nice-to-have-use">
+                                Raw Rabbit Leg + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: RABBIT HAUNCH -->
+
+                        <!-- START: SEARED SLAUGHTERFISH -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.1</td>
+                            <td class="recipe">
+                                Seared Slaughterfish<br />
+                                <span class="tag tag-ae">Recipe: Official Creation / Fishing</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Slaughterfish + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: SEARED SLAUGHTERFISH -->
+
+                        <!-- START: STEAMED MUDCRAB LEGS -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.1</td>
+                            <td class="recipe">
+                                Steamed Mudcrab Legs<br />
+                                <span class="tag tag-ae">Official DLC / Hearthfire</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Mudcrab Legs + Butter
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: STEAMED MUDCRAB LEGS -->
+
+                        <!-- START: PHEASANT ROAST -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">Pheasant Roast</td>
+                            <td class="nice-to-have-use">
+                                Pheasant Breast + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: PHEASANT ROAST -->
+
+                        <!-- START: GRILLED CHICKEN BREAST -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">Grilled Chicken Breast</td>
+                            <td class="nice-to-have-use">
+                                Chicken Breast + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: GRILLED CHICKEN BREAST -->
+
+                        <!-- START: GARLIC BREAD -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>0.1</td>
+                            <td class="recipe">
+                                Garlic Bread<br />
+                                <span>Cures disease</span><br />
+                                <span class="tag tag-ae">Official DLC / Hearthfire</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Garlic + Butter + Bread<br />
+                                Produces 2 servings
+                            </td>
+                            <td>Oven</td>
+                        </tr>
+                        <!-- END: GARLIC BREAD -->
+
+                        <!-- START: COOKED PEARLFISH -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">
+                                Cooked Pearlfish<br />
+                                <span class="tag tag-ae">Official Creation / Fishing</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Pearlfish + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: COOKED PEARLFISH -->
+
+                        <!-- START: COOKED ANGELFISH -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">
+                                Cooked Angelfish<br />
+                                <span class="tag tag-ae">Official Creation / Fishing</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Angelfish + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: COOKED ANGELFISH -->
+
+                        <!-- START: COOKED GOLDFISH -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">
+                                Cooked Goldfish<br />
+                                <span class="tag tag-ae">Official Creation / Fishing</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Goldfish + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: COOKED GOLDFISH -->
+
+                        <!-- START: COOKED GLASSFISH -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">
+                                Cooked Glassfish<br />
+                                <span class="tag tag-ae">Official Creation / Fishing</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Glassfish + Salt Pile
+                            </td>
+                            <td>Cooking pot</td>
+                        </tr>
+                        <!-- END: COOKED GLASSFISH -->
+
+                        <!-- START: APPLE DUMPLING -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.1</td>
+                            <td class="recipe">
+                                Apple Dumpling<br />
+                                <span class="tag tag-ae">Official DLC / Hearthfire</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Sack of Flour + Green Apple + Red Apple
+                            </td>
+                            <td>Oven</td>
+                        </tr>
+                        <!-- END: APPLE DUMPLING -->
+
+                        <!-- START: BRAIDED BREAD -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">
+                                Braided Bread<br />
+                                <span class="tag tag-ae">Official DLC / Hearthfire</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Sack of Flour + Salt Pile
+                            </td>
+                            <td>Oven</td>
+                        </tr>
+                        <!-- END: BRAIDED BREAD -->
+
+                        <!-- START: JAZBAY CROSTATA -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">
+                                Jazbay Crostata<br />
+                                <span class="tag tag-ae">Official DLC / Hearthfire</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Butter + Jazbay Grapes &times; 2 + Sack of Flour
+                            </td>
+                            <td>Oven</td>
+                        </tr>
+                        <!-- END: JAZBAY CROSTATA -->
+
+                        <!-- START: JUNIPER BERRY CROSTATA -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">
+                                Juniper Berry Crostata<br />
+                                <span class="tag tag-ae">Official DLC / Hearthfire</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Butter + Juniper Berries &times; 3 + Sack of Flour
+                            </td>
+                            <td>Oven</td>
+                        </tr>
+                        <!-- END: JUNIPER BERRY CROSTATA -->
+
+                        <!-- START: SNOWBERRY CROSTATA -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>0.2</td>
+                            <td class="recipe">
+                                Snowberry Crostata<br />
+                                <span class="tag tag-ae">Official DLC / Hearthfire</span>
+                            </td>
+                            <td class="nice-to-have-use">
+                                Butter + Snowberries &times; 2 + Sack of Flour
+                            </td>
+                            <td>Oven</td>
+                        </tr>
+                        <!-- END: SNOWBERRY CROSTATA -->
                     </tbody>
-                    <!-- END: LIGHT TRAVEL RATIONS OPTIONS -->
+                    <!--END: lIGHT TRAVEL RATION OPTIONS -->
 
                     <!-- START: LARGE MEAL MAIN ROW -->
                     <tbody>
