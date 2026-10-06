@@ -1216,36 +1216,401 @@
                     </tbody>
                     <!-- END: RESTORE MAGICKA INGREDIENT POOL -->
 
-                    <!-- Continue the remaining main potion rows. -->
-                    <tbody>
+                    <!-- 6. REGENERATE MAGICKA: MAIN ROW -->
+                    <tr>
+                        <td>Regenerate Magicka</td>
 
-                        <!-- Continue the remaining main potion rows. -->
+                        <td class="recipe">
+                            Garlic + Salt Pile
+                        </td>
+
+                        <td>
+                            Supports Magicka recovery during extended spellcasting
+                            rather than providing an immediate refill.
+                            Collect Garlic and Salt Piles while exploring.
+                            Keep separate reserves for Survival Mode cooking.
+                            Open the ingredient pool for alternatives, pairing warnings,
+                            and specialty recipes.
+                        </td>
+
+                        <td>
+                            <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                aria-controls="nice-magicka-regeneration">
+                                Optional +
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- END: REGENERATE MAGICKA MAIN ROW -->
+                    </tbody>
+                    <!-- START: REGENERATE MAGICKA INGREDIENT POOL -->
+                    <tbody id="nice-magicka-regeneration" class="ingredient-pool" hidden>
+                        <!-- INGREDIENT POOL LEGEND -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Magicka regeneration ingredient pool:</strong>
+                                Combine two different ingredients below.
+                                Green indicates no harmful shared effects within this listed pool;
+                                yellow identifies a pairing to avoid.
+                                Purple rows are complete specialty recipes.
+                                Regenerate Magicka increases recovery speed rather than
+                                providing an immediate refill.
+                                Add a third ingredient only when it contributes a useful effect.
+                            </td>
+                        </tr>
+
+                        <!-- START: GREEN INGREDIENTS -->
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Regenerate Magicka</td>
+                            <td class="recipe">Garlic</td>
+
+                            <td class="nice-to-have-use">
+                                Collect hanging Garlic braids and loose kitchen supplies.
+                                No harmful shared effects with other ingredients in this pool.
+                                Salt Pile is a clean baseline partner.
+                                Keep a separate reserve for cooking.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Regenerate Magicka</td>
+                            <td class="recipe">Fire Salts</td>
+
+                            <td class="nice-to-have-use">
+                                Save gathered or looted supplies.
+                                No harmful shared effects with other ingredients in this pool.
+                                Dwarven Oil also adds Restore Magicka.
+                                Keep a separate reserve for Survival Mode hot soup.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Regenerate Magicka</td>
+                            <td class="recipe">Salmon Roe</td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Hearthfire</span>
+                                Collect from salmon.
+                                No harmful shared effects with other ingredients in this pool.
+                                Jazbay Grapes also adds Fortify Magicka.
+                                Save for useful specialty combinations rather than routine batches.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: GREEN INGREDIENTS -->
+
+                        <!-- START: YELLOW INGREDIENTS -->
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Regenerate Magicka</td>
+                            <td class="recipe">Salt Pile</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from containers and other supplies.
+                                <strong>Avoid Dwarven Oil and Jazbay Grapes:</strong>
+                                either pairing adds Weakness to Magic.
+                                Garlic is a clean baseline partner.
+                                Keep a separate reserve for cooking.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Regenerate Magicka</td>
+                            <td class="recipe">Jazbay Grapes</td>
+
+                            <td class="nice-to-have-use">
+                                Gather in Eastmarch's volcanic region or grow your own.
+                                <strong>Avoid Salt Pile and Dwarven Oil:</strong>
+                                either pairing adds Weakness to Magic.
+                                Garlic gives regeneration only;
+                                Salmon Roe also adds Fortify Magicka.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Regenerate Magicka</td>
+                            <td class="recipe">Dwarven Oil</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from Dwarven automatons.
+                                <strong>Avoid Salt Pile and Jazbay Grapes:</strong>
+                                either pairing adds Weakness to Magic.
+                                Fire Salts also adds Restore Magicka.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: YELLOW INGREDIENTS -->
+
+                        <!-- START: PURPLE SPECIALTY RECIPES -->
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Regenerate Magicka + Restore Magicka</td>
+
+                            <td class="recipe">
+                                Fire Salts + Dwarven Oil
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Immediate Magicka recovery plus faster regeneration.
+                                A complete two-ingredient recipe.
+                                Reserve some Fire Salts for Survival Mode hot soup.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Regenerate Magicka + Fortify Magicka</td>
+
+                            <td class="recipe">
+                                Garlic + Jazbay Grapes + Red Mountain Flower
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Faster recovery with a temporary increase to maximum Magicka.
+                                Garlic and Jazbay Grapes activate Regenerate Magicka.
+                                Jazbay Grapes and Red Mountain Flower activate Fortify Magicka.
+                                The third ingredient adds a useful preparation effect.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Regenerate Magicka + Fortify Magicka</td>
+
+                            <td class="recipe">
+                                Salmon Roe + Jazbay Grapes
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Hearthfire ingredient</span>
+                                Two-ingredient caster preparation using Salmon Roe already collected.
+                                Combines faster recovery with a temporary increase
+                                to maximum Magicka.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Regenerate Magicka + Regenerate Health</td>
+
+                            <td class="recipe">
+                                Garlic + Salt Pile + Juniper Berries
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Supports both Magicka and health recovery over time.
+                                Garlic and Salt Pile activate Regenerate Magicka.
+                                Garlic and Juniper Berries activate Regenerate Health.
+                                Keep immediate restoration potions available for emergencies.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: PURPLE SPECIALTY RECIPES -->
+                    </tbody>
+                    <!-- END: REGENERATE MAGICKA INGREDIENT POOL -->
+
+                    <!-- 7. CURE DISEASE MAIN ROW -->
+                    <tr>
+                        <td>Cure Disease + Restore Stamina + Resist Poison</td>
+
+                        <td class="recipe">
+                            Charred Skeever Hide + Mudcrab Chitin
+                        </td>
+
+                        <td>
+                            Disease treatment with immediate stamina recovery
+                            and temporary poison resistance.
+                            Collect Charred Skeever Hide from cooked skeevers
+                            and Mudcrab Chitin from defeated mudcrabs.
+                            Open the optional list for standalone treatment,
+                            alternative ingredients, and specialty recipes.
+                        </td>
+
+                        <td>
+                            <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                aria-controls="nice-cure-disease">
+                                Optional +
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- END: CURE DISEASE MAIN ROW -->
+                    </tbody>
+                    <!-- START: CURE DISEASE OPTIONAL GROUP -->
+                    <tbody id="nice-cure-disease" class="ingredient-pool" hidden>
+                        <!-- STANDALONE TREATMENT -->
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Cure Disease — eat directly</td>
+                            <td class="recipe">Hawk Feathers</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from hawks you bring down.
+                                <strong>Use alone:</strong>
+                                eat directly for Cure Disease.
+                                This guide reserves Hawk Feathers for standalone treatment,
+                                not disease-cure potion recipes.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- POTION INGREDIENT POOL LEGEND -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Disease-cure potion ingredient pool:</strong>
+                                Combine two different ingredients from the four rows below.
+                                Green indicates no harmful shared effects within this listed pool.
+                                Purple rows are complete specialty recipes.
+                                Add a third ingredient only when it contributes a useful effect.
+                                Hawk Feathers are not part of this interchangeable potion pool.
+                            </td>
+                        </tr>
+
+                        <!-- START: GREEN POTION INGREDIENTS -->
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Cure Disease</td>
+                            <td class="recipe">Charred Skeever Hide</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from skeevers roasting over fires,
+                                not ordinary dead skeevers.
+                                No harmful shared effects with other ingredients in this potion pool.
+                                Mudcrab Chitin also adds Restore Stamina and Resist Poison;
+                                Felsaad Tern Feathers also adds Restore Health.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Cure Disease</td>
+                            <td class="recipe">Mudcrab Chitin</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated mudcrabs.
+                                No harmful shared effects with other ingredients in this potion pool.
+                                Charred Skeever Hide also adds Restore Stamina and Resist Poison.
+                                Resist Poison provides temporary resistance;
+                                it does not cure ongoing poison.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Cure Disease</td>
+                            <td class="recipe">Vampire Dust</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated vampires.
+                                No harmful shared effects with other ingredients in this potion pool.
+                                Use as an available substitute,
+                                but consider reserving it for invisibility or regeneration recipes.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Cure Disease</td>
+                            <td class="recipe">Felsaad Tern Feathers</td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                Collect from Felsaad Terns.
+                                No harmful shared effects with other ingredients in this potion pool.
+                                Charred Skeever Hide also adds Restore Health.
+                                Keep as a regional recovery ingredient.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: GREEN POTION INGREDIENTS -->
+
+                        <!-- START: PURPLE SPECIALTY RECIPES -->
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Cure Disease + Restore Health</td>
+
+                            <td class="recipe">
+                                Charred Skeever Hide + Felsaad Tern Feathers
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn ingredient</span>
+                                Disease treatment with immediate healing after an encounter.
+                                A complete two-ingredient recovery recipe.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Cure Disease + Restore Stamina + Resist Poison</td>
+
+                            <td class="recipe">
+                                Charred Skeever Hide + Mudcrab Chitin
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Disease treatment, immediate stamina recovery,
+                                and temporary poison resistance.
+                                Useful for creature-heavy exploration.
+                                Resist Poison does not cure an existing poison.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>
+                                Cure Disease + Restore Health + Restore Stamina + Resist Poison
+                            </td>
+
+                            <td class="recipe">
+                                Charred Skeever Hide + Felsaad Tern Feathers + Mudcrab Chitin
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn ingredient</span>
+                                Combined disease treatment, health and stamina recovery,
+                                and temporary poison resistance.
+                                Felsaad Tern Feathers adds Restore Health to the
+                                Charred Skeever Hide and Mudcrab Chitin recipe.
+                                The third ingredient contributes a useful recovery effect.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: PURPLE SPECIALTY RECIPES -->
+                    </tbody>
+                    <!-- END: CURE DISEASE OPTIONAL GROUP -->
+
+                    <!-- Continue the remaining main potion rows. -->
                     <tbody>
 
                         <!-- REMAINING HEALING & RECOVERY ENTRIES -->
                     <tbody>
-
-                        <!-- 6. REGENERATE MAGICKA -->
-                        <tr>
-                            <td>Regenerate Magicka</td>
-                            <td class="recipe">Garlic + Salt Pile</td>
-                            <td>
-                                Supports Magicka regeneration during longer encounters.
-                                Keep a separate supply of both ingredients for cooking.
-                            </td>
-                            <td class="nice-to-have-empty">—</td>
-                        </tr>
-
-                        <!-- 7. CURE DISEASE -->
-                        <tr>
-                            <td>Cure Disease</td>
-                            <td class="recipe">Hawk Feathers + Vampire Dust</td>
-                            <td>
-                                Disease treatment without unrelated buffs.
-                                Save gathered feathers and vampire drops for a small reserve.
-                            </td>
-                            <td class="nice-to-have-empty">—</td>
-                        </tr>
 
                         <!-- 8. CURE POISON -->
                         <tr>
