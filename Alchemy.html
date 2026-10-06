@@ -239,174 +239,226 @@
             </div>
         </section>
 
-        <!-- HEALING & RECOVERY -->
-        <section id="healing" class="panel">
-            <h2>Healing &amp; Recovery</h2>
-
+        <section class="panel" id="healing">
+            <h2>
+                Healing &amp; Recovery
+            </h2>
             <p class="panel-intro">
-                Basic recipes for health, stamina, and Magicka recovery,
-                regeneration, disease and poison treatment, and carry capacity.
-                Open an ingredient pool to see gatherable alternatives,
-                compatibility warnings, and specialty recipes.
+                Practical recipes for health, stamina, and Magicka restoration, regeneration, disease treatment, and
+                temporary carrying capacity. Open an optional group for ingredient alternatives, pairing warnings, and
+                selected specialty recipes. Hawk Feathers are listed separately for direct disease treatment.
             </p>
-
             <div class="table-wrap">
                 <table>
                     <thead>
                         <tr>
-                            <th scope="col">Effects</th>
-                            <th scope="col">Ingredients</th>
-                            <th scope="col">Use Case</th>
-                            <th scope="col">Nice to Haves</th>
+                            <th scope="col">
+                                Effects
+                            </th>
+                            <th scope="col">
+                                Ingredients
+                            </th>
+                            <th scope="col">
+                                Use Case
+                            </th>
+                            <th scope="col">
+                                Nice to Haves
+                            </th>
                         </tr>
                     </thead>
-
-                    <!-- 1. RESTORE HEALTH: MAIN ROW -->
+                    <!-- START: RESTORE HEALTH MAIN ROW -->
                     <tbody>
                         <tr>
-                            <td>Restore Health</td>
-
+                            <td>
+                                Restore Health
+                            </td>
                             <td class="recipe">
                                 Blue Mountain Flower + Butterfly Wing
                             </td>
-
                             <td>
-                                <span class="tag tag-essential">Essential</span>
+                                <span class="tag tag-essential">
+                                    Essential
+                                </span>
                                 Basic immediate healing using gatherable ingredients.
                                 Pick Blue Mountain Flowers and catch orange butterflies.
                                 Open the ingredient pool for substitutes and useful pairings.
                             </td>
-
                             <td>
-                                <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                    aria-controls="nice-healing-basic">
+                                <button aria-controls="nice-healing-basic" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
                                     Optional +
                                 </button>
                             </td>
                         </tr>
                     </tbody>
-                    <!-- RESTORE HEALTH: EXPANDED INGREDIENT POOL -->
-                    <tbody id="nice-healing-basic" class="ingredient-pool" hidden>
+                    <!-- END: RESTORE HEALTH MAIN ROW -->
+                    <!-- START: NICE HEALING BASIC -->
+                    <tbody class="ingredient-pool" hidden="" id="nice-healing-basic">
                         <tr class="nice-to-have-row healing-legend-row">
                             <td colspan="4">
-                                <strong>Healing ingredient pool:</strong>
-                                Combine two different ingredients below.
-                                Green indicates compatibility within this listed pool;
-                                yellow identifies a pairing to avoid.
-                                Purple rows are complete specialty recipes.
-                                Include a third ingredient only when it improves magnitude,
-                                duration, or useful effects.
+                                <strong>
+                                    Healing ingredient pool:
+                                </strong>
+                                Combine two different ingredients from the ingredient rows below. Green means no harmful
+                                shared effects with other ingredients in this listed pool. Yellow identifies pairings to
+                                avoid. Purple rows are complete specialty recipes. Add a third ingredient only when it
+                                improves magnitude, duration, or useful effects.
                             </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Health</td>
-                            <td class="recipe">Blue Mountain Flower</td>
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Blue Mountain Flower
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather flowers while traveling or grow your own.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Wheat also adds Fortify Health.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Health</td>
-                            <td class="recipe">Butterfly Wing</td>
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Butterfly Wing
+                            </td>
                             <td class="nice-to-have-use">
                                 Catch orange butterflies, not blue butterflies.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Blue Mountain Flower or Wheat gives healing only.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Health</td>
-                            <td class="recipe">Wheat</td>
-                            <td class="nice-to-have-use">
-                                Harvest from farms or grow your own.
-                                <strong>Avoid Swamp Fungal Pod:</strong>
-                                that pairing adds Lingering Damage Magicka.
-                                Butterfly Wing gives healing only;
-                                Blue Mountain Flower also adds Fortify Health.
+                            <td class="nice-to-have-empty-cell">
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Health</td>
-                            <td class="recipe">Blue Dartwing</td>
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Blue Dartwing
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect blue dragonflies near water.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Swamp Fungal Pod or Ash Hopper Jelly also adds Resist Shock.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Health</td>
-                            <td class="recipe">Charred Skeever Hide</td>
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Charred Skeever Hide
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from cooked skeevers, not ordinary dead skeevers.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Ash Hopper Jelly also adds Restore Stamina;
                                 Felsaad Tern Feathers also adds Cure Disease.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Health</td>
-                            <td class="recipe">Rock Warbler Egg</td>
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Rock Warbler Egg
+                            </td>
                             <td class="nice-to-have-use">
                                 Harvest nests in rocky regions, especially the Reach.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Keep as an opportunistic substitute.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Health</td>
-                            <td class="recipe">Swamp Fungal Pod</td>
-                            <td class="nice-to-have-use">
-                                Gather in Hjaalmarch's marshes.
-                                <strong>Avoid Wheat:</strong>
-                                that pairing adds Lingering Damage Magicka.
-                                Blue Dartwing or Ash Hopper Jelly also adds Resist Shock.
+                            <td class="nice-to-have-empty-cell">
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Health</td>
-                            <td class="recipe">Ash Hopper Jelly</td>
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Ash Hopper Jelly
+                            </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                <span class="tag tag-dlc">
+                                    Dragonborn / Solstheim
+                                </span>
                                 Loot ash hoppers.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Blue Dartwing or Swamp Fungal Pod also adds Resist Shock;
                                 Charred Skeever Hide also adds Restore Stamina.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Health</td>
-                            <td class="recipe">Felsaad Tern Feathers</td>
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Felsaad Tern Feathers
+                            </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                <span class="tag tag-dlc">
+                                    Dragonborn / Solstheim
+                                </span>
                                 Collect from Felsaad Terns.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Charred Skeever Hide also adds Cure Disease.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Wheat
+                            </td>
+                            <td class="nice-to-have-use">
+                                Harvest from farms or grow your own.
+                                <strong>
+                                    Avoid Swamp Fungal Pod:
+                                </strong>
+                                this pairing adds Lingering Damage Magicka.
+                                Butterfly Wing gives healing only;
+                                Blue Mountain Flower also adds Fortify Health.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>
+                                Restore Health
+                            </td>
+                            <td class="recipe">
+                                Swamp Fungal Pod
+                            </td>
+                            <td class="nice-to-have-use">
+                                Gather in Hjaalmarch's marshes.
+                                <strong>
+                                    Avoid Wheat:
+                                </strong>
+                                this pairing adds Lingering Damage Magicka.
+                                Blue Dartwing or Ash Hopper Jelly also adds Resist Shock.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Restore Health + longer-duration Fortify Health</td>
+                            <td>
+                                Restore Health + longer-duration Fortify Health
+                            </td>
                             <td class="recipe">
                                 Blue Mountain Flower + Wheat + Giant's Toe
                             </td>
@@ -416,145 +468,191 @@
                                 It does not increase immediate healing.
                                 Giant's Toe is not an interchangeable healing ingredient.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
                     </tbody>
-
-                    <!-- 2. REGENERATE HEALTH: MAIN ROW -->
+                    <!-- END: NICE HEALING BASIC -->
+                    <!-- START: REGENERATE HEALTH MAIN ROW -->
                     <tbody>
                         <tr>
-                            <td>Regenerate Health</td>
-
+                            <td>
+                                Regenerate Health
+                            </td>
                             <td class="recipe">
                                 Garlic + Juniper Berries
                             </td>
-
                             <td>
-                                <span class="tag tag-survival">Important for Survival</span>
+                                <span class="tag tag-survival">
+                                    Important for Survival
+                                </span>
                                 Supports health recovery over time rather than immediate healing.
                                 Collect Garlic from kitchens and Juniper Berries while exploring.
                                 Keep Restore Health potions available for emergencies.
                             </td>
-
                             <td>
-                                <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                    aria-controls="nice-health-regeneration">
+                                <button aria-controls="nice-health-regeneration" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
                                     Optional +
                                 </button>
                             </td>
                         </tr>
                     </tbody>
-                    <!-- REGENERATE HEALTH: EXPANDED INGREDIENT POOL -->
-                    <tbody id="nice-health-regeneration" class="ingredient-pool" hidden>
+                    <!-- END: REGENERATE HEALTH MAIN ROW -->
+                    <!-- START: NICE HEALTH REGENERATION -->
+                    <tbody class="ingredient-pool" hidden="" id="nice-health-regeneration">
                         <tr class="nice-to-have-row healing-legend-row">
                             <td colspan="4">
-                                <strong>Health regeneration ingredient pool:</strong>
-                                Combine two different ingredients below.
-                                Green indicates compatibility within this listed pool;
-                                yellow identifies a pairing to avoid.
-                                Purple rows are complete specialty recipes.
-                                Include a third ingredient only when it improves magnitude,
-                                duration, or useful effects.
+                                <strong>
+                                    Health regeneration ingredient pool:
+                                </strong>
+                                Combine two different ingredients from the ingredient rows below. Green means no harmful
+                                shared effects with other ingredients in this listed pool. Yellow identifies pairings to
+                                avoid. Purple rows are complete specialty recipes. Add a third ingredient only when it
+                                improves magnitude, duration, or useful effects.
                             </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Health</td>
-                            <td class="recipe">Garlic</td>
+                            <td>
+                                Regenerate Health
+                            </td>
+                            <td class="recipe">
+                                Garlic
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect hanging Garlic braids and loose kitchen supplies.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Keep a separate reserve for cooking.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Health</td>
-                            <td class="recipe">Juniper Berries</td>
+                            <td>
+                                Regenerate Health
+                            </td>
+                            <td class="recipe">
+                                Juniper Berries
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather from juniper trees, especially in the Reach.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Angelfish also adds Fortify Archery.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <tr class="nice-to-have-row ingredient-caution">
-                            <td>Regenerate Health</td>
-                            <td class="recipe">Luna Moth Wing</td>
-                            <td class="nice-to-have-use">
-                                Catch luna moths while exploring at night.
-                                <strong>Avoid Namira's Rot and Nordic Barnacle:</strong>
-                                either pairing adds Damage Magicka.
-                                Vampire Dust also adds Invisibility.
+                            <td class="nice-to-have-empty-cell">
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
                         </tr>
-
-                        <tr class="nice-to-have-row ingredient-caution">
-                            <td>Regenerate Health</td>
-                            <td class="recipe">Namira's Rot</td>
-                            <td class="nice-to-have-use">
-                                Gather fungus from cave floors.
-                                <strong>Avoid Luna Moth Wing and Nordic Barnacle:</strong>
-                                either pairing adds Damage Magicka.
-                                Garlic or Juniper Berries is a clean pairing.
-                            </td>
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <tr class="nice-to-have-row ingredient-caution">
-                            <td>Regenerate Health</td>
-                            <td class="recipe">Nordic Barnacle</td>
-                            <td class="nice-to-have-use">
-                                Gather barnacle clusters around submerged ruins and shipwrecks.
-                                <strong>Avoid Luna Moth Wing and Namira's Rot:</strong>
-                                either pairing adds Damage Magicka.
-                                Angelfish also adds Waterbreathing.
-                            </td>
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Health</td>
-                            <td class="recipe">Vampire Dust</td>
+                            <td>
+                                Regenerate Health
+                            </td>
+                            <td class="recipe">
+                                Vampire Dust
+                            </td>
                             <td class="nice-to-have-use">
                                 Save drops from defeated vampires.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Luna Moth Wing also adds Invisibility.
                                 Treat as encounter loot rather than a bulk gathering staple.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Health</td>
-                            <td class="recipe">Emperor Parasol Moss</td>
+                            <td>
+                                Regenerate Health
+                            </td>
+                            <td class="recipe">
+                                Emperor Parasol Moss
+                            </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                <span class="tag tag-dlc">
+                                    Dragonborn / Solstheim
+                                </span>
                                 Gather while exploring Solstheim.
-                                Compatible with every other ingredient in this pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Keep as a regional substitute.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Health</td>
-                            <td class="recipe">Angelfish</td>
+                            <td>
+                                Regenerate Health
+                            </td>
+                            <td class="recipe">
+                                Angelfish
+                            </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-ae">Official Creation / Fishing</span>
-                                Compatible with every other ingredient in this pool.
+                                <span class="tag tag-ae">
+                                    Official Creation / Fishing
+                                </span>
+                                No harmful shared effects with other ingredients in this pool.
                                 Nordic Barnacle also adds Waterbreathing;
                                 Juniper Berries also adds Fortify Archery.
                                 Save for useful specialty combinations.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>
+                                Regenerate Health
+                            </td>
+                            <td class="recipe">
+                                Luna Moth Wing
+                            </td>
+                            <td class="nice-to-have-use">
+                                Catch luna moths while exploring at night.
+                                <strong>
+                                    Avoid Namira's Rot and Nordic Barnacle:
+                                </strong>
+                                either pairing adds Damage Magicka.
+                                Vampire Dust also adds Invisibility.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>
+                                Regenerate Health
+                            </td>
+                            <td class="recipe">
+                                Namira's Rot
+                            </td>
+                            <td class="nice-to-have-use">
+                                Gather fungus from cave floors.
+                                <strong>
+                                    Avoid Luna Moth Wing and Nordic Barnacle:
+                                </strong>
+                                either pairing adds Damage Magicka.
+                                Garlic or Juniper Berries is a clean pairing.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>
+                                Regenerate Health
+                            </td>
+                            <td class="recipe">
+                                Nordic Barnacle
+                            </td>
+                            <td class="nice-to-have-use">
+                                Gather barnacle clusters around submerged ruins and shipwrecks.
+                                <strong>
+                                    Avoid Luna Moth Wing and Namira's Rot:
+                                </strong>
+                                either pairing adds Damage Magicka.
+                                Angelfish also adds Waterbreathing.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Regenerate Health + Invisibility</td>
+                            <td>
+                                Regenerate Health + Invisibility
+                            </td>
                             <td class="recipe">
                                 Luna Moth Wing + Vampire Dust
                             </td>
@@ -563,298 +661,323 @@
                                 Useful for retreating or repositioning while supporting recovery.
                                 A third ingredient is unnecessary unless it adds another useful effect.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Regenerate Health + Waterbreathing</td>
+                            <td>
+                                Regenerate Health + Waterbreathing
+                            </td>
                             <td class="recipe">
                                 Angelfish + Nordic Barnacle
                             </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-ae">Official Creation / Fishing</span>
+                                <span class="tag tag-ae">
+                                    Official Creation / Fishing
+                                </span>
                                 Combines recovery support with underwater breathing.
                                 Use when exploring submerged locations with an Angelfish available.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Regenerate Health + Fortify Archery</td>
+                            <td>
+                                Regenerate Health + Fortify Archery
+                            </td>
                             <td class="recipe">
                                 Angelfish + Juniper Berries
                             </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-ae">Official Creation / Fishing</span>
+                                <span class="tag tag-ae">
+                                    Official Creation / Fishing
+                                </span>
                                 Situational archer preparation.
                                 Combines regeneration support with an archery buff
                                 using only two ingredients.
                             </td>
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-                    </tbody>
-
-                    <!-- 3. RESTORE STAMINA: MAIN ROW -->
-                    <tr>
-                        <td>Restore Stamina</td>
-
-                        <td class="recipe">
-                            Bee + Purple Mountain Flower
-                        </td>
-
-                        <td>
-                            Immediate stamina recovery for sprinting, power attacks,
-                            and escaping dangerous encounters.
-                            Collect Bees and Purple Mountain Flowers while traveling.
-                            Open the ingredient pool for alternatives, pairing warnings,
-                            and specialty recipes.
-                        </td>
-
-                        <td>
-                            <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                aria-controls="nice-stamina-basic">
-                                Optional +
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- END: RESTORE STAMINA MAIN ROW -->
-                    </tbody>
-                    <!-- START: RESTORE STAMINA INGREDIENT POOL -->
-                    <tbody id="nice-stamina-basic" class="ingredient-pool" hidden>
-                        <!-- INGREDIENT POOL LEGEND -->
-                        <tr class="nice-to-have-row healing-legend-row">
-                            <td colspan="4">
-                                <strong>Stamina restoration ingredient pool:</strong>
-                                Combine two different ingredients below.
-                                Green indicates no harmful shared effects within this listed pool;
-                                yellow identifies a pairing to avoid.
-                                Purple rows are complete specialty recipes.
-                                This is a practical gathering selection, not every Restore Stamina
-                                ingredient. Add a third ingredient only when it contributes a
-                                useful effect.
+                            <td class="nice-to-have-empty-cell">
                             </td>
                         </tr>
-
-                        <!-- START: GREEN INGREDIENTS -->
-
+                    </tbody>
+                    <!-- END: NICE HEALTH REGENERATION -->
+                    <!-- START: RESTORE STAMINA MAIN ROW -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Bee + Purple Mountain Flower
+                            </td>
+                            <td>
+                                Immediate stamina recovery for sprinting, power attacks,
+                                and escaping dangerous encounters.
+                                Collect Bees and Purple Mountain Flowers while traveling.
+                                Open the ingredient pool for alternatives, pairing warnings,
+                                and specialty recipes.
+                            </td>
+                            <td>
+                                <button aria-controls="nice-stamina-basic" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: RESTORE STAMINA MAIN ROW -->
+                    <!-- START: NICE STAMINA BASIC -->
+                    <tbody class="ingredient-pool" hidden="" id="nice-stamina-basic">
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>
+                                    Stamina restoration ingredient pool:
+                                </strong>
+                                Combine two different ingredients from the ingredient rows below. Green means no harmful
+                                shared effects with other ingredients in this listed pool. Yellow identifies pairings to
+                                avoid. Purple rows are complete specialty recipes. Add a third ingredient only when it
+                                improves magnitude, duration, or useful effects.
+                            </td>
+                        </tr>
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Orange Dartwing</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Orange Dartwing
+                            </td>
                             <td class="nice-to-have-use">
                                 Catch orange dragonflies near water.
                                 Blue Dartwing is a different ingredient, not a substitute.
                                 No harmful shared effects with other ingredients in this pool.
                                 Pair with Bee or Purple Mountain Flower for stamina restoration.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Charred Skeever Hide</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Charred Skeever Hide
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from cooked skeevers, not ordinary dead skeevers.
                                 No harmful shared effects with other ingredients in this pool.
                                 Eye of Sabre Cat also adds Restore Health;
                                 Mudcrab Chitin also adds Cure Disease and Resist Poison.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Mudcrab Chitin</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Mudcrab Chitin
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from defeated mudcrabs.
                                 No harmful shared effects with other ingredients in this pool.
                                 Charred Skeever Hide also adds Cure Disease and Resist Poison.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Eye of Sabre Cat</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Eye of Sabre Cat
+                            </td>
                             <td class="nice-to-have-use">
                                 Save drops from defeated sabre cats.
                                 No harmful shared effects with other ingredients in this pool.
                                 Charred Skeever Hide also adds Restore Health.
                                 Treat as encounter loot rather than a routine gathering staple.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Hawk Beak</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Hawk Beak
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from hawks you bring down.
                                 No harmful shared effects with other ingredients in this pool.
                                 Purple Mountain Flower also adds Resist Frost;
                                 Netch Jelly also adds Fortify Carry Weight.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Large Antlers</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Large Antlers
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from deer.
                                 Small Antlers are a different ingredient, not a substitute.
                                 No harmful shared effects with other ingredients in this pool.
                                 Torchbug Thorax also adds Fortify Stamina.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Netch Jelly</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Netch Jelly
+                            </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                <span class="tag tag-dlc">
+                                    Dragonborn / Solstheim
+                                </span>
                                 Collect from defeated netches.
-                                Has a 2&times; Restore Stamina magnitude modifier.
+                                Has a 2× Restore Stamina magnitude modifier.
                                 No harmful shared effects with other ingredients in this pool.
                                 Hawk Beak also adds Fortify Carry Weight.
                                 Save for stronger recovery or specialty combinations.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: GREEN INGREDIENTS -->
-
-                        <!-- START: YELLOW INGREDIENTS -->
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Bee</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Bee
+                            </td>
                             <td class="nice-to-have-use">
                                 Catch around beehives.
-                                <strong>Avoid Honeycomb:</strong>
-                                together they add Ravage Stamina.
+                                <strong>
+                                    Avoid Honeycomb:
+                                </strong>
+                                this pairing adds Ravage Stamina.
                                 Purple Mountain Flower is a clean baseline partner.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Purple Mountain Flower</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Purple Mountain Flower
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather along roads or grow your own.
-                                <strong>Avoid Torchbug Thorax:</strong>
-                                together they add Lingering Damage Magicka.
+                                <strong>
+                                    Avoid Torchbug Thorax:
+                                </strong>
+                                this pairing adds Lingering Damage Magicka.
                                 Bee gives restoration only;
                                 Hawk Beak also adds Resist Frost.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Honeycomb</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Honeycomb
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from beehives.
-                                <strong>Avoid Bee:</strong>
-                                together they add Ravage Stamina.
+                                <strong>
+                                    Avoid Bee:
+                                </strong>
+                                this pairing adds Ravage Stamina.
                                 Purple Mountain Flower is a clean alternative.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Torchbug Thorax</td>
-
+                            <td>
+                                Restore Stamina
+                            </td>
+                            <td class="recipe">
+                                Torchbug Thorax
+                            </td>
                             <td class="nice-to-have-use">
                                 Catch torchbugs at night.
-                                <strong>Avoid Purple Mountain Flower:</strong>
-                                together they add Lingering Damage Magicka.
+                                <strong>
+                                    Avoid Purple Mountain Flower:
+                                </strong>
+                                this pairing adds Lingering Damage Magicka.
                                 Large Antlers also adds Fortify Stamina.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: YELLOW INGREDIENTS -->
-
-                        <!-- START: PURPLE SPECIALTY RECIPES -->
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Restore Stamina + Restore Health</td>
-
+                            <td>
+                                Restore Stamina + Restore Health
+                            </td>
                             <td class="recipe">
                                 Charred Skeever Hide + Eye of Sabre Cat
                             </td>
-
                             <td class="nice-to-have-use">
                                 Two-resource recovery using encounter supplies.
                                 No third ingredient needed.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Restore Stamina + Fortify Stamina</td>
-
+                            <td>
+                                Restore Stamina + Fortify Stamina
+                            </td>
                             <td class="recipe">
                                 Large Antlers + Torchbug Thorax
                             </td>
-
                             <td class="nice-to-have-use">
                                 Immediate stamina recovery with a temporary increase
                                 to maximum stamina.
                                 A complete two-ingredient recipe.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Restore Stamina + Resist Frost</td>
-
+                            <td>
+                                Restore Stamina + Resist Frost
+                            </td>
                             <td class="recipe">
                                 Purple Mountain Flower + Hawk Beak
                             </td>
-
                             <td class="nice-to-have-use">
                                 Stamina recovery with protection against frost damage.
                                 Resist Frost does not protect against Survival Mode's
                                 environmental cold.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Restore Stamina + Regenerate Stamina</td>
-
+                            <td>
+                                Restore Stamina + Regenerate Stamina
+                            </td>
                             <td class="recipe">
                                 Bee + Purple Mountain Flower + Mora Tapinella
                             </td>
-
                             <td class="nice-to-have-use">
                                 Immediate recovery plus stamina regeneration.
                                 Bee and Purple Mountain Flower activate Restore Stamina.
@@ -862,60 +985,56 @@
                                 The third ingredient adds a useful effect rather than
                                 merely repeating restoration.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <!-- END: PURPLE SPECIALTY RECIPES -->
-                    </tbody>
-                    <!-- END: RESTORE STAMINA INGREDIENT POOL -->
-
-                    <!-- 4. REGENERATE STAMINA: MAIN ROW -->
-                    <tr>
-                        <td>Regenerate Stamina</td>
-
-                        <td class="recipe">
-                            Fly Amanita + Mora Tapinella
-                        </td>
-
-                        <td>
-                            Faster stamina recovery during extended activity,
-                            rather than an immediate refill.
-                            Gather Fly Amanita and Mora Tapinella or grow your own.
-                            Open the ingredient pool for alternatives and a
-                            two-handed combat preparation recipe.
-                        </td>
-
-                        <td>
-                            <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                aria-controls="nice-stamina-regeneration">
-                                Optional +
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- END: REGENERATE STAMINA MAIN ROW -->
-                    </tbody>
-                    <!-- START: REGENERATE STAMINA INGREDIENT POOL -->
-                    <tbody id="nice-stamina-regeneration" class="ingredient-pool" hidden>
-                        <!-- INGREDIENT POOL LEGEND -->
-                        <tr class="nice-to-have-row healing-legend-row">
-                            <td colspan="4">
-                                <strong>Stamina regeneration ingredient pool:</strong>
-                                Combine two different ingredients below.
-                                Green indicates no harmful shared effects within this listed pool.
-                                Purple rows are complete specialty recipes.
-                                Regenerate Stamina increases recovery speed rather than
-                                providing an immediate refill.
-                                Add a third ingredient only when it contributes a useful effect.
+                            <td class="nice-to-have-empty-cell">
                             </td>
                         </tr>
-
-                        <!-- START: GREEN INGREDIENTS -->
-
+                    </tbody>
+                    <!-- END: NICE STAMINA BASIC -->
+                    <!-- START: REGENERATE STAMINA MAIN ROW -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                Regenerate Stamina
+                            </td>
+                            <td class="recipe">
+                                Fly Amanita + Mora Tapinella
+                            </td>
+                            <td>
+                                Faster stamina recovery during extended activity,
+                                rather than an immediate refill.
+                                Gather Fly Amanita and Mora Tapinella or grow your own.
+                                Open the ingredient pool for alternatives and a
+                                two-handed combat preparation recipe.
+                            </td>
+                            <td>
+                                <button aria-controls="nice-stamina-regeneration" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: REGENERATE STAMINA MAIN ROW -->
+                    <!-- START: NICE STAMINA REGENERATION -->
+                    <tbody class="ingredient-pool" hidden="" id="nice-stamina-regeneration">
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>
+                                    Stamina regeneration ingredient pool:
+                                </strong>
+                                Combine two different ingredients from the ingredient rows below. Green means no harmful
+                                shared effects with other ingredients in this listed pool. Purple rows are complete
+                                specialty recipes. Add a third ingredient only when it improves magnitude, duration, or
+                                useful effects.
+                            </td>
+                        </tr>
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Stamina</td>
-                            <td class="recipe">Fly Amanita</td>
-
+                            <td>
+                                Regenerate Stamina
+                            </td>
+                            <td class="recipe">
+                                Fly Amanita
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather red mushrooms or grow your own.
                                 No harmful shared effects with other ingredients in this pool.
@@ -923,42 +1042,48 @@
                                 for stamina regeneration only.
                                 Used in the two-handed specialty below.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Stamina</td>
-                            <td class="recipe">Mora Tapinella</td>
-
+                            <td>
+                                Regenerate Stamina
+                            </td>
+                            <td class="recipe">
+                                Mora Tapinella
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather from forest logs and stumps or grow your own.
                                 No harmful shared effects with other ingredients in this pool.
                                 Bee or Fly Amanita gives regeneration only;
                                 Scaly Pholiota also adds Fortify Illusion.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Stamina</td>
-                            <td class="recipe">Scaly Pholiota</td>
-
+                            <td>
+                                Regenerate Stamina
+                            </td>
+                            <td class="recipe">
+                                Scaly Pholiota
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather from trees and stumps or grow your own.
                                 No harmful shared effects with other ingredients in this pool.
                                 Bee or Fly Amanita gives regeneration only;
                                 Mora Tapinella also adds Fortify Illusion.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Stamina</td>
-                            <td class="recipe">Bee</td>
-
+                            <td>
+                                Regenerate Stamina
+                            </td>
+                            <td class="recipe">
+                                Bee
+                            </td>
                             <td class="nice-to-have-use">
                                 Catch around beehives.
                                 No harmful shared effects with other ingredients in this pool.
@@ -966,23 +1091,16 @@
                                 for stamina regeneration only.
                                 Used in the two-handed specialty below.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: GREEN INGREDIENTS -->
-
-                        <!-- START: PURPLE SPECIALTY RECIPES -->
-
                         <tr class="nice-to-have-row healing-specialty">
                             <td>
                                 Regenerate Stamina + Fortify Two-handed + Resist Fire
                             </td>
-
                             <td class="recipe">
                                 Bee + Fly Amanita + Dragon's Tongue
                             </td>
-
                             <td class="nice-to-have-use">
                                 Preparation for sustained two-handed combat,
                                 especially against fire damage.
@@ -990,116 +1108,119 @@
                                 Fly Amanita and Dragon's Tongue activate
                                 Fortify Two-handed and Resist Fire.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <!-- END: PURPLE SPECIALTY RECIPES -->
-                    </tbody>
-                    <!-- END: REGENERATE STAMINA INGREDIENT POOL -->
-
-                    <!-- 5. RESTORE MAGICKA: MAIN ROW -->
-                    <tr>
-                        <td>Restore Magicka</td>
-
-                        <td class="recipe">
-                            Red Mountain Flower + Mora Tapinella
-                        </td>
-
-                        <td>
-                            Immediate Magicka recovery for spellcasting.
-                            Gather Red Mountain Flowers along roads and Mora Tapinella
-                            from forest logs and stumps, or grow your own.
-                            Open the ingredient pool for alternatives, pairing warnings,
-                            and specialty recipes.
-                        </td>
-
-                        <td>
-                            <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                aria-controls="nice-magicka-basic">
-                                Optional +
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- END: RESTORE MAGICKA MAIN ROW -->
-                    </tbody>
-                    <!-- START: RESTORE MAGICKA INGREDIENT POOL -->
-                    <tbody id="nice-magicka-basic" class="ingredient-pool" hidden>
-                        <!-- INGREDIENT POOL LEGEND -->
-                        <tr class="nice-to-have-row healing-legend-row">
-                            <td colspan="4">
-                                <strong>Magicka restoration ingredient pool:</strong>
-                                Combine two different ingredients below.
-                                Green indicates no harmful shared effects within this listed pool;
-                                yellow identifies a pairing to avoid.
-                                Purple rows are complete specialty recipes.
-                                This is a practical gathering selection, not every Restore Magicka
-                                ingredient. Add a third ingredient only when it contributes a
-                                useful effect.
+                            <td class="nice-to-have-empty-cell">
                             </td>
                         </tr>
-
-                        <!-- START: GREEN INGREDIENTS -->
-
+                    </tbody>
+                    <!-- END: NICE STAMINA REGENERATION -->
+                    <!-- START: RESTORE MAGICKA MAIN ROW -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Red Mountain Flower + Mora Tapinella
+                            </td>
+                            <td>
+                                Immediate Magicka recovery for spellcasting.
+                                Gather Red Mountain Flowers along roads and Mora Tapinella
+                                from forest logs and stumps, or grow your own.
+                                Open the ingredient pool for alternatives, pairing warnings,
+                                and specialty recipes.
+                            </td>
+                            <td>
+                                <button aria-controls="nice-magicka-basic" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: RESTORE MAGICKA MAIN ROW -->
+                    <!-- START: NICE MAGICKA BASIC -->
+                    <tbody class="ingredient-pool" hidden="" id="nice-magicka-basic">
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>
+                                    Magicka restoration ingredient pool:
+                                </strong>
+                                Combine two different ingredients from the ingredient rows below. Green means no harmful
+                                shared effects with other ingredients in this listed pool. Yellow identifies pairings to
+                                avoid. Purple rows are complete specialty recipes. Add a third ingredient only when it
+                                improves magnitude, duration, or useful effects.
+                            </td>
+                        </tr>
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Mora Tapinella</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Mora Tapinella
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather from forest logs and stumps or grow your own.
                                 No harmful shared effects with other ingredients in this pool.
                                 Red Mountain Flower gives restoration only;
                                 Dwarven Oil also adds Fortify Illusion.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Creep Cluster</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Creep Cluster
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather in Eastmarch's volcanic region or grow your own.
                                 No harmful shared effects with other ingredients in this pool.
                                 Pair with Red Mountain Flower or Mora Tapinella
                                 for Magicka restoration.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Grass Pod</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Grass Pod
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather from grass plants in northern coastal regions.
                                 No harmful shared effects with other ingredients in this pool.
                                 Keep as a regional substitute when collected during travel.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Vampire Dust</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Vampire Dust
+                            </td>
                             <td class="nice-to-have-use">
                                 Save drops from defeated vampires.
                                 No harmful shared effects with other ingredients in this pool.
                                 Treat as an encounter-loot substitute.
                                 Keep a reserve for regeneration and invisibility recipes.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Dwarven Oil</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Dwarven Oil
+                            </td>
                             <td class="nice-to-have-use">
                                 Save drops from Dwarven automatons.
                                 No harmful shared effects with other ingredients in this pool.
@@ -1107,539 +1228,660 @@
                                 Outside this pool, avoid Taproot:
                                 that pairing also activates Weakness to Magic.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: GREEN INGREDIENTS -->
-
-                        <!-- START: YELLOW INGREDIENTS -->
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Red Mountain Flower</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Red Mountain Flower
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather along roads or grow your own.
-                                <strong>Avoid White Cap and Ectoplasm:</strong>
+                                <strong>
+                                    Avoid White Cap and Ectoplasm:
+                                </strong>
                                 White Cap adds Ravage Magicka;
                                 Ectoplasm adds Damage Health.
                                 Mora Tapinella is a clean baseline partner.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Elves Ear</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Elves Ear
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect dried bundles from kitchens and interiors.
-                                <strong>Avoid White Cap:</strong>
-                                together they add Weakness to Frost.
+                                <strong>
+                                    Avoid White Cap:
+                                </strong>
+                                this pairing adds Weakness to Frost.
                                 Red Mountain Flower is a clean restoration partner.
                                 Fire Salts also adds Resist Fire.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">White Cap</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                White Cap
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather mushrooms in caves or grow your own.
-                                <strong>Avoid Red Mountain Flower and Elves Ear:</strong>
+                                <strong>
+                                    Avoid Red Mountain Flower and Elves Ear:
+                                </strong>
                                 Red Mountain Flower adds Ravage Magicka;
                                 Elves Ear adds Weakness to Frost.
                                 Mora Tapinella is a clean alternative.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Ectoplasm</td>
-
+                            <td>
+                                Restore Magicka
+                            </td>
+                            <td class="recipe">
+                                Ectoplasm
+                            </td>
                             <td class="nice-to-have-use">
                                 Save drops from defeated ghosts.
-                                <strong>Avoid Red Mountain Flower:</strong>
-                                together they add Damage Health,
+                                <strong>
+                                    Avoid Red Mountain Flower:
+                                </strong>
+                                this pairing adds Damage Health,
                                 even though the pairing also adds Fortify Magicka.
                                 Mora Tapinella is a clean restoration partner.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: YELLOW INGREDIENTS -->
-
-                        <!-- START: PURPLE SPECIALTY RECIPES -->
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Restore Magicka + Resist Fire</td>
-
+                            <td>
+                                Restore Magicka + Resist Fire
+                            </td>
                             <td class="recipe">
                                 Elves Ear + Fire Salts
                             </td>
-
                             <td class="nice-to-have-use">
                                 Immediate Magicka recovery with temporary protection
                                 against fire damage.
                                 Keep a separate reserve of Fire Salts for Survival Mode hot soup.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Restore Magicka + Restore Stamina</td>
-
+                            <td>
+                                Restore Magicka + Restore Stamina
+                            </td>
                             <td class="recipe">
                                 Mora Tapinella + Pearl + Purple Mountain Flower
                             </td>
-
                             <td class="nice-to-have-use">
                                 Two-resource recovery for spellcasting and physical activity.
                                 Mora Tapinella and Pearl activate Restore Magicka.
                                 Pearl and Purple Mountain Flower activate Restore Stamina.
                                 The third ingredient adds a useful restoration effect.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <!-- END: PURPLE SPECIALTY RECIPES -->
-                    </tbody>
-                    <!-- END: RESTORE MAGICKA INGREDIENT POOL -->
-
-                    <!-- 6. REGENERATE MAGICKA: MAIN ROW -->
-                    <tr>
-                        <td>Regenerate Magicka</td>
-
-                        <td class="recipe">
-                            Garlic + Salt Pile
-                        </td>
-
-                        <td>
-                            Supports Magicka recovery during extended spellcasting
-                            rather than providing an immediate refill.
-                            Collect Garlic and Salt Piles while exploring.
-                            Keep separate reserves for Survival Mode cooking.
-                            Open the ingredient pool for alternatives, pairing warnings,
-                            and specialty recipes.
-                        </td>
-
-                        <td>
-                            <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                aria-controls="nice-magicka-regeneration">
-                                Optional +
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- END: REGENERATE MAGICKA MAIN ROW -->
-                    </tbody>
-                    <!-- START: REGENERATE MAGICKA INGREDIENT POOL -->
-                    <tbody id="nice-magicka-regeneration" class="ingredient-pool" hidden>
-                        <!-- INGREDIENT POOL LEGEND -->
-                        <tr class="nice-to-have-row healing-legend-row">
-                            <td colspan="4">
-                                <strong>Magicka regeneration ingredient pool:</strong>
-                                Combine two different ingredients below.
-                                Green indicates no harmful shared effects within this listed pool;
-                                yellow identifies a pairing to avoid.
-                                Purple rows are complete specialty recipes.
-                                Regenerate Magicka increases recovery speed rather than
-                                providing an immediate refill.
-                                Add a third ingredient only when it contributes a useful effect.
+                            <td class="nice-to-have-empty-cell">
                             </td>
                         </tr>
-
-                        <!-- START: GREEN INGREDIENTS -->
-
+                    </tbody>
+                    <!-- END: NICE MAGICKA BASIC -->
+                    <!-- START: REGENERATE MAGICKA MAIN ROW -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                Regenerate Magicka
+                            </td>
+                            <td class="recipe">
+                                Garlic + Salt Pile
+                            </td>
+                            <td>
+                                Supports Magicka recovery during extended spellcasting
+                                rather than providing an immediate refill.
+                                Collect Garlic and Salt Piles while exploring.
+                                Keep separate reserves for Survival Mode cooking.
+                                Open the ingredient pool for alternatives, pairing warnings,
+                                and specialty recipes.
+                            </td>
+                            <td>
+                                <button aria-controls="nice-magicka-regeneration" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: REGENERATE MAGICKA MAIN ROW -->
+                    <!-- START: NICE MAGICKA REGENERATION -->
+                    <tbody class="ingredient-pool" hidden="" id="nice-magicka-regeneration">
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>
+                                    Magicka regeneration ingredient pool:
+                                </strong>
+                                Combine two different ingredients from the ingredient rows below. Green means no harmful
+                                shared effects with other ingredients in this listed pool. Yellow identifies pairings to
+                                avoid. Purple rows are complete specialty recipes. Add a third ingredient only when it
+                                improves magnitude, duration, or useful effects.
+                            </td>
+                        </tr>
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Magicka</td>
-                            <td class="recipe">Garlic</td>
-
+                            <td>
+                                Regenerate Magicka
+                            </td>
+                            <td class="recipe">
+                                Garlic
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect hanging Garlic braids and loose kitchen supplies.
                                 No harmful shared effects with other ingredients in this pool.
                                 Salt Pile is a clean baseline partner.
                                 Keep a separate reserve for cooking.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Magicka</td>
-                            <td class="recipe">Fire Salts</td>
-
+                            <td>
+                                Regenerate Magicka
+                            </td>
+                            <td class="recipe">
+                                Fire Salts
+                            </td>
                             <td class="nice-to-have-use">
                                 Save gathered or looted supplies.
                                 No harmful shared effects with other ingredients in this pool.
                                 Dwarven Oil also adds Restore Magicka.
                                 Keep a separate reserve for Survival Mode hot soup.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Regenerate Magicka</td>
-                            <td class="recipe">Salmon Roe</td>
-
+                            <td>
+                                Regenerate Magicka
+                            </td>
+                            <td class="recipe">
+                                Salmon Roe
+                            </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Hearthfire</span>
+                                <span class="tag tag-dlc">
+                                    Hearthfire
+                                </span>
                                 Collect from salmon.
                                 No harmful shared effects with other ingredients in this pool.
                                 Jazbay Grapes also adds Fortify Magicka.
                                 Save for useful specialty combinations rather than routine batches.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: GREEN INGREDIENTS -->
-
-                        <!-- START: YELLOW INGREDIENTS -->
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Regenerate Magicka</td>
-                            <td class="recipe">Salt Pile</td>
-
+                            <td>
+                                Regenerate Magicka
+                            </td>
+                            <td class="recipe">
+                                Salt Pile
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from containers and other supplies.
-                                <strong>Avoid Dwarven Oil and Jazbay Grapes:</strong>
+                                <strong>
+                                    Avoid Dwarven Oil and Jazbay Grapes:
+                                </strong>
                                 either pairing adds Weakness to Magic.
                                 Garlic is a clean baseline partner.
                                 Keep a separate reserve for cooking.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Regenerate Magicka</td>
-                            <td class="recipe">Jazbay Grapes</td>
-
+                            <td>
+                                Regenerate Magicka
+                            </td>
+                            <td class="recipe">
+                                Jazbay Grapes
+                            </td>
                             <td class="nice-to-have-use">
                                 Gather in Eastmarch's volcanic region or grow your own.
-                                <strong>Avoid Salt Pile and Dwarven Oil:</strong>
+                                <strong>
+                                    Avoid Salt Pile and Dwarven Oil:
+                                </strong>
                                 either pairing adds Weakness to Magic.
                                 Garlic gives regeneration only;
                                 Salmon Roe also adds Fortify Magicka.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-caution">
-                            <td>Regenerate Magicka</td>
-                            <td class="recipe">Dwarven Oil</td>
-
+                            <td>
+                                Regenerate Magicka
+                            </td>
+                            <td class="recipe">
+                                Dwarven Oil
+                            </td>
                             <td class="nice-to-have-use">
                                 Save drops from Dwarven automatons.
-                                <strong>Avoid Salt Pile and Jazbay Grapes:</strong>
+                                <strong>
+                                    Avoid Salt Pile and Jazbay Grapes:
+                                </strong>
                                 either pairing adds Weakness to Magic.
                                 Fire Salts also adds Restore Magicka.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: YELLOW INGREDIENTS -->
-
-                        <!-- START: PURPLE SPECIALTY RECIPES -->
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Regenerate Magicka + Restore Magicka</td>
-
+                            <td>
+                                Regenerate Magicka + Restore Magicka
+                            </td>
                             <td class="recipe">
                                 Fire Salts + Dwarven Oil
                             </td>
-
                             <td class="nice-to-have-use">
                                 Immediate Magicka recovery plus faster regeneration.
                                 A complete two-ingredient recipe.
                                 Reserve some Fire Salts for Survival Mode hot soup.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Regenerate Magicka + Fortify Magicka</td>
-
+                            <td>
+                                Regenerate Magicka + Fortify Magicka
+                            </td>
                             <td class="recipe">
                                 Garlic + Jazbay Grapes + Red Mountain Flower
                             </td>
-
                             <td class="nice-to-have-use">
                                 Faster recovery with a temporary increase to maximum Magicka.
                                 Garlic and Jazbay Grapes activate Regenerate Magicka.
                                 Jazbay Grapes and Red Mountain Flower activate Fortify Magicka.
                                 The third ingredient adds a useful preparation effect.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Regenerate Magicka + Fortify Magicka</td>
-
+                            <td>
+                                Regenerate Magicka + Fortify Magicka
+                            </td>
                             <td class="recipe">
                                 Salmon Roe + Jazbay Grapes
                             </td>
-
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Hearthfire ingredient</span>
+                                <span class="tag tag-dlc">
+                                    Hearthfire ingredient
+                                </span>
                                 Two-ingredient caster preparation using Salmon Roe already collected.
                                 Combines faster recovery with a temporary increase
                                 to maximum Magicka.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Regenerate Magicka + Regenerate Health</td>
-
+                            <td>
+                                Regenerate Magicka + Regenerate Health
+                            </td>
                             <td class="recipe">
                                 Garlic + Salt Pile + Juniper Berries
                             </td>
-
                             <td class="nice-to-have-use">
                                 Supports both Magicka and health recovery over time.
                                 Garlic and Salt Pile activate Regenerate Magicka.
                                 Garlic and Juniper Berries activate Regenerate Health.
                                 Keep immediate restoration potions available for emergencies.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: PURPLE SPECIALTY RECIPES -->
                     </tbody>
-                    <!-- END: REGENERATE MAGICKA INGREDIENT POOL -->
-
-                    <!-- 7. CURE DISEASE MAIN ROW -->
-                    <tr>
-                        <td>Cure Disease + Restore Stamina + Resist Poison</td>
-
-                        <td class="recipe">
-                            Charred Skeever Hide + Mudcrab Chitin
-                        </td>
-
-                        <td>
-                            Disease treatment with immediate stamina recovery
-                            and temporary poison resistance.
-                            Collect Charred Skeever Hide from cooked skeevers
-                            and Mudcrab Chitin from defeated mudcrabs.
-                            Open the optional list for standalone treatment,
-                            alternative ingredients, and specialty recipes.
-                        </td>
-
-                        <td>
-                            <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                aria-controls="nice-cure-disease">
-                                Optional +
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- END: CURE DISEASE MAIN ROW -->
+                    <!-- END: NICE MAGICKA REGENERATION -->
+                    <!-- START: CURE DISEASE + RESTORE STAMINA + RESIST POISON MAIN ROW -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                Cure Disease + Restore Stamina + Resist Poison
+                            </td>
+                            <td class="recipe">
+                                Charred Skeever Hide + Mudcrab Chitin
+                            </td>
+                            <td>
+                                Disease treatment with immediate stamina recovery
+                                and temporary poison resistance.
+                                Collect Charred Skeever Hide from cooked skeevers
+                                and Mudcrab Chitin from defeated mudcrabs.
+                                Open the optional list for standalone treatment,
+                                alternative ingredients, and specialty recipes.
+                            </td>
+                            <td>
+                                <button aria-controls="nice-cure-disease" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
                     </tbody>
-                    <!-- START: CURE DISEASE OPTIONAL GROUP -->
-                    <tbody id="nice-cure-disease" class="ingredient-pool" hidden>
-                        <!-- STANDALONE TREATMENT -->
-
+                    <!-- END: CURE DISEASE + RESTORE STAMINA + RESIST POISON MAIN ROW -->
+                    <!-- START: NICE CURE DISEASE -->
+                    <tbody class="ingredient-pool" hidden="" id="nice-cure-disease">
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Cure Disease — eat directly</td>
-                            <td class="recipe">Hawk Feathers</td>
-
+                            <td>
+                                Cure Disease — eat directly
+                            </td>
+                            <td class="recipe">
+                                Hawk Feathers
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from hawks you bring down.
-                                <strong>Use alone:</strong>
+                                <strong>
+                                    Use alone:
+                                </strong>
                                 eat directly for Cure Disease.
                                 This guide reserves Hawk Feathers for standalone treatment,
                                 not disease-cure potion recipes.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <!-- POTION INGREDIENT POOL LEGEND -->
-                        <tr class="nice-to-have-row healing-legend-row">
-                            <td colspan="4">
-                                <strong>Disease-cure potion ingredient pool:</strong>
-                                Combine two different ingredients from the four rows below.
-                                Green indicates no harmful shared effects within this listed pool.
-                                Purple rows are complete specialty recipes.
-                                Add a third ingredient only when it contributes a useful effect.
-                                Hawk Feathers are not part of this interchangeable potion pool.
+                            <td class="nice-to-have-empty-cell">
                             </td>
                         </tr>
-
-                        <!-- START: GREEN POTION INGREDIENTS -->
-
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>
+                                    Disease-cure potion ingredient pool:
+                                </strong>
+                                Combine two different ingredients from the ingredient rows below. Green means no harmful
+                                shared effects with other ingredients in this listed pool. Purple rows are complete
+                                specialty recipes. Add a third ingredient only when it improves magnitude, duration, or
+                                useful effects. Hawk Feathers are for direct consumption only in this guide and are not
+                                part of the potion ingredient pool.
+                            </td>
+                        </tr>
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Cure Disease</td>
-                            <td class="recipe">Charred Skeever Hide</td>
-
+                            <td>
+                                Cure Disease
+                            </td>
+                            <td class="recipe">
+                                Charred Skeever Hide
+                            </td>
                             <td class="nice-to-have-use">
                                 Collect from skeevers roasting over fires,
                                 not ordinary dead skeevers.
-                                No harmful shared effects with other ingredients in this potion pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Mudcrab Chitin also adds Restore Stamina and Resist Poison;
                                 Felsaad Tern Feathers also adds Restore Health.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Cure Disease</td>
-                            <td class="recipe">Mudcrab Chitin</td>
-
+                            <td>
+                                Cure Disease
+                            </td>
+                            <td class="recipe">
+                                Mudcrab Chitin
+                            </td>
                             <td class="nice-to-have-use">
                                 Save drops from defeated mudcrabs.
-                                No harmful shared effects with other ingredients in this potion pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Charred Skeever Hide also adds Restore Stamina and Resist Poison.
                                 Resist Poison provides temporary resistance;
                                 it does not cure ongoing poison.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Cure Disease</td>
-                            <td class="recipe">Vampire Dust</td>
-
+                            <td>
+                                Cure Disease
+                            </td>
+                            <td class="recipe">
+                                Vampire Dust
+                            </td>
                             <td class="nice-to-have-use">
                                 Save drops from defeated vampires.
-                                No harmful shared effects with other ingredients in this potion pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Use as an available substitute,
                                 but consider reserving it for invisibility or regeneration recipes.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row ingredient-safe">
-                            <td>Cure Disease</td>
-                            <td class="recipe">Felsaad Tern Feathers</td>
-
+                            <td>
+                                Cure Disease
+                            </td>
+                            <td class="recipe">
+                                Felsaad Tern Feathers
+                            </td>
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                <span class="tag tag-dlc">
+                                    Dragonborn / Solstheim
+                                </span>
                                 Collect from Felsaad Terns.
-                                No harmful shared effects with other ingredients in this potion pool.
+                                No harmful shared effects with other ingredients in this pool.
                                 Charred Skeever Hide also adds Restore Health.
                                 Keep as a regional recovery ingredient.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
-                        <!-- END: GREEN POTION INGREDIENTS -->
-
-                        <!-- START: PURPLE SPECIALTY RECIPES -->
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Cure Disease + Restore Health</td>
-
+                            <td>
+                                Cure Disease + Restore Health
+                            </td>
                             <td class="recipe">
                                 Charred Skeever Hide + Felsaad Tern Feathers
                             </td>
-
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Dragonborn ingredient</span>
+                                <span class="tag tag-dlc">
+                                    Dragonborn ingredient
+                                </span>
                                 Disease treatment with immediate healing after an encounter.
                                 A complete two-ingredient recovery recipe.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
-                            <td>Cure Disease + Restore Stamina + Resist Poison</td>
-
+                            <td>
+                                Cure Disease + Restore Stamina + Resist Poison
+                            </td>
                             <td class="recipe">
                                 Charred Skeever Hide + Mudcrab Chitin
                             </td>
-
                             <td class="nice-to-have-use">
                                 Disease treatment, immediate stamina recovery,
                                 and temporary poison resistance.
                                 Useful for creature-heavy exploration.
                                 Resist Poison does not cure an existing poison.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
                         </tr>
-
                         <tr class="nice-to-have-row healing-specialty">
                             <td>
                                 Cure Disease + Restore Health + Restore Stamina + Resist Poison
                             </td>
-
                             <td class="recipe">
                                 Charred Skeever Hide + Felsaad Tern Feathers + Mudcrab Chitin
                             </td>
-
                             <td class="nice-to-have-use">
-                                <span class="tag tag-dlc">Dragonborn ingredient</span>
+                                <span class="tag tag-dlc">
+                                    Dragonborn ingredient
+                                </span>
                                 Combined disease treatment, health and stamina recovery,
                                 and temporary poison resistance.
                                 Felsaad Tern Feathers adds Restore Health to the
                                 Charred Skeever Hide and Mudcrab Chitin recipe.
                                 The third ingredient contributes a useful recovery effect.
                             </td>
-
-                            <td class="nice-to-have-empty-cell"></td>
-                        </tr>
-
-                        <!-- END: PURPLE SPECIALTY RECIPES -->
-                    </tbody>
-                    <!-- END: CURE DISEASE OPTIONAL GROUP -->
-
-                    <!-- Continue the remaining main potion rows. -->
-                    <tbody>
-
-                        <!-- REMAINING HEALING & RECOVERY ENTRIES -->
-                    <tbody>
-
-                        <!-- 8. CURE POISON -->
-                        <tr>
-                            <td>Cure Poison</td>
-                            <td class="recipe">Imp Gall + Scrib Jelly</td>
-                            <td>
-                                <span class="tag tag-ae">AE / Rare Curios</span>
-                                Stops ongoing poison effects rather than providing resistance.
-                                These ingredients are typically purchased from Khajiit caravans;
-                                this entry is an exception to the gather-first preference.
+                            <td class="nice-to-have-empty-cell">
                             </td>
-                            <td class="nice-to-have-empty">—</td>
                         </tr>
-
-                        <!-- 9. CARRY WEIGHT -->
+                    </tbody>
+                    <!-- END: NICE CURE DISEASE -->
+                    <!-- START: FORTIFY CARRY WEIGHT MAIN ROW -->
+                    <tbody>
                         <tr>
-                            <td>Fortify Carry Weight</td>
-                            <td class="recipe">Creep Cluster + Hawk Beak</td>
                             <td>
-                                <span class="tag tag-survival">Survival</span>
-                                Temporary carrying capacity for loot and heavy materials.
+                                Fortify Carry Weight
+                            </td>
+                            <td class="recipe">
+                                Creep Cluster + Hawk Beak
+                            </td>
+                            <td>
+                                <span class="tag tag-survival">
+                                    Survival
+                                </span>
+                                Temporarily increases carrying capacity for loot extraction,
+                                heavy materials, and the return trip from a dungeon.
                                 Plan where to unload before the effect expires.
+                                Open the ingredient pool for substitutes and pairing warnings.
                             </td>
-                            <td class="nice-to-have-empty">—</td>
+                            <td>
+                                <button aria-controls="nice-carry-weight" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
+                                    Optional +
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
+                    <!-- END: FORTIFY CARRY WEIGHT MAIN ROW -->
+                    <!-- START: NICE CARRY WEIGHT -->
+                    <tbody class="ingredient-pool" hidden="" id="nice-carry-weight">
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>
+                                    Carry-weight ingredient pool:
+                                </strong>
+                                Combine two different ingredients from the ingredient rows below. Green means no harmful
+                                shared effects with other ingredients in this listed pool. Yellow identifies pairings to
+                                avoid. Add a third ingredient only when it improves magnitude, duration, or useful
+                                effects.
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Fortify Carry Weight
+                            </td>
+                            <td class="recipe">
+                                Hawk Beak
+                            </td>
+                            <td class="nice-to-have-use">
+                                Collect from hawks you bring down.
+                                No harmful shared effects with other ingredients in this pool.
+                                Creep Cluster is the baseline partner.
+                                Netch Jelly also adds Restore Stamina.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Fortify Carry Weight
+                            </td>
+                            <td class="recipe">
+                                River Betty
+                            </td>
+                            <td class="nice-to-have-use">
+                                Catch fish in rivers and lakes.
+                                No harmful shared effects with other ingredients in this pool.
+                                Use as an available substitute in a carry-weight potion.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Fortify Carry Weight
+                            </td>
+                            <td class="recipe">
+                                Wisp Wrappings
+                            </td>
+                            <td class="nice-to-have-use">
+                                Save drops from defeated wispmothers.
+                                No harmful shared effects with other ingredients in this pool.
+                                Treat as encounter loot rather than a routine gathering staple.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Fortify Carry Weight
+                            </td>
+                            <td class="recipe">
+                                Netch Jelly
+                            </td>
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">
+                                    Dragonborn / Solstheim
+                                </span>
+                                Collect from defeated netches.
+                                No harmful shared effects with other ingredients in this pool.
+                                Hawk Beak also adds Restore Stamina.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>
+                                Fortify Carry Weight
+                            </td>
+                            <td class="recipe">
+                                Creep Cluster
+                            </td>
+                            <td class="nice-to-have-use">
+                                Gather in Eastmarch's volcanic region or grow your own.
+                                <strong>
+                                    Avoid Scaly Pholiota:
+                                </strong>
+                                this pairing adds Weakness to Magic.
+                                Hawk Beak is a clean baseline partner.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>
+                                Fortify Carry Weight
+                            </td>
+                            <td class="recipe">
+                                Scaly Pholiota
+                            </td>
+                            <td class="nice-to-have-use">
+                                Gather from trees and stumps or grow your own.
+                                <strong>
+                                    Avoid Creep Cluster:
+                                </strong>
+                                this pairing adds Weakness to Magic.
+                                Hawk Beak or River Betty gives a clean carry-weight potion.
+                            </td>
+                            <td class="nice-to-have-empty-cell">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: NICE CARRY WEIGHT -->
                 </table>
             </div>
         </section>
+
 
         <!-- SURVIVAL FOOD & WARMTH -->
         <section id="survival" class="panel">
