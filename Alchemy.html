@@ -2477,37 +2477,239 @@
                     </tbody>
                     <!-- END: STAMINA MEAL OPTIONS -->
 
-                    <!-- START: COMBAT MEAL MAIN ROW -->
+                    <!-- #region COMBAT MEAL MAIN ROW -->
                     <tbody>
-                        <tr>
-                            <td>Combat meal</td>
-                            <td class="recipe">Beef Stew</td>
+  <tr>
+    <td>Combat meal</td>
 
-                            <td>
-                                Food preparation for extended activity.
-                                Open the options group for complete combat-meal recipes.
-                            </td>
+    <td class="recipe">
+      Health, Stamina, and Magicka meals<br />
+      Specialty defensive foods
+    </td>
 
-                            <td>
-                                <button class="nice-to-have-button" type="button" aria-expanded="false"
-                                    aria-controls="options-survival-combat">
-                                    Optional +
-                                </button>
-                            </td>
-                        </tr>
+    <td>
+      Choose a recipe for healing, Stamina support, Magicka support,
+      magic resistance, or improved blocking.
+      Open the options group for complete recipes,
+      individual effects, and durations.
+    </td>
+
+    <td>
+      <button
+        class="nice-to-have-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="options-survival-combat">
+        Optional +
+      </button>
+    </td>
+  </tr>
                     </tbody>
-                    <!-- END: COMBAT MEAL MAIN ROW -->
+                    <!-- #endregion COMBAT MEAL MAIN ROW -->
 
                     <!-- START: COMBAT MEAL OPTIONS -->
                     <tbody id="options-survival-combat" class="ingredient-pool" hidden>
+                        <!-- COMBAT MEAL NOTE -->
                         <tr class="nice-to-have-row healing-legend-row">
                             <td colspan="4">
-                                <strong>Combat-meal recipe options:</strong>
-                                Complete cooking recipes will be added here after review.
+                                <strong>Combat meals:</strong>
+                                The Effects column lists each food's combat benefits and duration.
+                                Hunger restoration, weight, and preparation are listed individually.
+                                720 seconds is 12 minutes; 60 seconds is 1 minute.
+                                Purple rows identify specialty defensive foods.
+                                Each row is a complete recipe; ingredients are not interchangeable.
+                                Hearthfire and Fishing labels indicate official content,
+                                not third-party mods.
                             </td>
                         </tr>
+
+                        <!-- EXPANDED COLUMN HEADINGS -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td><strong>Effects</strong></td>
+                            <td><strong>Food</strong></td>
+                            <td><strong>Ingredients</strong></td>
+                            <td><strong>Serving / Preparation</strong></td>
+                        </tr>
+
+                        <!-- START: ELSWEYR FONDUE -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Fortify Magicka: 100 points for 720 seconds<br />
+                                Regenerate Magicka: 25% faster for 720 seconds
+                            </td>
+
+                            <td class="recipe">Elsweyr Fondue</td>
+
+                            <td class="nice-to-have-use">
+                                Eidar Cheese Wheel + Moon Sugar + Ale
+                            </td>
+
+                            <td>
+                                Hunger: 380 points<br />
+                                Weight: 0.5<br />
+                                Cooking pot
+                            </td>
+                        </tr>
+                        <!-- END: ELSWEYR FONDUE -->
+
+                        <!-- START: VEGETABLE SOUP -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Restore Stamina: 1 point/second for 720 seconds<br />
+                                Restore Health: 1 point/second for 720 seconds
+                            </td>
+
+                            <td class="recipe">Vegetable Soup</td>
+
+                            <td class="nice-to-have-use">
+                                Cabbage + Potato + Leek + Tomato
+                            </td>
+
+                            <td>
+                                Hunger: 380 points<br />
+                                Weight: 0.5<br />
+                                Cooking pot
+                            </td>
+                        </tr>
+                        <!-- END: VEGETABLE SOUP -->
+
+                        <!-- START: VENISON STEW -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Restore Stamina: 15 points immediately<br />
+                                Restore Stamina: 1 point/second for 720 seconds<br />
+                                Restore Health: 1 point/second for 720 seconds
+                            </td>
+
+                            <td class="recipe">Venison Stew</td>
+
+                            <td class="nice-to-have-use">
+                                Venison + Salt Pile + Potato + Leek
+                            </td>
+
+                            <td>
+                                Hunger: 380 points<br />
+                                Weight: 0.5<br />
+                                Cooking pot
+                            </td>
+                        </tr>
+                        <!-- END: VENISON STEW -->
+
+                        <!-- START: BEEF STEW -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Restore Stamina: 2 points/second for 720 seconds<br />
+                                Fortify Stamina: 25 points for 720 seconds
+                            </td>
+
+                            <td class="recipe">Beef Stew</td>
+
+                            <td class="nice-to-have-use">
+                                Raw Beef + Carrot + Salt Pile + Garlic
+                            </td>
+
+                            <td>
+                                Hunger: 380 points<br />
+                                Weight: 0.5<br />
+                                Cooking pot
+                            </td>
+                        </tr>
+                        <!-- END: BEEF STEW -->
+
+                        <!-- START: CRAB STEW -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Restore Stamina: 2 points/second for 720 seconds<br />
+                                Restore Health: 1 point/second for 720 seconds
+                            </td>
+
+                            <td class="recipe">
+                                Crab Stew<br />
+                                <span class="tag tag-ae">Official Creation / Fishing</span>
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Garlic + Potato + Leek + Crab Meat
+                            </td>
+
+                            <td>
+                                Hunger: 380 points<br />
+                                Weight: 0.5<br />
+                                Cooking pot
+                            </td>
+                        </tr>
+                        <!-- END: CRAB STEW -->
+
+                        <!-- START: HORKER STEW -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>
+                                Restore Stamina: 15 points immediately<br />
+                                Restore Health: 15 points immediately<br />
+                                Restore Health: 1 point/second for 720 seconds<br />
+                                No sustained Stamina restoration
+                            </td>
+
+                            <td class="recipe">Horker Stew</td>
+
+                            <td class="nice-to-have-use">
+                                Horker Meat + Lavender + Tomato + Garlic
+                            </td>
+
+                            <td>
+                                Hunger: 380 points<br />
+                                Weight: 0.5<br />
+                                Cooking pot
+                            </td>
+                        </tr>
+                        <!-- END: HORKER STEW -->
+
+                        <!-- START: LAVENDER DUMPLING -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>
+                                Resist Magic: 10% for 60 seconds
+                            </td>
+
+                            <td class="recipe">
+                                Lavender Dumpling<br />
+                                <span class="tag tag-dlc">Official DLC / Hearthfire</span>
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Moon Sugar + Sack of Flour + Snowberries &times; 2 + Lavender
+                            </td>
+
+                            <td>
+                                Hunger: 220 points<br />
+                                Weight: 0.1<br />
+                                Oven
+                            </td>
+                        </tr>
+                        <!-- END: LAVENDER DUMPLING -->
+
+                        <!-- START: CRAB CAKES -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>
+                                Fortify Block: 5% for 60 seconds<br />
+                                Restore Health: 15 points immediately
+                            </td>
+
+                            <td class="recipe">
+                                Crab Cakes<br />
+                                <span class="tag tag-ae">Official Creation / Fishing</span>
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Salt Pile + Sack of Flour + Crab Meat
+                            </td>
+
+                            <td>
+                                Hunger: 220 points<br />
+                                Weight: 0.1<br />
+                                Oven
+                            </td>
+                        </tr>
+                        <!-- END: CRAB CAKES -->
                     </tbody>
-                    
                     <!-- END: COMBAT MEAL OPTIONS -->
 
                     <!-- START: DISEASE UTILITY MEAL MAIN ROW -->
