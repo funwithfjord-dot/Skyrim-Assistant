@@ -93,8 +93,11 @@
     { name: "Netch Jelly", page: "Netch_Jelly", type: "ingredient" },
     { name: "Honeycomb", page: "Honeycomb", type: "ingredient" },
     { name: "Torchbug Thorax", page: "Torchbug_Thorax", type: "ingredient" },
-    { name: "Ash Hopper Jelly", page: "Ash_Hopper_Jelly", type: "ingredient"
-    },
+    { name: "Ash Hopper Jelly", page: "Ash_Hopper_Jelly", type: "ingredient"},
+    { name: "Grass Pod", page: "Grass_Pod", type: "ingredient" },
+    { name: "White Cap", page: "White_Cap", type: "ingredient" },
+    { name: "Ectoplasm", page: "Ectoplasm", type: "ingredient" },
+    { name: "Pearl", page: "Pearl", type: "ingredient" },
 
     /*
      * Add other types here later:

@@ -285,7 +285,6 @@
                             </td>
                         </tr>
                     </tbody>
-
                     <!-- RESTORE HEALTH: EXPANDED INGREDIENT POOL -->
                     <tbody id="nice-healing-basic" class="ingredient-pool" hidden>
                         <tr class="nice-to-have-row healing-legend-row">
@@ -445,7 +444,6 @@
                             </td>
                         </tr>
                     </tbody>
-
                     <!-- REGENERATE HEALTH: EXPANDED INGREDIENT POOL -->
                     <tbody id="nice-health-regeneration" class="ingredient-pool" hidden>
                         <tr class="nice-to-have-row healing-legend-row">
@@ -620,9 +618,7 @@
                         </td>
                     </tr>
                     <!-- END: RESTORE STAMINA MAIN ROW -->
-
                     </tbody>
-
                     <!-- START: RESTORE STAMINA INGREDIENT POOL -->
                     <tbody id="nice-stamina-basic" class="ingredient-pool" hidden>
                         <!-- INGREDIENT POOL LEGEND -->
@@ -874,32 +870,360 @@
                     </tbody>
                     <!-- END: RESTORE STAMINA INGREDIENT POOL -->
 
+                    <!-- 4. REGENERATE STAMINA: MAIN ROW -->
+                    <tr>
+                        <td>Regenerate Stamina</td>
+
+                        <td class="recipe">
+                            Fly Amanita + Mora Tapinella
+                        </td>
+
+                        <td>
+                            Faster stamina recovery during extended activity,
+                            rather than an immediate refill.
+                            Gather Fly Amanita and Mora Tapinella or grow your own.
+                            Open the ingredient pool for alternatives and a
+                            two-handed combat preparation recipe.
+                        </td>
+
+                        <td>
+                            <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                aria-controls="nice-stamina-regeneration">
+                                Optional +
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- END: REGENERATE STAMINA MAIN ROW -->
+                    </tbody>
+                    <!-- START: REGENERATE STAMINA INGREDIENT POOL -->
+                    <tbody id="nice-stamina-regeneration" class="ingredient-pool" hidden>
+                        <!-- INGREDIENT POOL LEGEND -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Stamina regeneration ingredient pool:</strong>
+                                Combine two different ingredients below.
+                                Green indicates no harmful shared effects within this listed pool.
+                                Purple rows are complete specialty recipes.
+                                Regenerate Stamina increases recovery speed rather than
+                                providing an immediate refill.
+                                Add a third ingredient only when it contributes a useful effect.
+                            </td>
+                        </tr>
+
+                        <!-- START: GREEN INGREDIENTS -->
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Regenerate Stamina</td>
+                            <td class="recipe">Fly Amanita</td>
+
+                            <td class="nice-to-have-use">
+                                Gather red mushrooms or grow your own.
+                                No harmful shared effects with other ingredients in this pool.
+                                Pair with Bee, Mora Tapinella, or Scaly Pholiota
+                                for stamina regeneration only.
+                                Used in the two-handed specialty below.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Regenerate Stamina</td>
+                            <td class="recipe">Mora Tapinella</td>
+
+                            <td class="nice-to-have-use">
+                                Gather from forest logs and stumps or grow your own.
+                                No harmful shared effects with other ingredients in this pool.
+                                Bee or Fly Amanita gives regeneration only;
+                                Scaly Pholiota also adds Fortify Illusion.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Regenerate Stamina</td>
+                            <td class="recipe">Scaly Pholiota</td>
+
+                            <td class="nice-to-have-use">
+                                Gather from trees and stumps or grow your own.
+                                No harmful shared effects with other ingredients in this pool.
+                                Bee or Fly Amanita gives regeneration only;
+                                Mora Tapinella also adds Fortify Illusion.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Regenerate Stamina</td>
+                            <td class="recipe">Bee</td>
+
+                            <td class="nice-to-have-use">
+                                Catch around beehives.
+                                No harmful shared effects with other ingredients in this pool.
+                                Pair with Fly Amanita, Mora Tapinella, or Scaly Pholiota
+                                for stamina regeneration only.
+                                Used in the two-handed specialty below.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: GREEN INGREDIENTS -->
+
+                        <!-- START: PURPLE SPECIALTY RECIPES -->
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>
+                                Regenerate Stamina + Fortify Two-handed + Resist Fire
+                            </td>
+
+                            <td class="recipe">
+                                Bee + Fly Amanita + Dragon's Tongue
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Preparation for sustained two-handed combat,
+                                especially against fire damage.
+                                Bee and Fly Amanita activate Regenerate Stamina.
+                                Fly Amanita and Dragon's Tongue activate
+                                Fortify Two-handed and Resist Fire.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: PURPLE SPECIALTY RECIPES -->
+                    </tbody>
+                    <!-- END: REGENERATE STAMINA INGREDIENT POOL -->
+
+                    <!-- 5. RESTORE MAGICKA: MAIN ROW -->
+                    <tr>
+                        <td>Restore Magicka</td>
+
+                        <td class="recipe">
+                            Red Mountain Flower + Mora Tapinella
+                        </td>
+
+                        <td>
+                            Immediate Magicka recovery for spellcasting.
+                            Gather Red Mountain Flowers along roads and Mora Tapinella
+                            from forest logs and stumps, or grow your own.
+                            Open the ingredient pool for alternatives, pairing warnings,
+                            and specialty recipes.
+                        </td>
+
+                        <td>
+                            <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                aria-controls="nice-magicka-basic">
+                                Optional +
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- END: RESTORE MAGICKA MAIN ROW -->
+                    </tbody>
+                    <!-- START: RESTORE MAGICKA INGREDIENT POOL -->
+                    <tbody id="nice-magicka-basic" class="ingredient-pool" hidden>
+                        <!-- INGREDIENT POOL LEGEND -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Magicka restoration ingredient pool:</strong>
+                                Combine two different ingredients below.
+                                Green indicates no harmful shared effects within this listed pool;
+                                yellow identifies a pairing to avoid.
+                                Purple rows are complete specialty recipes.
+                                This is a practical gathering selection, not every Restore Magicka
+                                ingredient. Add a third ingredient only when it contributes a
+                                useful effect.
+                            </td>
+                        </tr>
+
+                        <!-- START: GREEN INGREDIENTS -->
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Mora Tapinella</td>
+
+                            <td class="nice-to-have-use">
+                                Gather from forest logs and stumps or grow your own.
+                                No harmful shared effects with other ingredients in this pool.
+                                Red Mountain Flower gives restoration only;
+                                Dwarven Oil also adds Fortify Illusion.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Creep Cluster</td>
+
+                            <td class="nice-to-have-use">
+                                Gather in Eastmarch's volcanic region or grow your own.
+                                No harmful shared effects with other ingredients in this pool.
+                                Pair with Red Mountain Flower or Mora Tapinella
+                                for Magicka restoration.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Grass Pod</td>
+
+                            <td class="nice-to-have-use">
+                                Gather from grass plants in northern coastal regions.
+                                No harmful shared effects with other ingredients in this pool.
+                                Keep as a regional substitute when collected during travel.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Vampire Dust</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated vampires.
+                                No harmful shared effects with other ingredients in this pool.
+                                Treat as an encounter-loot substitute.
+                                Keep a reserve for regeneration and invisibility recipes.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Dwarven Oil</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from Dwarven automatons.
+                                No harmful shared effects with other ingredients in this pool.
+                                Mora Tapinella also adds Fortify Illusion.
+                                Outside this pool, avoid Taproot:
+                                that pairing also activates Weakness to Magic.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: GREEN INGREDIENTS -->
+
+                        <!-- START: YELLOW INGREDIENTS -->
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Red Mountain Flower</td>
+
+                            <td class="nice-to-have-use">
+                                Gather along roads or grow your own.
+                                <strong>Avoid White Cap and Ectoplasm:</strong>
+                                White Cap adds Ravage Magicka;
+                                Ectoplasm adds Damage Health.
+                                Mora Tapinella is a clean baseline partner.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Elves Ear</td>
+
+                            <td class="nice-to-have-use">
+                                Collect dried bundles from kitchens and interiors.
+                                <strong>Avoid White Cap:</strong>
+                                together they add Weakness to Frost.
+                                Red Mountain Flower is a clean restoration partner.
+                                Fire Salts also adds Resist Fire.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">White Cap</td>
+
+                            <td class="nice-to-have-use">
+                                Gather mushrooms in caves or grow your own.
+                                <strong>Avoid Red Mountain Flower and Elves Ear:</strong>
+                                Red Mountain Flower adds Ravage Magicka;
+                                Elves Ear adds Weakness to Frost.
+                                Mora Tapinella is a clean alternative.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Ectoplasm</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated ghosts.
+                                <strong>Avoid Red Mountain Flower:</strong>
+                                together they add Damage Health,
+                                even though the pairing also adds Fortify Magicka.
+                                Mora Tapinella is a clean restoration partner.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: YELLOW INGREDIENTS -->
+
+                        <!-- START: PURPLE SPECIALTY RECIPES -->
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Restore Magicka + Resist Fire</td>
+
+                            <td class="recipe">
+                                Elves Ear + Fire Salts
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Immediate Magicka recovery with temporary protection
+                                against fire damage.
+                                Keep a separate reserve of Fire Salts for Survival Mode hot soup.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Restore Magicka + Restore Stamina</td>
+
+                            <td class="recipe">
+                                Mora Tapinella + Pearl + Purple Mountain Flower
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Two-resource recovery for spellcasting and physical activity.
+                                Mora Tapinella and Pearl activate Restore Magicka.
+                                Pearl and Purple Mountain Flower activate Restore Stamina.
+                                The third ingredient adds a useful restoration effect.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: PURPLE SPECIALTY RECIPES -->
+                    </tbody>
+                    <!-- END: RESTORE MAGICKA INGREDIENT POOL -->
+
                     <!-- Continue the remaining main potion rows. -->
+                    <tbody>
+
+                        <!-- Continue the remaining main potion rows. -->
                     <tbody>
 
                         <!-- REMAINING HEALING & RECOVERY ENTRIES -->
                     <tbody>
-                        <!-- 4. REGENERATE STAMINA -->
-                        <tr>
-                            <td>Regenerate Stamina</td>
-                            <td class="recipe">Mora Tapinella + Scaly Pholiota</td>
-                            <td>
-                                Supports stamina recovery during extended activity.
-                                Useful for repeated attacks or frequent sprinting.
-                            </td>
-                            <td class="nice-to-have-empty">—</td>
-                        </tr>
-
-                        <!-- 5. RESTORE MAGICKA -->
-                        <tr>
-                            <td>Restore Magicka</td>
-                            <td class="recipe">Red Mountain Flower + Mora Tapinella</td>
-                            <td>
-                                Immediate Magicka recovery for spellcasting.
-                                Gather Red Mountain Flowers and Mora Tapinella while traveling.
-                            </td>
-                            <td class="nice-to-have-empty">—</td>
-                        </tr>
 
                         <!-- 6. REGENERATE MAGICKA -->
                         <tr>
