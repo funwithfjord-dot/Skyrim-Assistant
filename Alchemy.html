@@ -2479,31 +2479,28 @@
 
                     <!-- #region COMBAT MEAL MAIN ROW -->
                     <tbody>
-  <tr>
-    <td>Combat meal</td>
+                        <tr>
+                            <td>Combat meal</td>
 
-    <td class="recipe">
-      Health, Stamina, and Magicka meals<br />
-      Specialty defensive foods
-    </td>
+                            <td class="recipe">
+                                Health, Stamina, and Magicka meals<br />
+                                Specialty defensive foods
+                            </td>
 
-    <td>
-      Choose a recipe for healing, Stamina support, Magicka support,
-      magic resistance, or improved blocking.
-      Open the options group for complete recipes,
-      individual effects, and durations.
-    </td>
+                            <td>
+                                Choose a recipe for healing, Stamina support, Magicka support,
+                                magic resistance, or improved blocking.
+                                Open the options group for complete recipes,
+                                individual effects, and durations.
+                            </td>
 
-    <td>
-      <button
-        class="nice-to-have-button"
-        type="button"
-        aria-expanded="false"
-        aria-controls="options-survival-combat">
-        Optional +
-      </button>
-    </td>
-  </tr>
+                            <td>
+                                <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                    aria-controls="options-survival-combat">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
                     </tbody>
                     <!-- #endregion COMBAT MEAL MAIN ROW -->
 
@@ -2763,12 +2760,14 @@
         </section>
         <!-- END: SURVIVAL FOOD & WARMTH -->
 
-        <!-- RESISTANCE & COMBAT BUFFS -->
+        <!-- #START: RESISTANCE & COMBAT BUFFS -->
         <section id="resistance" class="panel">
             <h2>Resistance &amp; Combat Buffs</h2>
+
             <p class="panel-intro">
                 Prepare for expected threats rather than carrying every possible buff.
-                These entries will be reviewed individually.
+                Use Resist Magic for broad magical defense, then add elemental resistance
+                for specific threats. Choose combat and utility buffs to suit the job.
             </p>
 
             <div class="table-wrap">
@@ -2777,95 +2776,182 @@
                         <tr>
                             <th scope="col">Threat / Job</th>
                             <th scope="col">Ingredients</th>
-                            <th scope="col">Effect</th>
+                            <th scope="col">Effects</th>
                             <th scope="col">Best Use</th>
                             <th scope="col">Nice to Haves</th>
                         </tr>
                     </thead>
+
+                    <!-- #region GENERAL MAGIC DEFENSE MAIN ROW -->
+                    <tbody>
+                        <tr>
+                            <td>General magic defense</td>
+                            <td class="recipe">Lavender + Tundra Cotton</td>
+                            <td>Resist Magic</td>
+                            <td>
+                                Broad protection against magical threats,
+                                including fire, frost, and shock damage.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
+                        </tr>
+                    </tbody>
+                    <!-- #endregion GENERAL MAGIC DEFENSE MAIN ROW -->
+
+                    <!-- #region FIRE DEFENSE MAIN ROW -->
                     <tbody>
                         <tr>
                             <td>Fire damage</td>
                             <td class="recipe">Snowberries + Dragon's Tongue</td>
                             <td>Resist Fire</td>
-                            <td>Fire dragons and fire casters.</td>
-                            <td>—</td>
+                            <td>
+                                Additional fire protection against fire dragons and fire casters.
+                                Complements Resist Magic.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- #endregion FIRE DEFENSE MAIN ROW -->
+
+                    <!-- #region FROST DEFENSE MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Frost damage</td>
                             <td class="recipe">Snowberries + Thistle Branch</td>
                             <td>Resist Frost</td>
-                            <td>Frost dragons and frost casters.</td>
-                            <td>—</td>
+                            <td>
+                                Additional frost protection against frost dragons and frost casters.
+                                Complements Resist Magic.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- #endregion FROST DEFENSE MAIN ROW -->
+
+                    <!-- #region SHOCK DEFENSE MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Shock damage</td>
                             <td class="recipe">Snowberries + Swamp Fungal Pod</td>
                             <td>Resist Shock</td>
-                            <td>Shock-based enemies.</td>
-                            <td>—</td>
+                            <td>
+                                Additional protection against shock-based enemies.
+                                Complements Resist Magic.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- #endregion SHOCK DEFENSE MAIN ROW -->
+
+                    <!-- #region FROST AND SHOCK DEFENSE MAIN ROW -->
+                    <tbody>
+                        <tr>
+                            <td>Frost and shock damage</td>
+                            <td class="recipe">Snowberries + Hawk Beak</td>
+                            <td>Resist Frost + Resist Shock</td>
+                            <td>
+                                Additional protection when both frost and shock damage are expected.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
+                        </tr>
+                    </tbody>
+                    <!-- #endregion FROST AND SHOCK DEFENSE MAIN ROW -->
+
+                    <!-- #region MIXED ELEMENTAL DEFENSE MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Mixed elemental threats</td>
                             <td class="recipe">
                                 Snowberries + Hawk Beak + Dragon's Tongue
                             </td>
-                            <td>Elemental resistance — pending review</td>
-                            <td>Mixed encounters; verify the exact effects before relying on it.</td>
-                            <td>—</td>
+                            <td>Resist Fire + Resist Frost + Resist Shock</td>
+                            <td>
+                                Additional protection against all three elements.
+                                Complements general magic defense.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
-                        <tr>
-                            <td>General magic defense</td>
-                            <td class="recipe">Tundra Cotton + Void Salts</td>
-                            <td>Resist Magic</td>
-                            <td>Magic-heavy encounters.</td>
-                            <td>—</td>
-                        </tr>
+                    </tbody>
+                    <!-- #endregion MIXED ELEMENTAL DEFENSE MAIN ROW -->
+
+                    <!-- #region SHIELD DEFENSE MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Shield defense</td>
                             <td class="recipe">Tundra Cotton + Bleeding Crown</td>
-                            <td>Fortify Block</td>
-                            <td>Shield-based combat.</td>
-                            <td>—</td>
+                            <td>Fortify Block + Resist Magic</td>
+                            <td>
+                                Blocking attacks in encounters that also involve magic.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- #endregion SHIELD DEFENSE MAIN ROW -->
+
+                    <!-- #region ONE-HANDED DAMAGE MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>One-handed damage</td>
                             <td class="recipe">Bear Claws + Canis Root</td>
                             <td>Fortify One-handed</td>
-                            <td>One-handed weapon encounters.</td>
-                            <td>—</td>
+                            <td>Increasing one-handed weapon damage.</td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- #endregion ONE-HANDED DAMAGE MAIN ROW -->
+
+                    <!-- #region TWO-HANDED DAMAGE MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Two-handed damage</td>
                             <td class="recipe">Dragon's Tongue + Fly Amanita</td>
-                            <td>Fortify Two-handed</td>
-                            <td>Two-handed weapon encounters.</td>
-                            <td>—</td>
+                            <td>Fortify Two-handed + Resist Fire</td>
+                            <td>
+                                Increasing two-handed weapon damage while adding fire protection.
+                            </td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- #endregion TWO-HANDED DAMAGE MAIN ROW -->
+
+                    <!-- #region ARCHERY DAMAGE MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Archery damage</td>
                             <td class="recipe">Canis Root + Elves Ear</td>
                             <td>Fortify Archery</td>
-                            <td>Archery preparation.</td>
-                            <td>—</td>
+                            <td>Increasing bow damage before ranged combat.</td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- #endregion ARCHERY DAMAGE MAIN ROW -->
+
+                    <!-- #region STEALTH MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Stealth</td>
                             <td class="recipe">Abecean Longfin + Frost Mirriam</td>
                             <td>Fortify Sneak</td>
-                            <td>Stealth approaches.</td>
-                            <td>—</td>
+                            <td>Stealth approaches and avoiding detection.</td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- #endregion STEALTH MAIN ROW -->
+
+                    <!-- #region LOCKPICKING MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Lockpicking</td>
                             <td class="recipe">Falmer Ear + Namira's Rot</td>
                             <td>Fortify Lockpicking</td>
                             <td>Focused lockpicking tasks.</td>
-                            <td>—</td>
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
+                    <!-- #endregion LOCKPICKING MAIN ROW -->
                 </table>
             </div>
         </section>
+        <!-- #END: RESISTANCE & COMBAT BUFFS -->
 
         <!-- POISONS & ENEMY CONTROL -->
         <section id="poisons" class="panel">
