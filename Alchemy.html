@@ -596,20 +596,289 @@
                         </tr>
                     </tbody>
 
-                    <!-- REMAINING HEALING & RECOVERY ENTRIES -->
-                    <tbody>
-                        <!-- 3. RESTORE STAMINA -->
-                        <tr>
-                            <td>Restore Stamina</td>
-                            <td class="recipe">Bee + Purple Mountain Flower</td>
-                            <td>
-                                Immediate stamina recovery for sprinting, power attacks,
-                                and escaping dangerous encounters.
-                                Collect Bees and Purple Mountain Flowers while exploring.
+                    <!-- 3. RESTORE STAMINA: MAIN ROW -->
+                    <tr>
+                        <td>Restore Stamina</td>
+
+                        <td class="recipe">
+                            Bee + Purple Mountain Flower
+                        </td>
+
+                        <td>
+                            Immediate stamina recovery for sprinting, power attacks,
+                            and escaping dangerous encounters.
+                            Collect Bees and Purple Mountain Flowers while traveling.
+                            Open the ingredient pool for alternatives, pairing warnings,
+                            and specialty recipes.
+                        </td>
+
+                        <td>
+                            <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                aria-controls="nice-stamina-basic">
+                                Optional +
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- END: RESTORE STAMINA MAIN ROW -->
+
+                    </tbody>
+
+                    <!-- START: RESTORE STAMINA INGREDIENT POOL -->
+                    <tbody id="nice-stamina-basic" class="ingredient-pool" hidden>
+                        <!-- INGREDIENT POOL LEGEND -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Stamina restoration ingredient pool:</strong>
+                                Combine two different ingredients below.
+                                Green indicates no harmful shared effects within this listed pool;
+                                yellow identifies a pairing to avoid.
+                                Purple rows are complete specialty recipes.
+                                This is a practical gathering selection, not every Restore Stamina
+                                ingredient. Add a third ingredient only when it contributes a
+                                useful effect.
                             </td>
-                            <td class="nice-to-have-empty">—</td>
                         </tr>
 
+                        <!-- START: GREEN INGREDIENTS -->
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Orange Dartwing</td>
+
+                            <td class="nice-to-have-use">
+                                Catch orange dragonflies near water.
+                                Blue Dartwing is a different ingredient, not a substitute.
+                                No harmful shared effects with other ingredients in this pool.
+                                Pair with Bee or Purple Mountain Flower for stamina restoration.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Charred Skeever Hide</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from cooked skeevers, not ordinary dead skeevers.
+                                No harmful shared effects with other ingredients in this pool.
+                                Eye of Sabre Cat also adds Restore Health;
+                                Mudcrab Chitin also adds Cure Disease and Resist Poison.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Mudcrab Chitin</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from defeated mudcrabs.
+                                No harmful shared effects with other ingredients in this pool.
+                                Charred Skeever Hide also adds Cure Disease and Resist Poison.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Eye of Sabre Cat</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated sabre cats.
+                                No harmful shared effects with other ingredients in this pool.
+                                Charred Skeever Hide also adds Restore Health.
+                                Treat as encounter loot rather than a routine gathering staple.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Hawk Beak</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from hawks you bring down.
+                                No harmful shared effects with other ingredients in this pool.
+                                Purple Mountain Flower also adds Resist Frost;
+                                Netch Jelly also adds Fortify Carry Weight.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Large Antlers</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from deer.
+                                Small Antlers are a different ingredient, not a substitute.
+                                No harmful shared effects with other ingredients in this pool.
+                                Torchbug Thorax also adds Fortify Stamina.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Netch Jelly</td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                Collect from defeated netches.
+                                Has a 2&times; Restore Stamina magnitude modifier.
+                                No harmful shared effects with other ingredients in this pool.
+                                Hawk Beak also adds Fortify Carry Weight.
+                                Save for stronger recovery or specialty combinations.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: GREEN INGREDIENTS -->
+
+                        <!-- START: YELLOW INGREDIENTS -->
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Bee</td>
+
+                            <td class="nice-to-have-use">
+                                Catch around beehives.
+                                <strong>Avoid Honeycomb:</strong>
+                                together they add Ravage Stamina.
+                                Purple Mountain Flower is a clean baseline partner.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Purple Mountain Flower</td>
+
+                            <td class="nice-to-have-use">
+                                Gather along roads or grow your own.
+                                <strong>Avoid Torchbug Thorax:</strong>
+                                together they add Lingering Damage Magicka.
+                                Bee gives restoration only;
+                                Hawk Beak also adds Resist Frost.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Honeycomb</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from beehives.
+                                <strong>Avoid Bee:</strong>
+                                together they add Ravage Stamina.
+                                Purple Mountain Flower is a clean alternative.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Torchbug Thorax</td>
+
+                            <td class="nice-to-have-use">
+                                Catch torchbugs at night.
+                                <strong>Avoid Purple Mountain Flower:</strong>
+                                together they add Lingering Damage Magicka.
+                                Large Antlers also adds Fortify Stamina.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: YELLOW INGREDIENTS -->
+
+                        <!-- START: PURPLE SPECIALTY RECIPES -->
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Restore Stamina + Restore Health</td>
+
+                            <td class="recipe">
+                                Charred Skeever Hide + Eye of Sabre Cat
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Two-resource recovery using encounter supplies.
+                                No third ingredient needed.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Restore Stamina + Fortify Stamina</td>
+
+                            <td class="recipe">
+                                Large Antlers + Torchbug Thorax
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Immediate stamina recovery with a temporary increase
+                                to maximum stamina.
+                                A complete two-ingredient recipe.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Restore Stamina + Resist Frost</td>
+
+                            <td class="recipe">
+                                Purple Mountain Flower + Hawk Beak
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Stamina recovery with protection against frost damage.
+                                Resist Frost does not protect against Survival Mode's
+                                environmental cold.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Restore Stamina + Regenerate Stamina</td>
+
+                            <td class="recipe">
+                                Bee + Purple Mountain Flower + Mora Tapinella
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Immediate recovery plus stamina regeneration.
+                                Bee and Purple Mountain Flower activate Restore Stamina.
+                                Bee and Mora Tapinella activate Regenerate Stamina.
+                                The third ingredient adds a useful effect rather than
+                                merely repeating restoration.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <!-- END: PURPLE SPECIALTY RECIPES -->
+                    </tbody>
+                    <!-- END: RESTORE STAMINA INGREDIENT POOL -->
+
+                    <!-- Continue the remaining main potion rows. -->
+                    <tbody>
+
+                        <!-- REMAINING HEALING & RECOVERY ENTRIES -->
+                    <tbody>
                         <!-- 4. REGENERATE STAMINA -->
                         <tr>
                             <td>Regenerate Stamina</td>

@@ -38,12 +38,7 @@
     { name: "Scrib Jelly", page: "Scrib_Jelly", type: "ingredient" },
     { name: "Creep Cluster", page: "Creep_Cluster", type: "ingredient" },
     { name: "Hawk Beak", page: "Hawk_Beak", type: "ingredient" },
-    {
-      name: "Giant's Toe",
-      page: "Giant%27s_Toe",
-      type: "ingredient",
-      aliases: ["Giant’s Toe"]
-    },
+    { name: "Giant's Toe", page: "Giant%27s_Toe", type: "ingredient", aliases: ["Giant’s Toe"] },
     { name: "Charred Skeever Hide", page: "Charred_Skeever_Hide", type: "ingredient" },
     { name: "Felsaad Tern Feathers", page: "Felsaad_Tern_Feathers", type: "ingredient" },
     { name: "Mudcrab Chitin", page: "Mudcrab_Chitin", type: "ingredient" },
@@ -55,12 +50,7 @@
     { name: "Nirnroot", page: "Nirnroot", type: "ingredient" },
     { name: "Luna Moth Wing", page: "Luna_Moth_Wing", type: "ingredient" },
     { name: "Snowberries", page: "Snowberries", type: "ingredient" },
-    {
-      name: "Dragon's Tongue",
-      page: "Dragon%27s_Tongue",
-      type: "ingredient",
-      aliases: ["Dragon’s Tongue"]
-    },
+    { name: "Dragon's Tongue", page: "Dragon%27s_Tongue", type: "ingredient", aliases: ["Dragon’s Tongue"] },
     { name: "Swamp Fungal Pod", page: "Swamp_Fungal_Pod", type: "ingredient" },
     { name: "Tundra Cotton", page: "Tundra_Cotton", type: "ingredient" },
     { name: "Void Salts", page: "Void_Salts", type: "ingredient" },
@@ -72,12 +62,7 @@
     { name: "Abecean Longfin", page: "Abecean_Longfin", type: "ingredient" },
     { name: "Frost Mirriam", page: "Frost_Mirriam", type: "ingredient" },
     { name: "Falmer Ear", page: "Falmer_Ear", type: "ingredient" },
-    {
-      name: "Namira's Rot",
-      page: "Namira%27s_Rot",
-      type: "ingredient",
-      aliases: ["Namira’s Rot"]
-    },
+    {name: "Namira's Rot", page: "Namira%27s_Rot", type: "ingredient", aliases: ["Namira’s Rot"] },
     { name: "Imp Stool", page: "Imp_Stool", type: "ingredient" },
     { name: "Deathbell", page: "Deathbell", type: "ingredient" },
     { name: "Skeever Tail", page: "Skeever_Tail", type: "ingredient" },
@@ -103,10 +88,12 @@
     { name: "Emperor Parasol Moss", page: "Emperor_Parasol_Moss", type: "ingredient" },
     { name: "Angelfish", page: "Angelfish", type: "ingredient" },
     {name: "Rock Warbler Egg", page: "Rock_Warbler_Egg", type: "ingredient"},
-    {
-      name: "Ash Hopper Jelly",
-      page: "Ash_Hopper_Jelly",
-      type: "ingredient"
+    { name: "Eye of Sabre Cat", page: "Eye_of_Sabre_Cat", type: "ingredient" },
+    { name: "Large Antlers", page: "Large_Antlers", type: "ingredient" },
+    { name: "Netch Jelly", page: "Netch_Jelly", type: "ingredient" },
+    { name: "Honeycomb", page: "Honeycomb", type: "ingredient" },
+    { name: "Torchbug Thorax", page: "Torchbug_Thorax", type: "ingredient" },
+    { name: "Ash Hopper Jelly", page: "Ash_Hopper_Jelly", type: "ingredient"
     },
 
     /*
