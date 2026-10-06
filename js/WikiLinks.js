@@ -99,7 +99,15 @@
     { name: "Ambrosia", page: "Ambrosia", type: "ingredient" },
     { name: "Dwarven Oil", page: "Dwarven_Oil", type: "ingredient" },
     { name: "River Betty", page: "River_Betty", type: "ingredient" },
-    { name: "Spriggan Sap", page: "Spriggan_Sap", type: "ingredient" }
+    { name: "Spriggan Sap", page: "Spriggan_Sap", type: "ingredient" },
+    { name: "Emperor Parasol Moss", page: "Emperor_Parasol_Moss", type: "ingredient" },
+    { name: "Angelfish", page: "Angelfish", type: "ingredient" },
+    {name: "Rock Warbler Egg", page: "Rock_Warbler_Egg", type: "ingredient"},
+    {
+      name: "Ash Hopper Jelly",
+      page: "Ash_Hopper_Jelly",
+      type: "ingredient"
+    },
 
     /*
      * Add other types here later:

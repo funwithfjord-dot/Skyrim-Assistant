@@ -1,4 +1,6 @@
-/* Category navigation */
+/* =========================================
+   CATEGORY NAVIGATION
+   ========================================= */
 
 .category-nav {
   display: grid;
@@ -21,13 +23,18 @@
   cursor: pointer;
   text-align: left;
   text-shadow: 0 1px 1px #000;
-  background: linear-gradient(180deg,
-      rgba(63, 80, 93, 0.96),
-      rgba(21, 29, 37, 0.98));
+
+  background: linear-gradient(
+    180deg,
+    rgba(63, 80, 93, 0.96),
+    rgba(21, 29, 37, 0.98)
+  );
+
   box-shadow:
     inset 0 1px 0 rgba(232, 247, 255, 0.12),
     inset 0 -1px 0 rgba(0, 0, 0, 0.65),
     0 4px 10px var(--shadow);
+
   transition:
     transform 0.16s ease,
     border-color 0.16s ease,
@@ -47,9 +54,13 @@
   transform: translateY(-2px);
   border-color: var(--frost);
   color: var(--frost-bright);
-  background: linear-gradient(180deg,
-      rgba(74, 103, 119, 0.98),
-      rgba(26, 41, 52, 0.99));
+
+  background: linear-gradient(
+    180deg,
+    rgba(74, 103, 119, 0.98),
+    rgba(26, 41, 52, 0.99)
+  );
+
   box-shadow:
     inset 0 1px 0 rgba(232, 247, 255, 0.15),
     0 0 15px rgba(145, 203, 227, 0.16),
@@ -60,10 +71,14 @@
   border-color: var(--frost-bright);
   color: #102029;
   text-shadow: none;
-  background: linear-gradient(180deg,
-      #d7f1fb 0%,
-      #94cee5 48%,
-      #5b9fbd 100%);
+
+  background: linear-gradient(
+    180deg,
+    #d7f1fb 0%,
+    #94cee5 48%,
+    #5b9fbd 100%
+  );
+
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.78),
     inset 0 -2px 0 rgba(31, 78, 101, 0.62),
@@ -81,6 +96,7 @@
   line-height: 1;
   text-align: center;
   vertical-align: -0.18em;
+
   text-shadow:
     0 1px 0 #000,
     0 0 8px rgba(145, 203, 227, 0.26);
@@ -91,7 +107,10 @@
   text-shadow: none;
 }
 
-/* Tab content */
+
+/* =========================================
+   TAB PANELS
+   ========================================= */
 
 .panel {
   display: none;
@@ -99,9 +118,13 @@
   border: 1px solid var(--steel-dark);
   border-top-color: var(--steel);
   border-radius: 4px;
-  background: linear-gradient(135deg,
-      rgba(31, 45, 56, 0.98),
-      rgba(12, 17, 23, 0.99));
+
+  background: linear-gradient(
+    135deg,
+    rgba(31, 45, 56, 0.98),
+    rgba(12, 17, 23, 0.99)
+  );
+
   box-shadow:
     inset 0 1px 0 rgba(207, 236, 248, 0.08),
     0 10px 30px var(--shadow);
@@ -109,10 +132,10 @@
 
 .panel.active {
   display: block;
-  animation: fade-in 0.2s ease;
+  animation: alchemy-fade-in 0.2s ease;
 }
 
-@keyframes fade-in {
+@keyframes alchemy-fade-in {
   from {
     opacity: 0;
     transform: translateY(5px);
@@ -124,7 +147,42 @@
   }
 }
 
-/* Alchemy checklist cards */
+
+/* =========================================
+   TABLE BEHAVIOR
+   Keep headers in normal document flow.
+   ========================================= */
+
+.panel table th {
+  position: static;
+  top: auto;
+  z-index: auto;
+}
+
+.panel table td {
+  overflow-wrap: break-word;
+}
+
+.panel table .recipe {
+  line-height: 1.5;
+}
+
+/* Preserve the main table's fourth-column width. */
+#healing table th:last-child {
+  min-width: 125px;
+}
+
+/* Hidden rows and groups must remain hidden. */
+.panel tbody[hidden],
+.panel tr[hidden],
+.panel .hidden-row {
+  display: none !important;
+}
+
+
+/* =========================================
+   CHECKLIST CARDS
+   ========================================= */
 
 .checklist {
   counter-reset: step;
@@ -157,13 +215,10 @@
   font-weight: bold;
 }
 
-/* Master-list search */
 
-.hidden-row {
-  display: none;
-}
-
-/* Nice-to-Haves button */
+/* =========================================
+   NICE-TO-HAVES BUTTONS
+   ========================================= */
 
 .nice-to-have-button {
   min-width: 106px;
@@ -177,12 +232,17 @@
   line-height: 1.2;
   white-space: nowrap;
   cursor: pointer;
-  background: linear-gradient(180deg,
-      rgba(77, 159, 195, 0.3),
-      rgba(25, 48, 63, 0.64));
+
+  background: linear-gradient(
+    180deg,
+    rgba(77, 159, 195, 0.3),
+    rgba(25, 48, 63, 0.64)
+  );
+
   box-shadow:
     inset 0 1px 0 rgba(225, 249, 255, 0.14),
     0 1px 3px rgba(0, 0, 0, 0.35);
+
   transition:
     color 0.15s ease,
     border-color 0.15s ease,
@@ -194,53 +254,73 @@
   transform: translateY(-1px);
   border-color: var(--frost-bright);
   color: #ffffff;
-  background: linear-gradient(180deg,
-      rgba(98, 187, 225, 0.46),
-      rgba(35, 79, 101, 0.76));
+
+  background: linear-gradient(
+    180deg,
+    rgba(98, 187, 225, 0.46),
+    rgba(35, 79, 101, 0.76)
+  );
 }
 
 .nice-to-have-button[aria-expanded="true"] {
   border-color: var(--nordic-gold);
   color: var(--nordic-gold-bright);
-  background: linear-gradient(180deg,
-      rgba(196, 168, 106, 0.34),
-      rgba(76, 60, 31, 0.75));
+
+  background: linear-gradient(
+    180deg,
+    rgba(196, 168, 106, 0.34),
+    rgba(76, 60, 31, 0.75)
+  );
 }
 
-/* Expanded optional ingredient details */
+.tab-button:focus-visible,
+.nice-to-have-button:focus-visible {
+  outline: 2px solid var(--frost-bright);
+  outline-offset: 4px;
+}
 
-.nice-to-have-row td {
+.nice-to-have-empty {
+  color: var(--muted-dark);
+  text-align: center;
+}
+
+
+/* =========================================
+   GENERAL OPTIONAL ROWS
+   Used by older single-row expansions.
+   ========================================= */
+
+.panel .nice-to-have-row > td {
   padding: 13px 14px;
   border-top: 1px solid rgba(196, 168, 106, 0.68);
   border-bottom: 1px solid rgba(196, 168, 106, 0.5);
   color: #ddd3bc;
   vertical-align: top;
+  line-height: 1.55;
+
   background: linear-gradient(
     90deg,
-    rgba(104, 79, 34, 0.42) 0%,
-    rgba(57, 46, 29, 0.58) 45%,
-    rgba(25, 32, 36, 0.66) 100%
-  ) !important;
+    rgba(104, 79, 34, 0.42),
+    rgba(57, 46, 29, 0.58),
+    rgba(25, 32, 36, 0.66)
+  );
 }
 
-.nice-to-have-row td:first-child {
+.panel .nice-to-have-row > td:first-child {
   border-left: 4px solid var(--nordic-gold);
-  color: var(--nordic-gold-bright);
-  font-weight: bold;
 }
 
 .nice-to-have-row .recipe {
   color: var(--frost-bright);
+  font-weight: bold;
 }
 
-.nice-to-have-row .nice-to-have-use {
-  color: #ddd3bc;
-  line-height: 1.5;
+.nice-to-have-use {
+  line-height: 1.55;
 }
 
-.nice-to-have-row .nice-to-have-empty-cell {
-  width: 1%;
-  background: rgba(0, 0, 0, 0.12) !important;
+.nice-to-have-content {
+  line-height: 1.6;
 }
 
 .nice-to-have-content strong {
@@ -251,10 +331,161 @@
   color: var(--frost-bright);
 }
 
-.nice-to-have-empty {
-  color: var(--muted-dark);
-  text-align: center;
+/* Empty final cells retain their row's background.
+   Do not assign widths here: they share the main table column. */
+.nice-to-have-empty-cell {
+  padding: 13px 14px;
 }
+
+
+/* =========================================
+   SHARED INGREDIENT POOLS
+   Applies to healing, regeneration,
+   and future groups using ingredient-pool.
+   ========================================= */
+
+.panel .ingredient-pool > tr > td {
+  padding: 13px 14px;
+  vertical-align: top;
+  line-height: 1.55;
+}
+
+/* Prevent old generated labels from appearing in every cell. */
+.ingredient-pool > tr > td::before {
+  content: none;
+  display: none;
+}
+
+
+/* =========================================
+   POOL LEGEND
+   ========================================= */
+
+.panel .ingredient-pool > .healing-legend-row > td {
+  border-top: 1px solid var(--steel);
+  border-bottom: 1px solid var(--steel-dark);
+  border-left: 4px solid var(--steel);
+  color: var(--muted);
+  font-weight: normal;
+  background: #202d38;
+}
+
+.healing-legend-row strong {
+  color: var(--frost-bright);
+}
+
+
+/* =========================================
+   GREEN: COMPATIBLE INGREDIENTS
+   Within the specified ingredient pool.
+   ========================================= */
+
+.panel .ingredient-pool > .ingredient-safe > td {
+  border-top: 1px solid #405f47;
+  border-bottom: 1px solid #405f47;
+  color: #dcebdd;
+  background: #20362a;
+}
+
+.panel .ingredient-pool > .ingredient-safe > td:first-child {
+  border-left: 4px solid #91b978;
+  color: #bce5ae;
+  font-weight: bold;
+}
+
+.ingredient-pool .ingredient-safe .recipe,
+.ingredient-pool .ingredient-safe .wiki-link,
+.ingredient-pool .ingredient-safe .ingredient-link {
+  color: #c8efbc;
+}
+
+
+/* =========================================
+   YELLOW: PAIRING WARNINGS
+   ========================================= */
+
+.panel .ingredient-pool > .ingredient-caution > td {
+  border-top: 1px solid #766431;
+  border-bottom: 1px solid #766431;
+  color: #eee2ba;
+  background: #3c341c;
+}
+
+.panel .ingredient-pool > .ingredient-caution > td:first-child {
+  border-left: 4px solid #e0bc58;
+  color: #ffe29a;
+  font-weight: bold;
+}
+
+.ingredient-pool .ingredient-caution strong,
+.ingredient-pool .ingredient-caution .recipe,
+.ingredient-pool .ingredient-caution .wiki-link,
+.ingredient-pool .ingredient-caution .ingredient-link {
+  color: #ffe29a;
+}
+
+
+/* =========================================
+   PURPLE: SPECIALTY RECIPES
+   ========================================= */
+
+.panel .ingredient-pool > .healing-specialty > td {
+  border-top: 2px solid #ad8bd2;
+  border-bottom: 1px solid #68507e;
+  color: #e6daef;
+  background: #30233e;
+}
+
+.panel .ingredient-pool > .healing-specialty > td:first-child {
+  border-left: 4px solid #ad8bd2;
+  color: #dfc5fa;
+  font-weight: bold;
+}
+
+.ingredient-pool .healing-specialty .recipe,
+.ingredient-pool .healing-specialty .wiki-link,
+.ingredient-pool .healing-specialty .ingredient-link {
+  color: #dfc5fa;
+}
+
+
+/* =========================================
+   INGREDIENT POOL LINKS
+   ========================================= */
+
+.ingredient-pool .wiki-link,
+.ingredient-pool .ingredient-link {
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.ingredient-pool .wiki-link:hover,
+.ingredient-pool .ingredient-link:hover {
+  color: #ffffff;
+}
+
+.ingredient-pool .wiki-link:focus-visible,
+.ingredient-pool .ingredient-link:focus-visible {
+  outline: 2px solid var(--frost-bright);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+
+/* =========================================
+   OFFICIAL DLC BADGE
+   ========================================= */
+
+.tag-dlc {
+  color: var(--nordic-gold-bright);
+  background: rgba(196, 168, 106, 0.12);
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 650px) {
   .category-nav {
@@ -263,6 +494,42 @@
 
   .tab-button {
     min-height: 72px;
+    padding: 10px 12px;
     font-size: 0.9rem;
+  }
+
+  .tab-icon {
+    width: 1.3rem;
+    margin-right: 5px;
+    font-size: 1.3rem;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .nice-to-have-button {
+    min-height: 40px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .panel.active {
+    animation: none;
+  }
+
+  .tab-button,
+  .nice-to-have-button {
+    transition: none;
+  }
+
+  .tab-button:hover,
+  .nice-to-have-button:hover {
+    transform: none;
   }
 }
