@@ -132,6 +132,44 @@
     // Alchemy ingredient also used in cooking
     { name: "Moon Sugar", page: "Moon_Sugar", type: "ingredient" },
 
+        // Additional travel rations
+    { name: "Apple Dumpling", page: "Food", type: "food" },
+    { name: "Cooked Pearlfish", page: "Food", type: "food" },
+    { name: "Cooked Angelfish", page: "Food", type: "food" },
+    { name: "Cooked Goldfish", page: "Food", type: "food" },
+    { name: "Cooked Glassfish", page: "Food", type: "food" },
+    { name: "Braided Bread", page: "Food", type: "food" },
+    { name: "Pheasant Roast", page: "Food", type: "food" },
+    { name: "Grilled Chicken Breast", page: "Food", type: "food" },
+    { name: "Jazbay Crostata", page: "Food", type: "food" },
+    { name: "Juniper Berry Crostata", page: "Food", type: "food" },
+    { name: "Snowberry Crostata", page: "Food", type: "food" },
+
+    // Additional stamina meals
+    { name: "Venison Stew", page: "Food", type: "food" },
+    { name: "Horker Stew", page: "Food", type: "food" },
+
+    // Additional cooking supplies
+    { name: "Salmon Meat", page: "Food", type: "food" },
+    { name: "Slaughterfish", page: "Food", type: "food" },
+    { name: "Raw Rabbit Leg", page: "Food", type: "food" },
+    { name: "Mudcrab Legs", page: "Food", type: "food" },
+    { name: "Bread", page: "Food", type: "food" },
+    { name: "Sack of Flour", page: "Food", type: "food" },
+    { name: "Green Apple", page: "Food", type: "food" },
+    { name: "Red Apple", page: "Food", type: "food" },
+    { name: "Pheasant Breast", page: "Food", type: "food" },
+    { name: "Chicken Breast", page: "Food", type: "food" },
+    { name: "Raw Beef", page: "Food", type: "food" },
+    { name: "Carrot", page: "Food", type: "food" },
+    { name: "Horker Meat", page: "Food", type: "food" },
+    { name: "Pearlfish", page: "Food", type: "food" },
+
+    // Additional alchemy ingredients also used in cooking
+    { name: "Goldfish", page: "Goldfish", type: "ingredient" },
+    { name: "Glassfish", page: "Glassfish", type: "ingredient" },
+    { name: "Lavender", page: "Lavender", type: "ingredient" },
+
     /*
      * Add other types here later:
      *
