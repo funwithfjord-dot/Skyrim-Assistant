@@ -41,21 +41,47 @@ if (masterSearch) {
     });
 }
 
-const niceToHaveButtons = document.querySelectorAll(".nice-to-have-button");
+// Nice-to-Haves: only one optional group open at a time.
+const niceToHaveButtons = document.querySelectorAll(
+    ".nice-to-have-button"
+);
+
+function setOptionalExpanded(button, expanded) {
+    const targetId = button.getAttribute("aria-controls");
+    const targetGroup = document.getElementById(targetId);
+
+    if (!targetGroup) {
+        return;
+    }
+
+    button.setAttribute("aria-expanded", String(expanded));
+    button.textContent = expanded ? "Optional −" : "Optional +";
+    targetGroup.hidden = !expanded;
+}
+
+// Start with all optional groups closed.
+niceToHaveButtons.forEach((button) => {
+    setOptionalExpanded(button, false);
+});
 
 niceToHaveButtons.forEach((button) => {
     button.addEventListener("click", () => {
         const targetId = button.getAttribute("aria-controls");
-        const targetRow = document.getElementById(targetId);
+        const targetGroup = document.getElementById(targetId);
 
-        if (!targetRow) {
+        if (!targetGroup) {
             return;
         }
 
-        const isOpen = button.getAttribute("aria-expanded") === "true";
+        // Remember the clicked group's state before closing all groups.
+        const shouldOpen = targetGroup.hidden;
 
-        button.setAttribute("aria-expanded", String(!isOpen));
-        button.textContent = isOpen ? "Optional +" : "Optional −";
-        targetRow.hidden = isOpen;
+        niceToHaveButtons.forEach((otherButton) => {
+            setOptionalExpanded(otherButton, false);
+        });
+
+        if (shouldOpen) {
+            setOptionalExpanded(button, true);
+        }
     });
 });
