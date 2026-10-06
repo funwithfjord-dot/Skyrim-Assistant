@@ -27,20 +27,6 @@ buttons.forEach((button) => {
     });
 });
 
-const masterSearch = document.getElementById("master-search");
-const masterRows = document.querySelectorAll("#master-table tbody tr");
-
-if (masterSearch) {
-    masterSearch.addEventListener("input", () => {
-        const query = masterSearch.value.trim().toLowerCase();
-
-        masterRows.forEach((row) => {
-            const rowText = row.textContent.toLowerCase();
-            row.classList.toggle("hidden-row", !rowText.includes(query));
-        });
-    });
-}
-
 // Nice-to-Haves: only one optional group open at a time.
 const niceToHaveButtons = document.querySelectorAll(
     ".nice-to-have-button"
