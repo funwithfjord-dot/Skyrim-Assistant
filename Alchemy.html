@@ -1842,13 +1842,14 @@
             </div>
         </section>
 
-        <!-- SURVIVAL FOOD & WARMTH -->
+        <!-- START: SURVIVAL FOOD & WARMTH -->
         <section id="survival" class="panel">
             <h2>Survival Food &amp; Warmth</h2>
 
             <p class="panel-intro">
-                Use food for hunger, sleep for fatigue, and warmth tools and shelter
-                for cold-weather travel.
+                Food, warmth tools, and rest for Survival Mode travel.
+                Open an options group to view complete cooking recipes.
+                Recipe options will be added as each entry is reviewed.
             </p>
 
             <div class="table-wrap">
@@ -1858,101 +1859,224 @@
                             <th scope="col">Goal</th>
                             <th scope="col">Food / Tool</th>
                             <th scope="col">Reason to Carry or Use</th>
-                            <th scope="col">Nice to Haves</th>
+                            <th scope="col">Options</th>
                         </tr>
                     </thead>
 
+                    <!-- START: COLD RECOVERY MAIN ROW -->
                     <tbody>
                         <tr>
                             <td>Cold recovery</td>
                             <td class="recipe">Hot Soup made with Fire Salts</td>
+
                             <td>
                                 <span class="tag tag-essential">Essential</span>
                                 Cold-weather recovery supply.
+                                Open the options group for complete hot-food recipes.
                             </td>
-                            <td>—</td>
+
+                            <td>
+                                <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                    aria-controls="options-survival-cold">
+                                    Optional +
+                                </button>
+                            </td>
                         </tr>
+                    </tbody>
+                    <!-- END: COLD RECOVERY MAIN ROW -->
+
+                    <!-- START: COLD RECOVERY OPTIONS -->
+                    <tbody id="options-survival-cold" class="ingredient-pool" hidden>
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Cold-recovery recipe options:</strong>
+                                Complete cooking recipes will be added here after review.
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: COLD RECOVERY OPTIONS -->
+
+                    <!-- START: EMERGENCY WARMTH MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Emergency warmth</td>
                             <td class="recipe">Torch</td>
-                            <td>Supplementary warmth; does not replace shelter or hot soup.</td>
-                            <td>—</td>
+
+                            <td>
+                                Supplementary warmth.
+                                Plan shelter stops and carry hot food for cold-weather routes.
+                            </td>
+
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- END: EMERGENCY WARMTH MAIN ROW -->
+
+                    <!-- START: LIGHT TRAVEL RATIONS MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Light travel rations</td>
+
                             <td class="recipe">
                                 Salmon Steak, Seared Slaughterfish,
                                 Rabbit Haunch, Steamed Mudcrab Legs
                             </td>
-                            <td>Useful cooked food for travel.</td>
-                            <td>—</td>
+
+                            <td>
+                                Cooked food for travel.
+                                Open the options group for complete ration recipes.
+                            </td>
+
+                            <td>
+                                <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                    aria-controls="options-survival-rations">
+                                    Optional +
+                                </button>
+                            </td>
                         </tr>
+                    </tbody>
+                    <!-- END: LIGHT TRAVEL RATIONS MAIN ROW -->
+
+                    <!-- START: LIGHT TRAVEL RATIONS OPTIONS -->
+                    <tbody id="options-survival-rations" class="ingredient-pool" hidden>
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Travel-ration recipe options:</strong>
+                                Complete cooking recipes will be added here after review.
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: LIGHT TRAVEL RATIONS OPTIONS -->
+
+                    <!-- START: LARGE MEAL MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Large meal / combat food</td>
                             <td class="recipe">Crab Stew</td>
-                            <td>A meal to consider before a dungeon.</td>
-                            <td>—</td>
+
+                            <td>
+                                A meal to consider before a dungeon.
+                            </td>
+
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- END: LARGE MEAL MAIN ROW -->
+
+                    <!-- START: STAMINA MEAL MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Stamina meal</td>
                             <td class="recipe">Vegetable Soup</td>
-                            <td>Sustained stamina support.</td>
-                            <td>—</td>
+
+                            <td>
+                                Sustained stamina support.
+                                Open the options group for complete stamina-meal recipes.
+                            </td>
+
+                            <td>
+                                <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                    aria-controls="options-survival-stamina">
+                                    Optional +
+                                </button>
+                            </td>
                         </tr>
+                    </tbody>
+                    <!-- END: STAMINA MEAL MAIN ROW -->
+
+                    <!-- START: STAMINA MEAL OPTIONS -->
+                    <tbody id="options-survival-stamina" class="ingredient-pool" hidden>
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Stamina-meal recipe options:</strong>
+                                Complete cooking recipes will be added here after review.
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: STAMINA MEAL OPTIONS -->
+
+                    <!-- START: COMBAT MEAL MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Combat meal</td>
                             <td class="recipe">Beef Stew</td>
-                            <td>Food preparation for extended activity.</td>
-                            <td>—</td>
+
+                            <td>
+                                Food preparation for extended activity.
+                                Open the options group for complete combat-meal recipes.
+                            </td>
+
+                            <td>
+                                <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                    aria-controls="options-survival-combat">
+                                    Optional +
+                                </button>
+                            </td>
                         </tr>
+                    </tbody>
+                    <!-- END: COMBAT MEAL MAIN ROW -->
+
+                    <!-- START: COMBAT MEAL OPTIONS -->
+                    <tbody id="options-survival-combat" class="ingredient-pool" hidden>
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Combat-meal recipe options:</strong>
+                                Complete cooking recipes will be added here after review.
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- END: COMBAT MEAL OPTIONS -->
+
+                    <!-- START: DISEASE UTILITY MEAL MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Disease utility meal</td>
                             <td class="recipe">Garlic Bread</td>
-                            <td>Disease treatment alongside hunger restoration.</td>
-                            <td>—</td>
+
+                            <td>
+                                Disease treatment alongside hunger restoration.
+                            </td>
+
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- END: DISEASE UTILITY MEAL MAIN ROW -->
+
+                    <!-- START: FATIGUE RECOVERY MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Fatigue recovery</td>
                             <td class="recipe">Sleep in a bed</td>
+
                             <td>
                                 <span class="tag tag-survival">Survival</span>
                                 Plan sleeping stops for long trips.
                             </td>
-                            <td>—</td>
+
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
+                    </tbody>
+                    <!-- END: FATIGUE RECOVERY MAIN ROW -->
+
+                    <!-- START: FOOD SAFETY MAIN ROW -->
+                    <tbody>
                         <tr>
                             <td>Food safety</td>
                             <td class="recipe">Cooked food</td>
+
                             <td>
                                 <span class="tag tag-danger">Avoid raw meat</span>
                                 Choose cooked travel supplies.
                             </td>
-                            <td>—</td>
+
+                            <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
+                    <!-- END: FOOD SAFETY MAIN ROW -->
                 </table>
             </div>
-
-            <div class="two-column">
-                <article class="card">
-                    <h3>Cold-Region Rule</h3>
-                    <p>
-                        Prioritize hot soup, warm equipment, and planned shelter stops
-                        over optional loot or duplicate equipment.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Before Leaving Town</h3>
-                    <ul>
-                        <li>Sleep before a long trip.</li>
-                        <li>Eat and replenish cooked food.</li>
-                        <li>Pack hot soup for cold routes.</li>
-                        <li>Restock healing and disease treatment.</li>
-                    </ul>
-                </article>
-            </div>
         </section>
+        <!-- END: SURVIVAL FOOD & WARMTH -->
 
         <!-- RESISTANCE & COMBAT BUFFS -->
         <section id="resistance" class="panel">
