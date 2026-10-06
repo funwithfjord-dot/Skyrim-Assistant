@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="A Skyrim Anniversary Edition and Survival Mode reference assistant."
+  />
+  <title>Skyrim Assistant</title>
+
+  <link rel="stylesheet" href="css/Site.css" />
+
+  <style>
+    .home-hero {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 28px;
+      padding: clamp(34px, 7vw, 78px) clamp(22px, 5vw, 72px);
+      border: 1px solid var(--steel-dark);
+      border-top-color: var(--steel);
+      border-radius: 4px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(109, 174, 203, 0.18), transparent 45%),
+        linear-gradient(
+          135deg,
+          rgba(30, 47, 59, 0.96),
+          rgba(10, 16, 21, 0.98)
+        );
+      box-shadow:
+        inset 0 1px 0 rgba(207, 236, 248, 0.11),
+        0 10px 30px var(--shadow);
+    }
+
+    .home-hero::before,
+    .home-hero::after {
+      position: absolute;
+      top: 50%;
+      color: rgba(145, 203, 227, 0.1);
+      font-family: "Segoe UI Symbol", "Noto Sans Runic", Georgia, serif;
+      font-size: clamp(7rem, 16vw, 15rem);
+      line-height: 1;
+      pointer-events: none;
+      transform: translateY(-50%);
+    }
+
+    .home-hero::before {
+      content: "ᛉ";
+      left: 4%;
+    }
+
+    .home-hero::after {
+      content: "ᛟ";
+      right: 4%;
+    }
+
+    .home-kicker {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 12px;
+      color: var(--nordic-gold-bright);
+      font-size: 0.82rem;
+      font-weight: bold;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px #000;
+    }
+
+    .home-hero h1 {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 14px;
+    }
+
+    .home-hero-copy {
+      position: relative;
+      z-index: 1;
+      max-width: 740px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.16rem);
+      line-height: 1.7;
+    }
+
+    .home-hero .content-status {
+      margin-top: 24px;
+    }
+
+    .home-section {
+      margin-top: 34px;
+    }
+
+    .home-section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(100, 125, 140, 0.42);
+    }
+
+    .home-section-heading h2 {
+      margin: 0;
+    }
+
+    .home-section-heading p {
+      max-width: 690px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+      text-align: right;
+    }
+
+    .assistant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 16px;
+    }
+
+    .assistant-card {
+      position: relative;
+      display: flex;
+      min-height: 245px;
+      flex-direction: column;
+      padding: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(100, 125, 140, 0.75);
+      border-radius: 4px;
+      color: var(--text);
+      text-decoration: none;
+      background: linear-gradient(
+        145deg,
+        rgba(49, 67, 79, 0.72),
+        rgba(11, 17, 22, 0.82)
+      );
+      box-shadow:
+        inset 0 1px 0 rgba(207, 236, 248, 0.06),
+        0 6px 16px rgba(0, 0, 0, 0.22);
+      transition:
+        transform 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease;
+    }
+
+    .assistant-card::before {
+      position: absolute;
+      top: 12px;
+      right: 18px;
+      color: rgba(145, 203, 227, 0.08);
+      font-family: "Segoe UI Symbol", "Noto Sans Runic", Georgia, serif;
+      font-size: 5.5rem;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .assistant-card:hover {
+      border-color: var(--frost);
+      background: linear-gradient(
+        145deg,
+        rgba(59, 87, 104, 0.83),
+        rgba(16, 29, 38, 0.92)
+      );
+      box-shadow:
+        inset 0 1px 0 rgba(207, 236, 248, 0.1),
+        0 0 18px rgba(145, 203, 227, 0.12),
+        0 9px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-4px);
+    }
+
+    .assistant-card.coming-soon {
+      cursor: default;
+      opacity: 0.77;
+    }
+
+    .assistant-card.coming-soon:hover {
+      border-color: rgba(100, 125, 140, 0.75);
+      background: linear-gradient(
+        145deg,
+        rgba(49, 67, 79, 0.72),
+        rgba(11, 17, 22, 0.82)
+      );
+      box-shadow:
+        inset 0 1px 0 rgba(207, 236, 248, 0.06),
+        0 6px 16px rgba(0, 0, 0, 0.22);
+      transform: none;
+    }
+
+    .assistant-card.alchemy::before {
+      content: "ᛃ";
+    }
+
+    .assistant-card.survival::before {
+      content: "ᛏ";
+    }
+
+    .assistant-card.crafting::before {
+      content: "ᛉ";
+    }
+
+    .assistant-card.character::before {
+      content: "ᛒ";
+    }
+
+    .assistant-card.reference::before {
+      content: "ᚱ";
+    }
+
+    .assistant-card.mods::before {
+      content: "ᛟ";
+      color: rgba(203, 174, 240, 0.11);
+    }
+
+    .card-rune {
+      position: relative;
+      z-index: 1;
+      display: inline-grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      margin-bottom: 16px;
+      border: 1px solid var(--frost);
+      border-radius: 2px;
+      color: var(--frost-bright);
+      font-family: "Segoe UI Symbol", "Noto Sans Runic", Georgia, serif;
+      font-size: 1.65rem;
+      background: rgba(77, 159, 195, 0.12);
+      box-shadow: 0 0 12px rgba(145, 203, 227, 0.08);
+    }
+
+    .assistant-card.mods .card-rune {
+      border-color: #cbaef0;
+      color: #dfc9fa;
+      background: rgba(154, 132, 202, 0.13);
+    }
+
+    .assistant-card h3 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 8px;
+      color: var(--frost-bright);
+      font-size: 1.35rem;
+    }
+
+    .assistant-card p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.58;
+    }
+
+    .card-footer {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    .card-action {
+      color: var(--nordic-gold-bright);
+      font-size: 0.86rem;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .card-arrow {
+      color: var(--frost);
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .coming-soon-label {
+      padding: 4px 8px;
+      border: 1px solid rgba(100, 125, 140, 0.7);
+      border-radius: 2px;
+      color: var(--muted-dark);
+      font-size: 0.7rem;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .quick-note {
+      margin-top: 26px;
+      padding: 16px 18px;
+      border: 1px solid rgba(100, 125, 140, 0.68);
+      border-left: 4px solid var(--nordic-gold);
+      border-radius: 3px;
+      color: var(--muted);
+      line-height: 1.6;
+      background: linear-gradient(
+        90deg,
+        rgba(196, 168, 106, 0.1),
+        rgba(12, 20, 27, 0.28)
+      );
+    }
+
+    .quick-note strong {
+      color: var(--nordic-gold-bright);
+    }
+
+    @media (max-width: 760px) {
+      .home-section-heading {
+        display: block;
+      }
+
+      .home-section-heading p {
+        margin-top: 8px;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-logo" href="index.html">
+        <span class="site-logo-rune" aria-hidden="true">ᛉ</span>
+        <span>Skyrim Assistant</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="Alchemy.html">Alchemy</a>
+        <span class="site-nav-placeholder">Survival</span>
+        <span class="site-nav-placeholder">Crafting</span>
+        <span class="site-nav-placeholder">Character</span>
+        <span class="site-nav-placeholder">Reference</span>
+        <span class="site-nav-placeholder mod-nav-link">Mods</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="home-hero" aria-labelledby="home-title">
+      <p class="home-kicker">A Field Journal for the Dragonborn</p>
+
+      <h1 id="home-title">Plan. Prepare. Survive.</h1>
+
+      <p class="home-hero-copy">
+        Build useful potion reserves, prepare for Survival Mode travel, track crafting goals,
+        and keep a clear divide between official Anniversary Edition content and your modded game.
+      </p>
+
+      <div class="content-status" aria-label="Supported content">
+        <span class="content-badge badge-vanilla">Vanilla</span>
+        <span class="content-badge badge-dlc">Official DLC</span>
+        <span class="content-badge badge-ae">Anniversary Creations</span>
+        <span class="content-badge badge-survival">Survival Mode</span>
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="assistant-tools-heading">
+      <div class="home-section-heading">
+        <h2 id="assistant-tools-heading">Assistant Sections</h2>
+
+        <p>
+          Choose a discipline to open a focused reference. Alchemy is currently the completed section.
+          The remaining categories are ready to become separate pages as the site expands.
+        </p>
+      </div>
+
+      <div class="assistant-grid">
+        <a class="assistant-card alchemy" href="Alchemy.html">
+          <span class="card-rune" aria-hidden="true">ᛃ</span>
+          <h3>Alchemy</h3>
+
+          <p>
+            Potions, poisons, ingredient stockpiles, Survival Mode food and warmth,
+            crafting brews, optional ingredient upgrades, and a searchable master list.
+          </p>
+
+          <div class="card-footer">
+            <span class="card-action">Open Alchemy</span>
+            <span class="card-arrow" aria-hidden="true">›</span>
+          </div>
+        </a>
+
+        <article class="assistant-card survival coming-soon">
+          <span class="card-rune" aria-hidden="true">ᛏ</span>
+          <h3>Survival</h3>
+
+          <p>
+            Cold, hunger, fatigue, food poisoning, disease, warmth, sleeping,
+            hot soup, travel preparation, and safe expedition planning.
+          </p>
+
+          <div class="card-footer">
+            <span class="coming-soon-label">Planned</span>
+            <span class="card-arrow" aria-hidden="true">›</span>
+          </div>
+        </article>
+
+        <article class="assistant-card crafting coming-soon">
+          <span class="card-rune" aria-hidden="true">⚒</span>
+          <h3>Crafting</h3>
+
+          <p>
+            Smithing, enchanting, farming, fishing, homes, material routes,
+            crafting loops, and official Anniversary Edition additions.
+          </p>
+
+          <div class="card-footer">
+            <span class="coming-soon-label">Planned</span>
+            <span class="card-arrow" aria-hidden="true">›</span>
+          </div>
+        </article>
+
+        <article class="assistant-card character coming-soon">
+          <span class="card-rune" aria-hidden="true">ᛒ</span>
+          <h3>Character</h3>
+
+          <p>
+            Build plans, skill priorities, perk paths, gear targets,
+            combat preparation, and progression notes for your playstyle.
+          </p>
+
+          <div class="card-footer">
+            <span class="coming-soon-label">Planned</span>
+            <span class="card-arrow" aria-hidden="true">›</span>
+          </div>
+        </article>
+
+        <article class="assistant-card reference coming-soon">
+          <span class="card-rune" aria-hidden="true">ᚱ</span>
+          <h3>Reference</h3>
+
+          <p>
+            A searchable journal for locations, enemies, materials, merchants,
+            quests, useful destinations, and quick gameplay facts.
+          </p>
+
+          <div class="card-footer">
+            <span class="coming-soon-label">Planned</span>
+            <span class="card-arrow" aria-hidden="true">›</span>
+          </div>
+        </article>
+
+        <article class="assistant-card mods coming-soon">
+          <span class="card-rune" aria-hidden="true">ᛟ</span>
+          <h3>Mods</h3>
+
+          <p>
+            Named mod-specific guides, compatibility notes, load-order reminders,
+            and mechanics that differ from the official game.
+          </p>
+
+          <div class="card-footer">
+            <span class="coming-soon-label">Planned</span>
+            <span class="card-arrow" aria-hidden="true">›</span>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <footer class="site-footer">
+      Skyrim Assistant · Built for Skyrim Anniversary Edition and Survival Mode.
+      Third-party mod content should always be identified separately from official game content.
+    </footer>
+  </main>
+</body>
+</html>

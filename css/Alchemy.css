@@ -1,0 +1,268 @@
+/* Category navigation */
+
+.category-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+  gap: 12px;
+  margin: 30px 0 22px;
+}
+
+.tab-button {
+  position: relative;
+  overflow: hidden;
+  min-height: 62px;
+  padding: 12px 16px;
+  border: 1px solid var(--steel-dark);
+  border-radius: 3px;
+  color: var(--steel-light);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  text-shadow: 0 1px 1px #000;
+  background: linear-gradient(180deg,
+      rgba(63, 80, 93, 0.96),
+      rgba(21, 29, 37, 0.98));
+  box-shadow:
+    inset 0 1px 0 rgba(232, 247, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.65),
+    0 4px 10px var(--shadow);
+  transition:
+    transform 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease,
+    background 0.16s ease;
+}
+
+.tab-button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 1px solid rgba(170, 189, 199, 0.11);
+  pointer-events: none;
+}
+
+.tab-button:hover {
+  transform: translateY(-2px);
+  border-color: var(--frost);
+  color: var(--frost-bright);
+  background: linear-gradient(180deg,
+      rgba(74, 103, 119, 0.98),
+      rgba(26, 41, 52, 0.99));
+  box-shadow:
+    inset 0 1px 0 rgba(232, 247, 255, 0.15),
+    0 0 15px rgba(145, 203, 227, 0.16),
+    0 4px 10px var(--shadow);
+}
+
+.tab-button.active {
+  border-color: var(--frost-bright);
+  color: #102029;
+  text-shadow: none;
+  background: linear-gradient(180deg,
+      #d7f1fb 0%,
+      #94cee5 48%,
+      #5b9fbd 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    inset 0 -2px 0 rgba(31, 78, 101, 0.62),
+    0 0 20px var(--frost-glow);
+}
+
+.tab-icon {
+  display: inline-block;
+  width: 1.65rem;
+  margin-right: 7px;
+  color: var(--frost);
+  font-family: "Segoe UI Symbol", "Noto Sans Runic", Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  vertical-align: -0.18em;
+  text-shadow:
+    0 1px 0 #000,
+    0 0 8px rgba(145, 203, 227, 0.26);
+}
+
+.tab-button.active .tab-icon {
+  color: #1b4c63;
+  text-shadow: none;
+}
+
+/* Tab content */
+
+.panel {
+  display: none;
+  padding: clamp(18px, 3vw, 32px);
+  border: 1px solid var(--steel-dark);
+  border-top-color: var(--steel);
+  border-radius: 4px;
+  background: linear-gradient(135deg,
+      rgba(31, 45, 56, 0.98),
+      rgba(12, 17, 23, 0.99));
+  box-shadow:
+    inset 0 1px 0 rgba(207, 236, 248, 0.08),
+    0 10px 30px var(--shadow);
+}
+
+.panel.active {
+  display: block;
+  animation: fade-in 0.2s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Alchemy checklist cards */
+
+.checklist {
+  counter-reset: step;
+  padding-left: 0;
+  list-style: none;
+}
+
+.checklist li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.checklist li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border: 1px solid var(--frost);
+  border-radius: 50%;
+  color: var(--frost-bright);
+  background: rgba(77, 159, 195, 0.14);
+  box-shadow: 0 0 8px rgba(145, 203, 227, 0.12);
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Master-list search */
+
+.hidden-row {
+  display: none;
+}
+
+/* Nice-to-Haves button */
+
+.nice-to-have-button {
+  min-width: 106px;
+  padding: 7px 10px;
+  border: 1px solid rgba(145, 203, 227, 0.6);
+  border-radius: 2px;
+  color: var(--frost-bright);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: bold;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  background: linear-gradient(180deg,
+      rgba(77, 159, 195, 0.3),
+      rgba(25, 48, 63, 0.64));
+  box-shadow:
+    inset 0 1px 0 rgba(225, 249, 255, 0.14),
+    0 1px 3px rgba(0, 0, 0, 0.35);
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.nice-to-have-button:hover {
+  transform: translateY(-1px);
+  border-color: var(--frost-bright);
+  color: #ffffff;
+  background: linear-gradient(180deg,
+      rgba(98, 187, 225, 0.46),
+      rgba(35, 79, 101, 0.76));
+}
+
+.nice-to-have-button[aria-expanded="true"] {
+  border-color: var(--nordic-gold);
+  color: var(--nordic-gold-bright);
+  background: linear-gradient(180deg,
+      rgba(196, 168, 106, 0.34),
+      rgba(76, 60, 31, 0.75));
+}
+
+/* Expanded optional ingredient details */
+
+.nice-to-have-row td {
+  padding: 13px 14px;
+  border-top: 1px solid rgba(196, 168, 106, 0.68);
+  border-bottom: 1px solid rgba(196, 168, 106, 0.5);
+  color: #ddd3bc;
+  vertical-align: top;
+  background: linear-gradient(
+    90deg,
+    rgba(104, 79, 34, 0.42) 0%,
+    rgba(57, 46, 29, 0.58) 45%,
+    rgba(25, 32, 36, 0.66) 100%
+  ) !important;
+}
+
+.nice-to-have-row td:first-child {
+  border-left: 4px solid var(--nordic-gold);
+  color: var(--nordic-gold-bright);
+  font-weight: bold;
+}
+
+.nice-to-have-row .recipe {
+  color: var(--frost-bright);
+}
+
+.nice-to-have-row .nice-to-have-use {
+  color: #ddd3bc;
+  line-height: 1.5;
+}
+
+.nice-to-have-row .nice-to-have-empty-cell {
+  width: 1%;
+  background: rgba(0, 0, 0, 0.12) !important;
+}
+
+.nice-to-have-content strong {
+  color: var(--nordic-gold-bright);
+}
+
+.nice-to-have-content .recipe {
+  color: var(--frost-bright);
+}
+
+.nice-to-have-empty {
+  color: var(--muted-dark);
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .category-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tab-button {
+    min-height: 72px;
+    font-size: 0.9rem;
+  }
+}

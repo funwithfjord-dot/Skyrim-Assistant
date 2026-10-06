@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Skyrim Anniversary Edition Survival Mode alchemy guide for potions, poisons, ingredients, food, and crafting." />
+    <title>Alchemy | Skyrim Assistant</title>
+
+    <link rel="stylesheet" href="css/Site.css" />
+    <link rel="stylesheet" href="css/Alchemy.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="site-logo" href="index.html">
+                <span class="site-logo-rune" aria-hidden="true">ᛉ</span>
+                <span>Skyrim Assistant</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="Alchemy.html">Alchemy</a>
+                <span class="site-nav-placeholder">Survival</span>
+                <span class="site-nav-placeholder">Crafting</span>
+                <span class="site-nav-placeholder">Character</span>
+                <span class="site-nav-placeholder">Reference</span>
+                <span class="site-nav-placeholder mod-nav-link">Mods</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <header class="page-header">
+            <p class="page-kicker">Survival Mode Field Reference</p>
+
+            <h1>Skyrim Alchemy</h1>
+
+            <p class="subtitle">
+                A practical reference for potions, poisons, food, warmth, ingredients,
+                crafting supplies, and optional recipe upgrades in Skyrim Anniversary Edition Survival Mode.
+            </p>
+
+            <div class="content-status" aria-label="Supported content">
+                <span class="content-badge badge-vanilla">Vanilla</span>
+                <span class="content-badge badge-dlc">Official DLC</span>
+                <span class="content-badge badge-ae">Anniversary Creations</span>
+                <span class="content-badge badge-survival">Survival Mode</span>
+            </div>
+
+            <div class="warning">
+                <strong>Official-content note:</strong>
+                Recipes marked <span class="tag tag-ae">AE / Rare Curios</span> use official
+                Anniversary Edition Creation content. Third-party mods can alter ingredient effects,
+                durations, magnitudes, and values.
+            </div>
+        </header>
+
+        <nav class="category-nav" aria-label="Alchemy categories">
+            <button class="tab-button active" data-target="core-kit">
+                <span class="tab-icon" aria-hidden="true">ᛉ</span>
+                Core Expedition Kit
+            </button>
+
+            <button class="tab-button" data-target="healing">
+                <span class="tab-icon" aria-hidden="true">✥</span>
+                Healing & Recovery
+            </button>
+
+            <button class="tab-button" data-target="survival">
+                <span class="tab-icon" aria-hidden="true">ᛏ</span>
+                Survival Food & Warmth
+            </button>
+
+            <button class="tab-button" data-target="resistance">
+                <span class="tab-icon" aria-hidden="true">ᛡ</span>
+                Resistance & Combat Buffs
+            </button>
+
+            <button class="tab-button" data-target="poisons">
+                <span class="tab-icon" aria-hidden="true">☠</span>
+                Poisons & Enemy Control
+            </button>
+
+            <button class="tab-button" data-target="crafting">
+                <span class="tab-icon" aria-hidden="true">⚒</span>
+                Crafting & Town Supplies
+            </button>
+
+            <button class="tab-button" data-target="ingredients">
+                <span class="tab-icon" aria-hidden="true">ᛒ</span>
+                Ingredient Stockpile
+            </button>
+
+            <button class="tab-button" data-target="master-list">
+                <span class="tab-icon" aria-hidden="true">ᚱ</span>
+                Full Master List
+            </button>
+        </nav>
+
+        <!-- CORE EXPEDITION KIT -->
+        <section id="core-kit" class="panel active">
+            <h2>Core Expedition Kit</h2>
+
+            <p class="panel-intro">
+                This is the standard loadout for a normal Survival Mode expedition. Increase the amount
+                of food, hot soup, healing, and disease cures for long trips, northern travel,
+                Solstheim, Dwemer ruins, or major dungeons.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Item / Recipe</th>
+                            <th>Suggested Carry Amount</th>
+                            <th>Why Carry It</th>
+                            <th>Nice to Haves</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Healing</td>
+                            <td class="recipe">Blue Mountain Flower + Wheat</td>
+                            <td>15–25</td>
+                            <td>Basic Restore Health potion. Essential because Survival Mode disables passive health
+                                regeneration.</td>
+                            <td>
+                                <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                    aria-controls="nice-core-healing">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr id="nice-core-healing" class="nice-to-have-row" hidden>
+                            <td colspan="5">
+                                <div class="nice-to-have-content">
+                                    <strong>Nice to haves:</strong>
+                                    Add <span class="recipe">Giant's Toe</span> for a premium
+                                    <strong>Restore Health + Fortify Health</strong> potion. Save the upgrade for bosses
+                                    and difficult expeditions rather than routine batches.
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Boss Healing</td>
+                            <td class="recipe">Blue Mountain Flower + Wheat + Giant's Toe</td>
+                            <td>3–6</td>
+                            <td>Premium Restore Health + Fortify Health potion for dragons, bosses, and emergencies.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magicka</td>
+                            <td class="recipe">Red Mountain Flower + Mora Tapinella</td>
+                            <td>5–10 for casters</td>
+                            <td>Restore Magicka. Fatigue makes natural Magicka recovery less reliable.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Stamina</td>
+                            <td class="recipe">Purple Mountain Flower + Thistle Branch</td>
+                            <td>5–10 for melee/archers</td>
+                            <td>Restore Stamina for sprinting, power attacks, bow use, and escape.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Disease</td>
+                            <td class="recipe">Cure Disease potion or Garlic Bread</td>
+                            <td>3–5</td>
+                            <td>Treat disease early. Creature-heavy caves and swamps are common infection sources.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cold Travel</td>
+                            <td class="recipe">Hot Soup</td>
+                            <td>5–10 in cold regions</td>
+                            <td>Reduces cold and adds warmth. Mandatory for northern mountains and Solstheim.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Hunger</td>
+                            <td class="recipe">Cooked travel food</td>
+                            <td>6–12 meals</td>
+                            <td>Maintains hunger and helps keep the Well Fed bonus active.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Escape</td>
+                            <td class="recipe">Nirnroot + Luna Moth Wing</td>
+                            <td>2–3</td>
+                            <td>Invisibility for stealth, retreat, breaking combat, or avoiding an unnecessary fight.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Control Poison</td>
+                            <td class="recipe">Canis Root + Imp Stool + Mora Tapinella</td>
+                            <td>5–10</td>
+                            <td>Paralysis plus Lingering Damage Health. One of the best emergency tools in the game.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Loot Recovery</td>
+                            <td class="recipe">Creep Cluster + Mora Tapinella + Scaly Pholiota</td>
+                            <td>2–4</td>
+                            <td>Fortify Carry Weight plus Fortify Stamina Regeneration for loot extraction.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Travel Tool</td>
+                            <td class="recipe">Torch</td>
+                            <td>1–2</td>
+                            <td>Adds warmth in Survival Mode. Useful as an emergency measure, but not a replacement for
+                                soup or shelter.</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- HEALING -->
+        <section id="healing" class="panel">
+            <h2>Healing & Recovery</h2>
+
+            <p class="panel-intro">
+                Survival Mode makes reliable healing, disease treatment, stamina restoration,
+                and carry-weight recovery much more valuable. Keep a large reserve of basic
+                health potions, then use specialized recipes for caves, long trips, water,
+                magic-heavy fights, and emergency recovery.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Effects</th>
+                            <th>Ingredients / Food</th>
+                            <th>Use Case</th>
+                            <th>Nice to Haves</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- FIRST HEALING ROW -->
+                        <tr>
+                            <td>Restore Health</td>
+                            <td class="recipe">Blue Mountain Flower + Wheat</td>
+                            <td>
+                                <span class="tag tag-essential">Essential</span>
+                                Basic, cheap, easy-to-source healing potion. Pick Blue Mountain Flowers while
+                                traveling and harvest or buy Wheat from farms. This should be your main bulk
+                                healing reserve in Survival Mode.
+                            </td>
+                            <td>
+                                <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                    aria-controls="nice-healing-basic">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr id="nice-healing-basic" class="nice-to-have-row" hidden>
+                            <td>Fortify Health</td>
+                            <td class="recipe">Giant's Toe</td>
+                            <td class="nice-to-have-use">
+                                Use when preparing for dragons, bosses, giant camps, or difficult expeditions.
+                                It upgrades the basic healing potion into a stronger emergency version.
+                            </td>
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Cure Disease + Restore Stamina + Resist Poison</td>
+                            <td class="recipe">Charred Skeever Hide + Mudcrab Chitin</td>
+                            <td>
+                                Best for Falmer, Chaurus, spiders, animal dens, poison traps, and swamp travel.
+                                Carry these when poison and disease are more likely than direct magical damage.
+                            </td>
+                            <td>
+                                <button class="nice-to-have-button" type="button" aria-expanded="false"
+                                    aria-controls="nice-healing-poison-defense">
+                                    Optional +
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr id="nice-healing-poison-defense" class="nice-to-have-row" hidden>
+                            <td colspan="4">
+                                <div class="nice-to-have-content">
+                                    <strong>Nice to haves:</strong>
+                                    Add <span class="recipe">Felsaad Tern Feathers</span> for
+                                    <strong>Restore Health</strong>. This turns it into an excellent full
+                                    creature-cave recovery potion, though the feathers are best saved for
+                                    dedicated healing and disease batches when your supply is low.
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Cure Disease + Restore Health + Restore Stamina + Resist Magic</td>
+                            <td class="recipe">Charred Skeever Hide + Felsaad Tern Feathers + Wisp Wrappings</td>
+                            <td>
+                                Premium all-purpose expedition potion. Especially valuable before mage dens,
+                                dragon priest ruins, difficult tombs, or long travel away from towns.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cure Disease + Restore Health + Restore Stamina + Resist Poison</td>
+                            <td class="recipe">Charred Skeever Hide + Felsaad Tern Feathers + Mudcrab Chitin</td>
+                            <td>
+                                Premium creature-cave recovery potion. Excellent for Chaurus nests, Falmer
+                                ruins, spider caves, swamps, and other poison-heavy locations.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Restore Magicka</td>
+                            <td class="recipe">Red Mountain Flower + Mora Tapinella</td>
+                            <td>
+                                Straightforward caster recovery potion. Keep a larger reserve if your
+                                build relies on spells or staff charges during long Survival Mode trips.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Magicka + Regenerate Magicka</td>
+                            <td class="recipe">Salmon Roe + Jazbay Grapes</td>
+                            <td>
+                                Use shortly before a demanding spell sequence. This is a preparation potion,
+                                not a substitute for instant Restore Magicka during combat.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Restore Stamina</td>
+                            <td class="recipe">Purple Mountain Flower + Thistle Branch</td>
+                            <td>
+                                Reliable supply for sprinting, power attacks, archery, carrying loot,
+                                and escaping dangerous fights.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Waterbreathing + Fortify Magicka</td>
+                            <td class="recipe">Salmon Roe + Nordic Barnacle</td>
+                            <td>
+                                Carry for submerged ruins, shipwrecks, deep-water treasure, and long dives.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Restore Stamina + Waterbreathing + Fortify Magicka</td>
+                            <td class="recipe">Salmon Roe + Histcarp</td>
+                            <td>
+                                Useful for diving, swimming, sprinting after surfacing, and unexpected
+                                encounters near water.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Carry Weight + Fortify Stamina Regeneration</td>
+                            <td class="recipe">Creep Cluster + Mora Tapinella + Scaly Pholiota</td>
+                            <td>
+                                <span class="tag tag-survival">Survival</span>
+                                Keep for loot extraction, Dwemer ruins, dragon bones, and long overland returns
+                                where fast travel is unavailable.
+                            </td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SURVIVAL -->
+        <section id="survival" class="panel">
+            <h2>Survival Food & Warmth</h2>
+
+            <p class="panel-intro">
+                Potions do not solve hunger, fatigue, or cold. Eat cooked food for hunger, sleep in a
+                bed for fatigue, and use hot soup, fires, shelter, torches, and warm armor to survive cold regions.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Goal</th>
+                            <th>Food / Tool</th>
+                            <th>Reason to Carry or Use</th>
+                            <th>Nice to Haves</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Cold recovery</td>
+                            <td class="recipe">Hot Soup made with Fire Salts</td>
+                            <td><span class="tag tag-essential">Essential</span> Restores warmth and reduces cold.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Emergency warmth</td>
+                            <td class="recipe">Torch</td>
+                            <td>Provides warmth while traveling, but does not replace shelter or hot soup.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Most hunger per weight</td>
+                            <td class="recipe">Salmon Steak, Seared Slaughterfish, Rabbit Haunch, Steamed Mudcrab Legs
+                            </td>
+                            <td>Light travel rations that restore substantial hunger while weighing very little.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Large meal / combat food</td>
+                            <td class="recipe">Crab Stew</td>
+                            <td>High hunger restoration and long-duration health/stamina regeneration benefits.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Stamina meal</td>
+                            <td class="recipe">Vegetable Soup</td>
+                            <td>Useful sustained Stamina regeneration for travel and repeated power attacks.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Health + stamina meal</td>
+                            <td class="recipe">Beef Stew</td>
+                            <td>Useful before extended combat or a difficult dungeon section.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Disease utility meal</td>
+                            <td class="recipe">Garlic Bread</td>
+                            <td>Cures disease while also restoring hunger.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fatigue recovery</td>
+                            <td class="recipe">Sleep in a bed</td>
+                            <td><span class="tag tag-survival">Survival</span> The real answer to fatigue.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Food safety</td>
+                            <td class="recipe">Cooked food</td>
+                            <td><span class="tag tag-danger">Avoid raw meat</span> Raw meat and seafood can cause Food
+                                Poisoning.</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="two-column">
+                <article class="card">
+                    <h3>Cold-Region Rule</h3>
+                    <p>
+                        Before traveling north, bring hot soup before carrying extra vendor loot or optional buff
+                        potions. A torch buys time, but a fire, forge, cave, inn, home, or indoor location is
+                        the reliable reset.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Before Leaving Town</h3>
+                    <ul>
+                        <li>Sleep first to remove fatigue penalties.</li>
+                        <li>Eat until Well Fed.</li>
+                        <li>Cook food and hot soup for the intended route.</li>
+                        <li>Carry disease cures before heading to swamps, caves, or creature dens.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- RESISTANCE -->
+        <section id="resistance" class="panel">
+            <h2>Resistance & Combat Buffs</h2>
+
+            <p class="panel-intro">
+                Carry buffs for the threats you actually expect. In Survival Mode, it is usually better
+                to bring the correct few potions than to haul every possible resistance potion.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Threat / Job</th>
+                            <th>Ingredients</th>
+                            <th>Effect</th>
+                            <th>Best Use</th>
+                            <th>Nice to Haves</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Fire dragons / fire mages</td>
+                            <td class="recipe">Snowberries + Dragon's Tongue</td>
+                            <td>Resist Fire</td>
+                            <td>Fire dragons, Ash Spawn, fire mage dens, Flame Atronachs.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Frost dragons / ice mages</td>
+                            <td class="recipe">Snowberries + Thistle Branch</td>
+                            <td>Resist Frost</td>
+                            <td>Northern travel, frost dragons, frost mages, ice caves.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Shock mages / Dwemer</td>
+                            <td class="recipe">Snowberries + Swamp Fungal Pod</td>
+                            <td>Resist Shock</td>
+                            <td>Dwemer ruins, Storm Atronachs, mage encounters.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mixed elemental threats</td>
+                            <td class="recipe">Snowberries + Hawk Beak + Dragon's Tongue</td>
+                            <td>Resist Fire + Frost + Shock</td>
+                            <td>Unknown threats, dragon hunts, and mixed mage groups.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>General magic defense</td>
+                            <td class="recipe">Tundra Cotton + Void Salts</td>
+                            <td>Resist Magic</td>
+                            <td><span class="tag tag-essential">Essential</span> Dragon priests, warlocks, mage bosses,
+                                and magical traps.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Shield defense</td>
+                            <td class="recipe">Tundra Cotton + Bleeding Crown</td>
+                            <td>Fortify Block</td>
+                            <td>Hard melee fights for shield-based characters.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>One-handed damage</td>
+                            <td class="recipe">Bear Claws + Canis Root</td>
+                            <td>Fortify One-handed</td>
+                            <td>Bosses and difficult melee encounters.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Two-handed damage</td>
+                            <td class="recipe">Dragon's Tongue + Fly Amanita</td>
+                            <td>Fortify Two-handed</td>
+                            <td>Two-handed boss damage burst.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Archery damage</td>
+                            <td class="recipe">Canis Root + Elves Ear</td>
+                            <td>Fortify Archery</td>
+                            <td>Dragons, giants, dragon priests, or a difficult opening shot.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Stealth</td>
+                            <td class="recipe">Abecean Longfin + Frost Mirriam</td>
+                            <td>Fortify Sneak</td>
+                            <td>Stealth approach, heist, scouting, or avoiding combat.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lockpicking</td>
+                            <td class="recipe">Falmer Ear + Namira's Rot</td>
+                            <td>Fortify Lockpicking</td>
+                            <td>Only carry when you expect difficult locks; otherwise store at home.</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- POISONS -->
+        <section id="poisons" class="panel">
+            <h2>Poisons & Enemy Control</h2>
+
+            <p class="panel-intro">
+                In Survival Mode, poisons are often more valuable than raw damage buffs because they can
+                stop an enemy long enough for you to heal, retreat, reload, reposition, or escape.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Purpose</th>
+                            <th>Ingredients</th>
+                            <th>Effects</th>
+                            <th>Practical Use</th>
+                            <th>Nice to Haves</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Best universal control poison</td>
+                            <td class="recipe">Canis Root + Imp Stool + Mora Tapinella</td>
+                            <td>Paralysis + Lingering Damage Health</td>
+                            <td><span class="tag tag-essential">Essential</span> Use on bosses, dangerous melee targets,
+                                or surprise threats.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cheaper paralysis</td>
+                            <td class="recipe">Canis Root + Imp Stool</td>
+                            <td>Paralysis</td>
+                            <td>Great standard control poison when you want to save Mora Tapinella.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Slow</td>
+                            <td class="recipe">Deathbell + Salt Pile</td>
+                            <td>Slow</td>
+                            <td>Sabre cats, charging melee enemies, and fast targets.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Basic damage health</td>
+                            <td class="recipe">Imp Stool + Skeever Tail</td>
+                            <td>Damage Health</td>
+                            <td>Cheap early-game poison for routine weapon use.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Premium damage poison</td>
+                            <td class="recipe">Chokeberry + Deathbell</td>
+                            <td>Damage Health + Weakness to Poison</td>
+                            <td><span class="tag tag-ae">AE / Rare Curios</span> Strong against high-health targets.
+                            </td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lingering damage poison</td>
+                            <td class="recipe">Chokeberry + Mora Tapinella</td>
+                            <td>Lingering Damage Health</td>
+                            <td><span class="tag tag-ae">AE / Rare Curios</span> Apply, disengage, and let the effect
+                                work.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Enemy infighting</td>
+                            <td class="recipe">Hagraven Feathers + Troll Fat</td>
+                            <td>Frenzy</td>
+                            <td>Strong against groups that can turn on one another.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magic-damage setup</td>
+                            <td class="recipe">Dreugh Wax + Weakness to Magic partner</td>
+                            <td>Weakness to Magic</td>
+                            <td><span class="tag tag-ae">AE / Rare Curios</span> Apply before a destruction magic burst.
+                            </td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Recommended Weapon Poison Stack</h3>
+                <ul>
+                    <li>5–10 <strong>Canis Root + Imp Stool + Mora Tapinella</strong> paralysis poisons.</li>
+                    <li>5 <strong>Deathbell + Salt Pile</strong> slow poisons.</li>
+                    <li>Optional premium stack: <strong>Chokeberry + Deathbell</strong> for tough enemies.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CRAFTING -->
+        <section id="crafting" class="panel">
+            <h2>Crafting & Town Supplies</h2>
+
+            <p class="panel-intro">
+                Keep these ingredients and potions at home, then brew or use them immediately before a
+                focused crafting, merchant, or pickpocketing session. They are useful, but generally do
+                not deserve permanent weight in your dungeon inventory.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Effects</th>
+                            <th>Ingredients</th>
+                            <th>Notes</th>
+                            <th>Nice to Haves</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Fortify Enchanting</td>
+                            <td class="recipe">Blue Butterfly Wing + Snowberries</td>
+                            <td>Drink immediately before enchanting equipment.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Smithing</td>
+                            <td class="recipe">Blisterwort + Glowing Mushroom</td>
+                            <td>Drink immediately before improving weapons and armor.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Enchanting + Fortify Smithing</td>
+                            <td class="recipe">Dreugh Wax + Gold Kanet + Stoneflower Petals</td>
+                            <td><span class="tag tag-ae">AE / Rare Curios</span> Premium dual-crafting potion.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Barter</td>
+                            <td class="recipe">Dragon's Tongue + Tundra Cotton</td>
+                            <td>Drink before selling expensive dungeon loot or buying costly supplies.</td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Pickpocket</td>
+                            <td class="recipe">Blue Dartwing + Orange Dartwing</td>
+                            <td>Useful for a focused theft attempt, quest target, or high-value pickpocket.</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- INGREDIENTS -->
+        <section id="ingredients" class="panel">
+            <h2>Ingredient Stockpile</h2>
+
+            <p class="panel-intro">
+                If you want an organized alchemy chest system, separate common renewable ingredients
+                from premium materials that should not be casually sold or used in random recipes.
+            </p>
+
+            <div class="two-column">
+                <article class="card">
+                    <h3>Grow, Harvest, or Buy Constantly</h3>
+                    <ul>
+                        <li>Blue Mountain Flower</li>
+                        <li>Wheat</li>
+                        <li>Purple Mountain Flower</li>
+                        <li>Red Mountain Flower</li>
+                        <li>Thistle Branch</li>
+                        <li>Snowberries</li>
+                        <li>Dragon's Tongue</li>
+                        <li>Mora Tapinella</li>
+                        <li>Creep Cluster</li>
+                        <li>Scaly Pholiota</li>
+                        <li>Blisterwort</li>
+                        <li>Glowing Mushroom</li>
+                        <li>Canis Root</li>
+                        <li>Imp Stool</li>
+                        <li>Deathbell</li>
+                        <li>Swamp Fungal Pod</li>
+                        <li>Tundra Cotton</li>
+                        <li>Salt Pile</li>
+                        <li>Garlic</li>
+                        <li>Fire Salts</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Save for Special Use</h3>
+                    <ul>
+                        <li>Giant's Toe</li>
+                        <li>Salmon Roe</li>
+                        <li>Nordic Barnacle</li>
+                        <li>Jazbay Grapes</li>
+                        <li>Histcarp</li>
+                        <li>Luna Moth Wing</li>
+                        <li>Nirnroot</li>
+                        <li>Void Salts</li>
+                        <li>Charred Skeever Hide</li>
+                        <li>Felsaad Tern Feathers</li>
+                        <li>Hawk Feathers</li>
+                        <li>Mudcrab Chitin</li>
+                        <li>Hawk Beak</li>
+                        <li>Elves Ear</li>
+                        <li>Abecean Longfin</li>
+                        <li>Frost Mirriam</li>
+                        <li>Bleeding Crown</li>
+                        <li>Bear Claws</li>
+                        <li>Hagraven Feathers</li>
+                        <li>Troll Fat</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>AE / Rare Curios Premium Stock</h3>
+                    <ul>
+                        <li>Chokeberry</li>
+                        <li>Dreugh Wax</li>
+                        <li>Gold Kanet</li>
+                        <li>Stoneflower Petals</li>
+                        <li>Bittergreen Petals</li>
+                        <li>Blister Pod Cap</li>
+                        <li>Void Essence</li>
+                        <li>Fungus Stalk</li>
+                        <li>Ambrosia</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Cooking Materials to Protect</h3>
+                    <ul>
+                        <li>Fire Salts for hot soups</li>
+                        <li>Salt Piles for cooking</li>
+                        <li>Garlic for Garlic Bread</li>
+                        <li>Cooked fish and meat for travel rations</li>
+                        <li>Crab Meat for Crab Stew</li>
+                        <li>Vegetables for Vegetable Soup</li>
+                        <li>Beef and vegetables for Beef Stew</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- MASTER LIST -->
+        <section id="master-list" class="panel">
+            <h2>Full Master List</h2>
+
+            <p class="panel-intro">
+                Search the complete reference by potion effect, ingredient, destination, or use.
+                For example, search for <em>Frost</em>, <em>Paralysis</em>, <em>Chokeberry</em>,
+                <em>Healing</em>, or <em>Dwemer</em>.
+            </p>
+
+            <div class="search-row">
+                <input id="master-search" type="search" placeholder="Search recipes, ingredients, effects, or uses..."
+                    aria-label="Search master list" />
+            </div>
+
+            <div class="table-wrap">
+                <table id="master-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Recipe / Item</th>
+                            <th>Effects</th>
+                            <th>Best Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Healing</td>
+                            <td class="recipe">Blue Mountain Flower + Wheat</td>
+                            <td>Restore Health</td>
+                            <td>Everyday emergency healing</td>
+                            <td>Cheap, common, and easy to stockpile in Survival Mode.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Healing</td>
+                            <td class="recipe">Blue Mountain Flower + Wheat + Giant's Toe</td>
+                            <td>Restore Health + Fortify Health</td>
+                            <td>Bosses, dragons, giant camps</td>
+                            <td>Premium version of the basic healing potion.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Disease Recovery</td>
+                            <td class="recipe">Charred Skeever Hide + Felsaad Tern Feathers</td>
+                            <td>Restore Health + Cure Disease</td>
+                            <td>Creature caves, swamps, and disease-risk travel</td>
+                            <td>Useful specialized recovery potion.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison / Disease Defense</td>
+                            <td class="recipe">Charred Skeever Hide + Mudcrab Chitin</td>
+                            <td>Cure Disease + Restore Stamina + Resist Poison</td>
+                            <td>Falmer, Chaurus, spiders, poison traps, and swamps</td>
+                            <td>Creature-cave preparation potion.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magicka</td>
+                            <td class="recipe">Red Mountain Flower + Mora Tapinella</td>
+                            <td>Restore Magicka</td>
+                            <td>Spellcasting recovery</td>
+                            <td>Easy general-use recipe.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magicka</td>
+                            <td class="recipe">Salmon Roe + Jazbay Grapes</td>
+                            <td>Fortify Magicka + Regenerate Magicka</td>
+                            <td>Pre-fight caster buff</td>
+                            <td>Premium Salmon Roe use.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Stamina</td>
+                            <td class="recipe">Purple Mountain Flower + Thistle Branch</td>
+                            <td>Restore Stamina</td>
+                            <td>Sprinting, power attacks, archery</td>
+                            <td>Useful for non-casters.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Water</td>
+                            <td class="recipe">Salmon Roe + Nordic Barnacle</td>
+                            <td>Waterbreathing + Fortify Magicka</td>
+                            <td>Underwater ruins and shipwrecks</td>
+                            <td>Long Waterbreathing utility.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Carry Weight</td>
+                            <td class="recipe">Creep Cluster + Mora Tapinella + Scaly Pholiota</td>
+                            <td>Fortify Carry Weight + Fortify Stamina Regeneration</td>
+                            <td>Loot extraction</td>
+                            <td>Especially valuable without fast travel.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Invisibility</td>
+                            <td class="recipe">Nirnroot + Luna Moth Wing</td>
+                            <td>Invisibility</td>
+                            <td>Stealth, escape, repositioning</td>
+                            <td>Carry a few, not dozens.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fire Resistance</td>
+                            <td class="recipe">Snowberries + Dragon's Tongue</td>
+                            <td>Resist Fire</td>
+                            <td>Fire dragons and fire mages</td>
+                            <td>Bring for specific threats.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Frost Resistance</td>
+                            <td class="recipe">Snowberries + Thistle Branch</td>
+                            <td>Resist Frost</td>
+                            <td>Frost dragons and ice mages</td>
+                            <td>Useful alongside cold-weather planning.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Shock Resistance</td>
+                            <td class="recipe">Snowberries + Swamp Fungal Pod</td>
+                            <td>Resist Shock</td>
+                            <td>Dwemer ruins and shock mages</td>
+                            <td>Good for automatons and mage ruins.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magic Resistance</td>
+                            <td class="recipe">Tundra Cotton + Void Salts</td>
+                            <td>Resist Magic</td>
+                            <td>Dragon priests and mage bosses</td>
+                            <td>High-priority rare-use potion.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Paralysis Poison</td>
+                            <td class="recipe">Canis Root + Imp Stool + Mora Tapinella</td>
+                            <td>Paralysis + Lingering Damage Health</td>
+                            <td>Bosses and dangerous enemies</td>
+                            <td>Best general control poison.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Slow Poison</td>
+                            <td class="recipe">Deathbell + Salt Pile</td>
+                            <td>Slow</td>
+                            <td>Fast melee enemies</td>
+                            <td>Good for sabre cats and chargers.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Damage Poison</td>
+                            <td class="recipe">Imp Stool + Skeever Tail</td>
+                            <td>Damage Health</td>
+                            <td>Routine early-game poison</td>
+                            <td>Cheap and easy to make.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Enchanting</td>
+                            <td class="recipe">Blue Butterfly Wing + Snowberries</td>
+                            <td>Fortify Enchanting</td>
+                            <td>Enchanting sessions</td>
+                            <td>Use in town, then store leftovers.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Smithing</td>
+                            <td class="recipe">Blisterwort + Glowing Mushroom</td>
+                            <td>Fortify Smithing</td>
+                            <td>Improving equipment</td>
+                            <td>Use immediately before smithing.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortify Barter</td>
+                            <td class="recipe">Dragon's Tongue + Tundra Cotton</td>
+                            <td>Fortify Barter</td>
+                            <td>Merchant selling and expensive purchases</td>
+                            <td>Town-only utility potion.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Survival Food</td>
+                            <td class="recipe">Hot Soup + Fire Salts</td>
+                            <td>Warmth / Cold Recovery</td>
+                            <td>Winterhold, Dawnstar, mountains, Solstheim</td>
+                            <td>Core cold-weather survival supply.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Survival Food</td>
+                            <td class="recipe">Crab Stew</td>
+                            <td>Hunger + Health/Stamina regeneration</td>
+                            <td>Pre-dungeon meal</td>
+                            <td>High-value meal when available.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Survival Food</td>
+                            <td class="recipe">Vegetable Soup</td>
+                            <td>Stamina regeneration</td>
+                            <td>Travel and repeated power attacks</td>
+                            <td>Excellent practical meal.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Survival Food</td>
+                            <td class="recipe">Beef Stew</td>
+                            <td>Health + Stamina regeneration</td>
+                            <td>Extended combat</td>
+                            <td>Good pre-fight food.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            Skyrim Assistant · Alchemy Reference · Vanilla, official DLC, Anniversary Creations, and Survival Mode.
+            Third-party mod content should always be identified separately.
+        </footer>
+    </main>
+
+    <script src="js/Alchemy.js"></script>
+</body>
+
+</html>
