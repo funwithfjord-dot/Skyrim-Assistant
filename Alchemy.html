@@ -3047,16 +3047,348 @@
                     </tbody>
                     <!-- END: RESISTANCE MAGIC OPTIONS -->
 
-                    <!-- START: FIRE DEFENSE MAIN ROW -->
+                    <!-- START: FIRE RESISTANCE MAIN ROW -->
                     <tbody>
                         <tr>
-                            <td>Fire damage</td>
-                            <td class="recipe">Snowberries + Dragon's Tongue</td>
                             <td>Resist Fire</td>
-                            <td class="nice-to-have-empty">—</td>
+
+                            <td class="recipe">
+                                Snowberries + Dragon's Tongue
+                            </td>
+
+                            <td>
+                                Fire protection against fire dragons and fire casters.
+                                Complements Resist Magic.
+                                Open the ingredient pool for substitutes, pairing warnings,
+                                and specialty combinations.
+                            </td>
+
+                            <td>
+                                <button aria-controls="nice-resistance-fire" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
+                                    Optional +
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
-                    <!-- #END: FIRE DEFENSE MAIN ROW -->
+                    <!-- END: FIRE RESISTANCE MAIN ROW -->
+
+                    <!-- START: RESISTANCE FIRE OPTIONS -->
+                    <tbody class="ingredient-pool" hidden id="nice-resistance-fire">
+                        <!-- START: FIRE RESISTANCE LEGEND -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Fire resistance ingredient pool:</strong>
+                                Combine two different ingredients from the ingredient rows below.
+                                Every ingredient in this pool provides Resist Fire.
+                                Green means no harmful shared effects with other ingredients
+                                in this listed pool. Yellow identifies pairings to avoid.
+                                Purple rows are complete specialty recipes.
+                                Ingredients appearing only in purple recipes are not interchangeable
+                                pool ingredients.
+                                Add a third ingredient only when it improves magnitude,
+                                duration, or useful effects.
+                            </td>
+                        </tr>
+                        <!-- END: FIRE RESISTANCE LEGEND -->
+
+                        <!-- START: SNOWBERRIES -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Snowberries</td>
+
+                            <td class="nice-to-have-use">
+                                Gather from snowberry bushes while traveling through snowy regions.
+                                Keep a separate reserve for baking.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: SNOWBERRIES -->
+
+                        <!-- START: DRAGON'S TONGUE -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Dragon's Tongue</td>
+
+                            <td class="nice-to-have-use">
+                                Gather flowers while traveling or grow your own.
+                                Fly Amanita also adds Fortify Two-handed.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: DRAGON'S TONGUE -->
+
+                        <!-- START: FLY AMANITA -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Fly Amanita</td>
+
+                            <td class="nice-to-have-use">
+                                Gather mushrooms while exploring or grow your own.
+                                Dragon's Tongue also adds Fortify Two-handed.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: FLY AMANITA -->
+
+                        <!-- START: MUDCRAB CHITIN -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Mudcrab Chitin</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from defeated mudcrabs near rivers, lakes, and coastal waters.
+                                Keep as an alternative to plant ingredients.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: MUDCRAB CHITIN -->
+
+                        <!-- START: ASHEN GRASS POD -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Ashen Grass Pod</td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                Harvest Spiky Grass.
+                                Enhances Resist Fire strength and duration.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: ASHEN GRASS POD -->
+
+                        <!-- START: SPAWN ASH -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Spawn Ash</td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                Save loot from defeated ash spawn.
+                                Treat as encounter supplies rather than a gathering staple.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: SPAWN ASH -->
+
+                        <!-- START: BONE MEAL -->
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Bone Meal</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated skeletons.
+                                <strong>Avoid Ash Creep Cluster:</strong>
+                                this pairing adds Damage Stamina.
+                                Snowberries or Dragon's Tongue is a clean pairing.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: BONE MEAL -->
+
+                        <!-- START: ASH CREEP CLUSTER -->
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Ash Creep Cluster</td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                Gather ash creep clusters.
+                                <strong>Avoid Bone Meal:</strong>
+                                this pairing adds Damage Stamina.
+                                Snowberries or Dragon's Tongue is a clean pairing.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: ASH CREEP CLUSTER -->
+
+                        <!-- START: ELVES EAR -->
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Elves Ear</td>
+
+                            <td class="nice-to-have-use">
+                                Collect dried Elves Ear hanging in kitchens.
+                                <strong>Avoid Fire Salts:</strong>
+                                this pairing adds Weakness to Frost, alongside Restore Magicka.
+                                Snowberries or Dragon's Tongue is a clean pairing.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: ELVES EAR -->
+
+                        <!-- START: FIRE SALTS -->
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Resist Fire</td>
+
+                            <td class="recipe">Fire Salts</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated flame atronachs.
+                                <strong>Avoid Elves Ear:</strong>
+                                this pairing adds Weakness to Frost, alongside Restore Magicka.
+                                Keep a separate reserve for hot-food recipes.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: FIRE SALTS -->
+
+                        <!-- START: ENHANCED FIRE RESISTANCE -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Enhanced Resist Fire</td>
+
+                            <td class="recipe">
+                                Snowberries + Ashen Grass Pod
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                A two-ingredient fire-resistance potion.
+                                Ashen Grass Pod enhances the resistance strength and duration.
+                                A third ingredient is unnecessary unless it adds another useful effect.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: ENHANCED FIRE RESISTANCE -->
+
+                        <!-- START: FIRE RESISTANCE AND TWO-HANDED -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Resist Fire + Fortify Two-handed</td>
+
+                            <td class="recipe">
+                                Dragon's Tongue + Fly Amanita
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                A two-ingredient combat potion.
+                                Combines fire protection with increased Two-handed weapon damage.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: FIRE RESISTANCE AND TWO-HANDED -->
+
+                        <!-- START: ENHANCED FIRE RESISTANCE AND TWO-HANDED -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Enhanced Resist Fire + Fortify Two-handed</td>
+
+                            <td class="recipe">
+                                Dragon's Tongue + Fly Amanita + Ashen Grass Pod
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                Ashen Grass Pod enhances the Resist Fire effect
+                                while retaining Fortify Two-handed.
+                                It does not enhance the Two-handed buff.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: ENHANCED FIRE RESISTANCE AND TWO-HANDED -->
+
+                        <!-- START: FIRE RESISTANCE TWO-HANDED STAMINA AND ILLUSION -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>
+                                Resist Fire + Fortify Two-handed +
+                                Regenerate Stamina + Fortify Illusion
+                            </td>
+
+                            <td class="recipe">
+                                Dragon's Tongue + Fly Amanita + Mora Tapinella
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Combines fire protection and Two-handed damage
+                                with Stamina regeneration.
+                                Fortify Illusion is an additional benefit
+                                when using Illusion spells.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: FIRE RESISTANCE TWO-HANDED STAMINA AND ILLUSION -->
+
+                        <!-- START: FIRE FROST AND POISON RESISTANCE -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Resist Fire + Resist Frost + Resist Poison</td>
+
+                            <td class="recipe">
+                                Mudcrab Chitin + Snowberries + Thistle Branch
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Combines fire and frost protection with poison resistance.
+                                Useful when preparing for multiple damage types.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: FIRE FROST AND POISON RESISTANCE -->
+
+                        <!-- START: FIRE FROST AND MAGICKA SUPPORT -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>
+                                Resist Fire + Resist Frost +
+                                Restore Magicka + Regenerate Magicka
+                            </td>
+
+                            <td class="recipe">
+                                Fire Salts + Moon Sugar + Snowberries
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Combines fire and frost protection with an immediate Magicka refill
+                                and faster Magicka regeneration.
+                                Useful preparation for magic-focused combat.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: FIRE FROST AND MAGICKA SUPPORT -->
+
+                        <!-- START: ALL ELEMENTAL RESISTANCE AND STAMINA -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>
+                                Resist Fire + Resist Frost + Resist Shock + Restore Stamina
+                            </td>
+
+                            <td class="recipe">
+                                Hawk Beak + Mudcrab Chitin + Snowberries
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Combines protection against all three elements
+                                with an immediate Stamina refill.
+                                Complements general magic defense.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: ALL ELEMENTAL RESISTANCE AND STAMINA -->
+                    </tbody>
+                    <!-- END: RESISTANCE FIRE OPTIONS -->
 
                     <!-- START: FROST DEFENSE MAIN ROW -->
                     <tbody>
