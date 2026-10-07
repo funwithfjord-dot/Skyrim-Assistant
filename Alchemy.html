@@ -2774,28 +2774,278 @@
                 <table>
                     <thead>
                         <tr>
-                            <th scope="col">Threat / Job</th>
+                            <th scope="col">Effect</th>
                             <th scope="col">Ingredients</th>
-                            <th scope="col">Effects</th>
-                            <th scope="col">Best Use</th>
-                            <th scope="col">Nice to Haves</th>
+                            <th scope="col">Use Case</th>
+                            <th scope="col">Nice to Have</th>
                         </tr>
                     </thead>
 
                     <!-- START: GENERAL MAGIC DEFENSE MAIN ROW -->
                     <tbody>
                         <tr>
-                            <td>General magic defense</td>
-                            <td class="recipe">Lavender + Tundra Cotton</td>
                             <td>Resist Magic</td>
-                            <td>
-                                Broad protection against magical threats,
-                                including fire, frost, and shock damage.
+
+                            <td class="recipe">
+                                Lavender + Tundra Cotton
                             </td>
-                            <td class="nice-to-have-empty">—</td>
+
+                            <td>
+                                Broad magical defense, including fire, frost, and shock damage.
+                                Open the ingredient pool for substitutes, pairing warnings,
+                                and useful combat combinations.
+                            </td>
+
+                            <td>
+                                <button aria-controls="nice-resistance-magic" aria-expanded="false"
+                                    class="nice-to-have-button" type="button">
+                                    Optional +
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
-                    <!-- #END: GENERAL MAGIC DEFENSE MAIN ROW -->
+                    <!-- END: GENERAL MAGIC DEFENSE MAIN ROW -->
+
+                    <!-- START: RESISTANCE MAGIC OPTIONS -->
+                    <tbody class="ingredient-pool" hidden id="nice-resistance-magic">
+                        <!-- START: MAGIC RESISTANCE LEGEND -->
+                        <tr class="nice-to-have-row healing-legend-row">
+                            <td colspan="4">
+                                <strong>Magic resistance ingredient pool:</strong>
+                                Combine two different ingredients from the ingredient rows below.
+                                Every ingredient in this pool provides Resist Magic.
+                                Green means no harmful shared effects with other ingredients
+                                in this listed pool. Yellow identifies pairings to avoid.
+                                Purple rows are complete specialty recipes.
+                                Add a third ingredient only when it improves magnitude,
+                                duration, or useful effects.
+                            </td>
+                        </tr>
+                        <!-- END: MAGIC RESISTANCE LEGEND -->
+
+                        <!-- START: LAVENDER -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Lavender</td>
+
+                            <td class="nice-to-have-use">
+                                Gather while traveling or grow your own.
+                                Keep as a staple for the main recipe with Tundra Cotton.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: LAVENDER -->
+
+                        <!-- START: TUNDRA COTTON -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Tundra Cotton</td>
+
+                            <td class="nice-to-have-use">
+                                Gather in the tundra around Whiterun.
+                                Bleeding Crown also adds Fortify Block;
+                                Void Salts also adds Fortify Magicka;
+                                Hagraven Claw also adds Fortify Barter.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: TUNDRA COTTON -->
+
+                        <!-- START: BLEEDING CROWN -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Bleeding Crown</td>
+
+                            <td class="nice-to-have-use">
+                                Gather mushrooms while exploring caves.
+                                Tundra Cotton also adds Fortify Block.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: BLEEDING CROWN -->
+
+                        <!-- START: CHICKEN'S EGG -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Chicken's Egg</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from chicken nests around farms and settlements.
+                                Keep a separate reserve for baking.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: CHICKEN'S EGG -->
+
+                        <!-- START: WISP WRAPPINGS -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Wisp Wrappings</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated wispmothers.
+                                Treat as encounter loot rather than a bulk gathering staple.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: WISP WRAPPINGS -->
+
+                        <!-- START: HAGRAVEN CLAW -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Hagraven Claw</td>
+
+                            <td class="nice-to-have-use">
+                                Collect from defeated hagravens.
+                                Tundra Cotton also adds Fortify Barter.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: HAGRAVEN CLAW -->
+
+                        <!-- START: FELSAAD TERN FEATHERS -->
+                        <tr class="nice-to-have-row ingredient-safe">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Felsaad Tern Feathers</td>
+
+                            <td class="nice-to-have-use">
+                                <span class="tag tag-dlc">Dragonborn / Solstheim</span>
+                                Collect from Felsaad terns.
+                                Keep as a regional substitute.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: FELSAAD TERN FEATHERS -->
+
+                        <!-- START: NIRNROOT -->
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Nirnroot</td>
+
+                            <td class="nice-to-have-use">
+                                Gather near water; listen for its distinctive chime.
+                                <strong>Avoid Crimson Nirnroot:</strong>
+                                this pairing adds Damage Health and Damage Stamina,
+                                alongside Invisibility.
+                                <strong>Avoid Void Salts:</strong>
+                                this pairing adds Damage Health.
+                                Lavender or Tundra Cotton is a clean pairing.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: NIRNROOT -->
+
+                        <!-- START: CRIMSON NIRNROOT -->
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Crimson Nirnroot</td>
+
+                            <td class="nice-to-have-use">
+                                Gather in Blackreach.
+                                <strong>Avoid Nirnroot:</strong>
+                                this pairing adds Damage Health and Damage Stamina,
+                                alongside Invisibility.
+                                <strong>Avoid Void Salts:</strong>
+                                this pairing adds Damage Health.
+                                Lavender or Tundra Cotton is a clean pairing.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: CRIMSON NIRNROOT -->
+
+                        <!-- START: VOID SALTS -->
+                        <tr class="nice-to-have-row ingredient-caution">
+                            <td>Resist Magic</td>
+
+                            <td class="recipe">Void Salts</td>
+
+                            <td class="nice-to-have-use">
+                                Save drops from defeated storm atronachs.
+                                <strong>Avoid Nirnroot and Crimson Nirnroot:</strong>
+                                either pairing adds Damage Health.
+                                Tundra Cotton also adds Fortify Magicka.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: VOID SALTS -->
+
+                        <!-- START: MAGIC RESISTANCE AND BLOCK -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Resist Magic + Fortify Block</td>
+
+                            <td class="recipe">
+                                Tundra Cotton + Bleeding Crown
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                A two-ingredient defensive potion.
+                                Combines magic resistance with blocking support.
+                                A third ingredient is unnecessary unless it adds another useful effect.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: MAGIC RESISTANCE AND BLOCK -->
+
+                        <!-- START: MAGIC RESISTANCE AND MAGICKA -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>Resist Magic + Fortify Magicka</td>
+
+                            <td class="recipe">
+                                Tundra Cotton + Void Salts
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                A two-ingredient defense-and-Magicka potion.
+                                Combines magic resistance with a larger Magicka pool.
+                                Do not add either Nirnroot variety.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: MAGIC RESISTANCE AND MAGICKA -->
+
+                        <!-- START: MAGIC RESISTANCE BLOCK AND MAGICKA -->
+                        <tr class="nice-to-have-row healing-specialty">
+                            <td>
+                                Resist Magic + Fortify Block + Fortify Magicka
+                            </td>
+
+                            <td class="recipe">
+                                Tundra Cotton + Bleeding Crown + Void Salts
+                            </td>
+
+                            <td class="nice-to-have-use">
+                                Complete three-ingredient combat preparation.
+                                Combines magic resistance, blocking support,
+                                and a larger Magicka pool.
+                                Use when both additional buffs are useful.
+                            </td>
+
+                            <td class="nice-to-have-empty-cell"></td>
+                        </tr>
+                        <!-- END: MAGIC RESISTANCE BLOCK AND MAGICKA -->
+                    </tbody>
+                    <!-- END: RESISTANCE MAGIC OPTIONS -->
 
                     <!-- START: FIRE DEFENSE MAIN ROW -->
                     <tbody>
@@ -2803,10 +3053,6 @@
                             <td>Fire damage</td>
                             <td class="recipe">Snowberries + Dragon's Tongue</td>
                             <td>Resist Fire</td>
-                            <td>
-                                Additional fire protection against fire dragons and fire casters.
-                                Complements Resist Magic.
-                            </td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2818,10 +3064,6 @@
                             <td>Frost damage</td>
                             <td class="recipe">Snowberries + Thistle Branch</td>
                             <td>Resist Frost</td>
-                            <td>
-                                Additional frost protection against frost dragons and frost casters.
-                                Complements Resist Magic.
-                            </td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2833,10 +3075,6 @@
                             <td>Shock damage</td>
                             <td class="recipe">Snowberries + Swamp Fungal Pod</td>
                             <td>Resist Shock</td>
-                            <td>
-                                Additional protection against shock-based enemies.
-                                Complements Resist Magic.
-                            </td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2853,11 +3091,6 @@
 
                             <td>Resist Fire + Resist Frost</td>
 
-                            <td>
-                                Additional protection against fire and frost dragons or casters.
-                                Complements Resist Magic.
-                            </td>
-
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2871,10 +3104,6 @@
                                 Snowberries + Hawk Beak + Dragon's Tongue
                             </td>
                             <td>Resist Fire + Resist Frost + Resist Shock</td>
-                            <td>
-                                Additional protection against all three elements.
-                                Complements general magic defense.
-                            </td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2886,9 +3115,6 @@
                             <td>Shield defense</td>
                             <td class="recipe">Tundra Cotton + Bleeding Crown</td>
                             <td>Fortify Block + Resist Magic</td>
-                            <td>
-                                Blocking attacks in encounters that also involve magic.
-                            </td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2900,7 +3126,6 @@
                             <td>One-handed damage</td>
                             <td class="recipe">Bear Claws + Canis Root</td>
                             <td>Fortify One-handed</td>
-                            <td>Increasing one-handed weapon damage.</td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2912,9 +3137,6 @@
                             <td>Two-handed damage</td>
                             <td class="recipe">Dragon's Tongue + Fly Amanita</td>
                             <td>Fortify Two-handed + Resist Fire</td>
-                            <td>
-                                Increasing two-handed weapon damage while adding fire protection.
-                            </td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2926,7 +3148,6 @@
                             <td>Archery damage</td>
                             <td class="recipe">Canis Root + Elves Ear</td>
                             <td>Fortify Archery</td>
-                            <td>Increasing bow damage before ranged combat.</td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2938,7 +3159,6 @@
                             <td>Stealth</td>
                             <td class="recipe">Abecean Longfin + Frost Mirriam</td>
                             <td>Fortify Sneak</td>
-                            <td>Stealth approaches and avoiding detection.</td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
@@ -2950,7 +3170,6 @@
                             <td>Lockpicking</td>
                             <td class="recipe">Falmer Ear + Namira's Rot</td>
                             <td>Fortify Lockpicking</td>
-                            <td>Focused lockpicking tasks.</td>
                             <td class="nice-to-have-empty">—</td>
                         </tr>
                     </tbody>
