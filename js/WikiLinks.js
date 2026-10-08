@@ -169,6 +169,9 @@
     { name: "Goldfish", page: "Goldfish", type: "ingredient" },
     { name: "Glassfish", page: "Glassfish", type: "ingredient" },
     { name: "Lavender", page: "Lavender", type: "ingredient" },
+    { name: "Crimson Nirnroot", page: "Crimson_Nirnroot", type: "ingredient" },
+    { name: "Chicken's Egg", page: "Chicken%27s_Egg", type: "ingredient" },
+    { name: "Hagraven Claw", page: "Hagraven_Claw", type: "ingredient" },
 
     /*
      * Add other types here later:
